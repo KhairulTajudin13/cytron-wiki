@@ -101,7 +101,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/platforms/iriv-picontrol',
+                to: '/docs/products/iriv-picontrol',
               },
             ],
           },

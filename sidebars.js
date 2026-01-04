@@ -16,33 +16,34 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "category",
-      label: "Platforms",
+      label: "Products",
+      link: { type: "doc", id: "products/index" },
       items: [
         {
           type: "category",
           label: "IRIV PiControl",
-          link: { type: "doc", id: "platforms/iriv-picontrol/index" },
+          link: { type: "doc", id: "products/iriv-picontrol/index" },
           items: [
-            "platforms/iriv-picontrol/getting-started",
-            "platforms/iriv-picontrol/hardware-layout",
-            "platforms/iriv-picontrol/internal-board-layout",
-            "platforms/iriv-picontrol/terminal-1",
-            "platforms/iriv-picontrol/terminal-2",
-            "platforms/iriv-picontrol/interfaces-and-mapping",
-            "platforms/iriv-picontrol/software-configuration",
-            "platforms/iriv-picontrol/programming-reference",
-            "platforms/iriv-picontrol/troubleshooting",
-            "platforms/iriv-picontrol/downloads",
+            "products/iriv-picontrol/getting-started",
+            "products/iriv-picontrol/hardware-layout",
+            "products/iriv-picontrol/internal-board-layout",
+            "products/iriv-picontrol/terminal-1",
+            "products/iriv-picontrol/terminal-2",
+            "products/iriv-picontrol/interfaces-and-mapping",
+            "products/iriv-picontrol/software-configuration",
+            "products/iriv-picontrol/programming-reference",
+            "products/iriv-picontrol/troubleshooting",
+            "products/iriv-picontrol/downloads",
 
             // Move Node-RED to the bottom
             {
               type: "category",
               label: "Node-RED Documentation",
-              link: { type: "doc", id: "platforms/iriv-picontrol/node-red/index" },
+              link: { type: "doc", id: "products/iriv-picontrol/node-red/index" },
               items: [
-                "platforms/iriv-picontrol/node-red/install",
-                "platforms/iriv-picontrol/node-red/first-flow",
-                "platforms/iriv-picontrol/node-red/industrial-use-cases",
+                "products/iriv-picontrol/node-red/install",
+                "products/iriv-picontrol/node-red/first-flow",
+                "products/iriv-picontrol/node-red/industrial-use-cases",
               ],
             },
           ],

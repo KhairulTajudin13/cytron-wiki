@@ -15,8 +15,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/platforms/iriv-picontrol">
-            IRIV PiControl Documentation
+            to="/docs/products/">
+            Browse Products Documentation
           </Link>
         </div>
       </div>
