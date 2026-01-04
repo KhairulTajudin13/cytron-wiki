@@ -7,7 +7,7 @@ sidebar_position: 7
 
 Quick reference for network interfaces, serial device mappings, I2C addresses, and GPIO assignments.
 
-![IRIV PiControl Block Diagram](/img/platforms/iriv-picontrol/block-diagram.png)
+![IRIV PiControl Block Diagram](/img/products/iriv-picontrol/block-diagram.png)
 
 *Block diagram showing system architecture, interface connections, and signal flow between CM4, I/O subsystems, and peripheral devices.*
 

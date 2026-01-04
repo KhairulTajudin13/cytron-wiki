@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Hardware Layout
 
-![IRIV PiControl External Layout](/img/platforms/iriv-picontrol/external-layout.png)
+![IRIV PiControl External Layout](/img/products/iriv-picontrol/external-layout.png)
 
 *External layout showing all ports, terminals, buttons, LEDs, and connectors on the IRIV PiControl enclosure.*
 
