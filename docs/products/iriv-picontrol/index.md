@@ -22,9 +22,9 @@ IRIV PiControl combines industrial interfaces with Raspberry Pi's computing capa
 Follow these steps to set up your IRIV PiControl:
 
 1. [Review hardware requirements and power specifications](./getting-started.md#power-requirements)
-2. [Connect power supply and perform first boot](./getting-started.md#first-boot)
+2. [Connect power supply and perform first boot](./getting-started.md#first-boot-and-access)
 3. [Run configuration script](./getting-started.md#configuration)
-4. [Verify OLED display status](./getting-started.md#oled-status)
+4. [Verify OLED display status](./getting-started.md#oled-system-status)
 5. [Begin development with Node-RED](./node-red/index.md)
 
 ## Product Hub
