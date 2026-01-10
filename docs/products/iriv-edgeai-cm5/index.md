@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
 title: IRIV EdgeAI CM5
+sidebar_position: 1
+description: Industrial edge AI controller powered by Raspberry Pi Compute Module 5, designed for AI inference, vision-based applications, and high-performance edge processing.
 ---
 
 # IRIV EdgeAI CM5

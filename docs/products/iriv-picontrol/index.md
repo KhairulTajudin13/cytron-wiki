@@ -1,6 +1,7 @@
 ---
-title: IRIV PiControl Documentation
+title: IRIV PiControl
 sidebar_position: 1
+description: Industrial controller powered by Raspberry Pi Compute Module 4, featuring isolated I/O, serial communication, and expansion options in a DIN rail-mountable enclosure.
 ---
 
 # IRIV PiControl Documentation

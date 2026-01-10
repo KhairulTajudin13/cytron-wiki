@@ -1,6 +1,7 @@
 ---
-title: IRIV IO Controller Documentation
+title: IRIV IO Controller
 sidebar_position: 1
+description: Industrial I/O controller powered by Raspberry Pi RP2350 microcontroller, designed for lightweight automation with digital and analog I/O, RS485, and Ethernet in a compact DIN rail-mountable enclosure.
 ---
 
 # IRIV IO Controller Documentation

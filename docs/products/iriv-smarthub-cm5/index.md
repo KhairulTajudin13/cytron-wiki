@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
 title: IRIV SmartHub CM5
+sidebar_position: 1
+description: Industrial gateway and controller powered by Raspberry Pi Compute Module 5, designed for edge computing, system integration, and industrial automation applications.
 ---
 
 # IRIV SmartHub CM5
