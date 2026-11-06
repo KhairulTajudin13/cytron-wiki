@@ -6,6 +6,8 @@ description: IRIV PiControl Industry 4.0 Agribox (KIT-IRIV-AGRBX2) — smart-agr
 
 # IRIV PiControl Industry 4.0 Agribox
 
+<img src="https://static.cytron.io/image/cache/catalog/products/KIT-IRIV-AGRBX2/4-800x800.png" alt="IRIV PiControl Industry 4.0 Agribox" width="360" loading="lazy" />
+
 **Product code:** KIT-IRIV-AGRBX2 · [Product page](https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4.0-agribox-v2-myagritech-software-included)
 
 A packaged smart-agriculture control box. It monitors soil and climate, switches pumps, valves and lights by schedule or sensor readings, and comes with the **MyAgritech** web dashboard for remote monitoring, data logging and email alerts.

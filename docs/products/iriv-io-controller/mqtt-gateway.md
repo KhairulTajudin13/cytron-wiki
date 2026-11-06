@@ -6,6 +6,8 @@ description: IRIV IOC MQTT Gateway — the IRIV IO Controller preloaded with Cyt
 
 # IRIV IOC MQTT Gateway
 
+<img src="https://static.cytron.io/image/cache/catalog/products/IRIV-IOC-MQTT/ppp3.1-800x800.png" alt="IRIV IOC MQTT Gateway" width="360" loading="lazy" />
+
 [Product page](https://my.cytron.io/p-iriv-io-controller-mqtt-ir4.0-industrial-i-o-controller-with-mqtt-ready) · [Getting Started series (6 parts)](https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway)
 
 The IRIV IOC MQTT Gateway is the same hardware as the IRIV IO Controller, **preloaded at the factory with Cytron's MQTT Gateway firmware**. It publishes the digital inputs, analog inputs and Modbus RTU (RS485) readings to your MQTT broker over Ethernet, and lets you switch the digital outputs from MQTT — all set up from a web page, with no coding.

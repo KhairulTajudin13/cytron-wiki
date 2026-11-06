@@ -43,6 +43,7 @@ export const kits = [
     title: 'IRIV EdgeAI Safety Box Kit',
     tag: 'EdgeAI CM5 · 26 TOPS',
     link: '/docs/kits/iriv-edgeai-safety-box-kit',
+    image: 'https://static.cytron.io/image/cache/catalog/products/KIT-IRIV-EAI-PPE/safety-box-b-500x500.png',
     description:
       'Ready-to-deploy PPE and danger-zone detection for up to 6 RTSP IP cameras, in an IP67 enclosure with alarm outputs.',
   },
@@ -50,6 +51,7 @@ export const kits = [
     title: 'IRIV PiControl Industry 4.0 Agribox',
     tag: 'PiControl CM4 + IO Controller',
     link: '/docs/kits/iriv-picontrol-agribox',
+    image: 'https://static.cytron.io/image/cache/catalog/products/KIT-IRIV-AGRBX2/4-500x500.png',
     description:
       'Smart-agriculture control box with 5 relays, RS485 soil and climate sensors, and the MyAgritech dashboard.',
   },
@@ -57,6 +59,7 @@ export const kits = [
     title: 'IRIV PiControl Industry 4.0 Training Kit & Workshop',
     tag: 'PiControl CM4 · Workshop',
     link: '/docs/kits/iriv-picontrol-industry40-training',
+    image: 'https://static.cytron.io/image/cache/catalog/products/V-KIT-IRIV/iriv-training-kit-new-main-500x500.png',
     description:
       'DIN-rail training panel with RS485 sensor and power meter, sold alone or with a 2-day Node-RED / Modbus / IoT workshop.',
   },
@@ -64,6 +67,7 @@ export const kits = [
     title: 'IRIV EdgeAI Industry 4.0 Vision Training',
     tag: 'EdgeAI CM5 · 13 TOPS · Workshop',
     link: '/docs/kits/iriv-edgeai-vision-training',
+    image: 'https://static.cytron.io/image/cache/catalog/products/V-KIT-IRIV-EAI/edge-ai-kit-a-500x500.png',
     description:
       'Two-day Edge AI vision workshop with a take-home EdgeAI training kit: Hailo pipelines, custom models, Node-RED and Blynk.',
   },

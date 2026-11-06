@@ -6,6 +6,8 @@ description: IRIV EdgeAI Safety Box Kit (KIT-IRIV-EAI-PPE) — on-site PPE and d
 
 # IRIV EdgeAI Safety Box Kit
 
+<img src="https://static.cytron.io/image/cache/catalog/products/KIT-IRIV-EAI-PPE/safety-box-b-800x800.png" alt="IRIV EdgeAI Safety Box Kit" width="360" loading="lazy" />
+
 **Product code:** KIT-IRIV-EAI-PPE · [Product page](https://my.cytron.io/p-iriv-edgeai-safety-box-kit) · [Quick Start Guide](https://my.cytron.io/tutorial/iriv-edgeai-safety-box-quick-start-guide)
 
 A ready-to-deploy workplace-safety box. It watches your existing IP cameras for missing PPE and people entering danger zones, raises alarms on two outputs, and keeps an evidence log and PDF safety reports. All AI runs on the device: video does not leave the site, and the system keeps working without internet.

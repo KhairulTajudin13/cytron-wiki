@@ -6,6 +6,8 @@ description: IRIV EdgeAI Industry 4.0 Training — Getting Started with EdgeAI V
 
 # IRIV EdgeAI Industry 4.0 Vision Training
 
+<img src="https://static.cytron.io/image/cache/catalog/products/V-KIT-IRIV-EAI/edge-ai-kit-a-800x800.png" alt="IRIV EdgeAI Industry 4.0 Training Kit" width="360" loading="lazy" />
+
 **Product code:** V-KIT-IRIV-EAI (kit + training option: KIT-IRIV-EAI-SP) · [Product page](https://my.cytron.io/cytron-industry/iriv-edge-ai-training-page)
 
 A two-day Edge AI vision workshop by Cytron, sold with an IRIV EdgeAI industrial training kit that participants take home. You learn Node-RED, Modbus RS485 and Blynk, then Hailo AI detection, preparing your own dataset, training a custom model and linking AI results to physical outputs.

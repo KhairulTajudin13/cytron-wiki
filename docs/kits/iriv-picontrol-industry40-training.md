@@ -6,6 +6,8 @@ description: IRIV PiControl Industry 4.0 training kit and 2-day hands-on worksho
 
 # IRIV PiControl Industry 4.0 Training Kit & Workshop
 
+<img src="https://static.cytron.io/image/cache/catalog/products/V-KIT-IRIV/iriv-training-kit-new-main-800x800.png" alt="IRIV PiControl Industry 4.0 Training Kit" width="360" loading="lazy" />
+
 **Product code:** V-KIT-IRIV (training kit only: CK-KIT-IRIVPCT) · [Product page](https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4p0-kit-and-workshops)
 
 A DIN-rail training panel built around the IRIV PiControl, sold on its own or with a two-day hands-on workshop run by Cytron, the designer and manufacturer of IRIV PiControl. Participants take the kit home after the workshop.
