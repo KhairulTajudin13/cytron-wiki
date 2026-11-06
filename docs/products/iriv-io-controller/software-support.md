@@ -15,7 +15,7 @@ The IRIV IO Controller is based on the Raspberry Pi RP2350A microcontroller, whi
 
 CircuitPython is a beginner-friendly Python variant designed for microcontrollers.
 
-**Status:** Officially supported
+**Status:** Official board build — [IRIV IO Controller (RP2350) on circuitpython.org](https://circuitpython.org/board/cytron_iriv_io_controller/), installed as a UF2 file
 
 CircuitPython provides:
 - Python-based programming (easy to learn)
@@ -30,7 +30,7 @@ For a comprehensive CircuitPython tutorial, see:
 
 MicroPython is a lean Python implementation for microcontrollers.
 
-**Status:** Compatible with RP2350A
+**Status:** The RP2350A chip is supported by MicroPython; no IRIV-specific MicroPython build is published
 
 MicroPython provides:
 - Full Python 3 implementation
@@ -41,7 +41,7 @@ MicroPython provides:
 
 The official Raspberry Pi C/C++ SDK supports the RP2350A.
 
-**Status:** Compatible with RP2350A
+**Status:** Supports the RP2350A chip; no IRIV-specific examples are published
 
 C/C++ SDK provides:
 - Low-level hardware access
@@ -57,13 +57,17 @@ The IRIV IO Controller supports both OT (Operational Technology) and IT (Informa
 
 ### MODBUS RTU (Default Firmware)
 
-The IRIV IO Controller ships **preprogrammed as a MODBUS RTU IO Expander** with counter function.
+Cytron's getting-started material describes the unit as shipping **preprogrammed as a MODBUS RTU IO Expander** with counter function.
+
+:::note
+The default firmware is not described in the datasheet. Confirm the firmware version and MODBUS register map with Cytron support before relying on it.
+:::
 
 **Interface:** RS485 (isolated)
 **Maximum Baud Rate:** 500 kbps
 **Function:** IO expansion and pulse counting
 
-The default firmware allows immediate integration into MODBUS RTU networks without additional programming.
+Cytron also publishes a [Modbus Configuration Tool tutorial](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup) for setting the slave ID and baud rate.
 
 ### MODBUS TCP
 
@@ -79,12 +83,12 @@ The W5500 Ethernet controller supports MODBUS TCP through its hardwired TCP/IP i
 
 MQTT protocol can be implemented for IoT gateway applications, sensor data publishing, and cloud integration.
 
-### HTTP/HTTPS
+### HTTP
 
 **Interface:** Ethernet (W5500)
 **Protocol Support:** Via application layer
 
-HTTP/HTTPS protocols supported for web-based monitoring, RESTful API integration, and web server applications.
+The datasheet lists HTTP (with MQTT) as supported IT protocols, for web-based monitoring and REST-style integration. HTTPS is not stated in the datasheet.
 
 ### TCP/UDP
 
@@ -120,6 +124,10 @@ The RP2350A uses the UF2 (USB Flashing Format) for firmware updates. UF2 files c
 
 ## Programming Resources
 
+### Cytron Example Code
+
+- [CytronTechnologies/Cytron-IRIV-IO-Controller on GitHub](https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller) — official example code linked from the product page (CircuitPython samples for analog input, Ethernet, Modbus, pulse counter and RTC)
+
 ### Official Raspberry Pi Resources
 
 - [Raspberry Pi RP2350A Datasheet](https://www.raspberrypi.com/documentation/microcontrollers/)
@@ -139,9 +147,9 @@ The RP2350A uses the UF2 (USB Flashing Format) for firmware updates. UF2 files c
 
 Based on the datasheet, the following limitations apply:
 
-**Analog Input Mode:**
-- Both analog channels (AN0, AN1) must operate in the same mode (voltage or current)
-- Cannot measure voltage on one channel and current on the other simultaneously
+**Analog Inputs:**
+- Not isolated: AGND is shared with system GND
+- Mode (voltage or current) is set per channel by its own DIP switch
 
 **Power Consumption:**
 - Maximum power consumption: 0.7W

@@ -129,3 +129,9 @@ The block diagram illustrates the following signal paths:
 
 - Enclosure body: 139mm x 88mm x 38mm
 - Side clearance for DIN bracket: 8mm
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

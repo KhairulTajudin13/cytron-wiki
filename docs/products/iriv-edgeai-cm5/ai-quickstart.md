@@ -59,22 +59,42 @@ To install the Raspberry Pi AI HAT+:
 
 > **Image placeholder** — AI HAT+ installation diagram (to be added later)
 
+## Configurations on Sale
+
+The IRIV EdgeAI CM5 is sold with a Raspberry Pi AI HAT+ pre-installed (product page, Oct 2026):
+
+| RAM | eMMC | AI HAT+ |
+|---|---|---|
+| 8GB | 32GB | 13 TOPS |
+| 8GB | 32GB | 26 TOPS |
+| 16GB | 64GB | 26 TOPS |
+
+The product page names Hailo-8 as an example accelerator. Per Raspberry Pi, the 13 TOPS AI HAT+ uses Hailo-8L and the 26 TOPS version uses Hailo-8; Cytron has not stated the chip per configuration.
+
+Kits (product page):
+- **EdgeAI Only:** controller, dual-band antenna, screwdriver, 4 silicone bumpers
+- **Basic Kit:** adds Meanwell 24V 24W DIN-rail PSU, USB 3.0 industrial camera 2MP with CS lens, 175mm industrial dome light, VisionPro camera stand
+- **Complete Kit:** adds 1m HDMI cable and wireless keyboard/mouse
+
 ## Software Configuration
 
-*Note: Specific AI software stack details, frameworks, and model support are not specified in the official datasheet. Refer to Raspberry Pi AI HAT+ documentation for software setup instructions.*
+Cytron's datasheet does not describe the AI software stack. The AI HAT+ is the standard Raspberry Pi accessory, so follow the [Raspberry Pi AI HAT+ documentation](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html) and [AI software guide](https://www.raspberrypi.com/documentation/computers/ai.html) (Raspberry Pi OS Bookworm; Hailo packages are installed with `sudo apt install hailo-all`).
 
-For AI HAT+ software setup, consult:
-- Official Raspberry Pi AI HAT+ documentation
-- Raspberry Pi OS AI software packages
+## Cytron AI Tutorials
 
-## Additional AI-Related Resources
-
-The official getting started tutorial references the following related topics:
-
-- AI Processor setup
-- AI Computer Vision implementation
-
-*Note: Detailed procedures for these topics are not included in the datasheet. Refer to the official Cytron tutorials for step-by-step guides.*
+| Tutorial | Level |
+|---|---|
+| [Getting Started with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/getting-started-with-iriv-edgeai-cm5) (6 parts) | Intermediate |
+| [Custom Object Detection on IRIV Edge AI](https://my.cytron.io/tutorial/custom-object-detection-on-iriv-edge-ai) (7 parts) | Advanced |
+| [Exploration of YOLOv4 with IRIV EdgeAI CM5 in Custom Object Detection](https://my.cytron.io/tutorial/Yolov4-training-intro) (3 parts) | — |
+| [IRIV EdgeAI CM5: Enhancing CCTV Cameras](https://my.cytron.io/tutorial/enhance-rtsp-camera-with-iriv-edge-ai) | Intermediate |
+| [Capture Hand Movement using Mediapipe on IRIV Edge AI](https://my.cytron.io/tutorial/capture-hand-movement-using-mediapipe-on-iriv-edge-ai) | Intermediate |
+| [AI Packaging Detection for Missing Item Inspection](https://my.cytron.io/tutorial/ai-packaging-detection-missing-item-inspection) | Intermediate |
+| [Real-Time PPE Detection on Raspberry Pi With Edge AI](https://my.cytron.io/tutorial/real-time-ppe-detection-raspberry-pi) | Beginner |
+| [AI PPE Zone Monitoring with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/ai-ppe-zone-monitoring-iriv-edgeai-cm5) | Beginner |
+| [How AI Detects Defects in Product Quality Inspection](https://my.cytron.io/tutorial/how-ai-detects-defects-in-product-quality-inspection) | Beginner |
+| [Exploring Industrial Edge AI Applications with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/industrial-edge-ai-applications-iriv-edgeai-cm5) | Beginner |
+| [Automate Shutdown and Power-On with IRIV Real-Time Clock](https://my.cytron.io/tutorial/automate-shutdown-and-poweron-with-iriv-realtime-clock) | Beginner |
 
 ## Vision System Considerations
 
@@ -87,8 +107,14 @@ When designing vision-based AI applications:
 
 ## Performance Notes
 
-*Performance specifications, supported AI models, inference speeds, and benchmark data are not specified in the official datasheet.*
+*Cytron has not published inference benchmarks for this controller. The datasheet's max 11W power figure is a CPU stress test with USB load excluded; it does not say whether AI HAT+, NVMe or mini PCIe load is included.*
 
 For performance information, refer to:
 - Raspberry Pi AI HAT+ official specifications
 - Application-specific testing in your deployment environment
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

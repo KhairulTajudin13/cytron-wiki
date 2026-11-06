@@ -16,7 +16,7 @@ Downloadable resources and support contact information for IRIV PiControl.
 - Date: November 2025
 - Format: PDF
 
-Download location: Not specified in current sources.
+Download: [IRIV PiControl CM4 User Manual (PDF)](../../../sources/manuals/IRIV%20PiControl%20CM4%20User%20Manual.pdf). The product page also links the CM4 and CM5 user manuals, 3D CAD, OS images (Bookworm and Bullseye) and a brochure.
 
 ## Software and Firmware
 
@@ -41,12 +41,17 @@ Download: [www.raspberrypi.com/software/operating-systems/](https://www.raspberr
 
 **ADC Library (Adafruit_ADS1x15):**
 ```bash
+# Raspberry Pi OS Bookworm blocks system-wide pip installs,
+# so create a virtual environment first (one time):
+python3 -m venv --system-site-packages ~/iriv-env
+source ~/iriv-env/bin/activate
 pip install Adafruit_ADS1x15
 ```
 
 **Serial Communication (pySerial):**
 ```bash
-pip install pyserial
+# Bookworm: install from apt, or pip inside the venv above
+sudo apt install python3-serial
 ```
 
 ## Utilities
@@ -72,7 +77,7 @@ Circuit schematics: Not specified in current sources.
 
 ### 3D Models
 
-CAD models: Not specified in current sources.
+3D CAD files are linked from the [product page](https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller) (Resources section).
 
 ## Example Code
 
@@ -92,7 +97,12 @@ Example flows: Not specified in current sources.
 - URL: [my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4](https://my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4)
 - Part of 13-part Node-RED series for industrial applications
 
-Additional tutorial URLs: Not specified in current sources.
+**More Cytron tutorials using IRIV PiControl:**
+- [AI Gesture Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol) (Advanced, 2025)
+- [AI Plant Disease Detection with IRIV PiControl](https://my.cytron.io/tutorial/ai-plant-disease-detection-with-iriv-picontrol) (Advanced, 2025)
+- [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp) (Beginner, 2026, 5 parts)
+
+The product page FAQ also notes that CodeSys and Ignition (paid) can be used on IRIV PiControl.
 
 ## Support and Contact
 

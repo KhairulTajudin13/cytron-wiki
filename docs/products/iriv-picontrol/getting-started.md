@@ -11,7 +11,7 @@ Task-based guide to set up and configure your IRIV PiControl for first use.
 
 **Minimum Requirements:**
 - IRIV PiControl CM4 unit
-- Power supply: DC 10-30V (Terminal 1) OR USB-C 5V 1.5A minimum
+- Power supply: DC 10-30V (Terminal 1) OR USB-C 5V (3A rated)
 - Network connection (Ethernet cable or WiFi)
 
 **Optional:**
@@ -27,14 +27,12 @@ The IRIV PiControl supports two power input methods:
 - **Voltage Range:** DC 10V to 30V
 - **Surge Protection:** Up to 60V for 20ms
 - **Fuse Protection:** 4A replaceable fuse
-- **Current Draw:** Approximately 0.3A (device only, excluding USB loads)
+- **Power Consumption:** max 6.5W (running `stress-ng --cpu 4 --cpu-method fft`, USB load not included)
 - **No earth connection required**
 
 ### USB-C Power Input
-- **Voltage:** DC 5V
-- **Minimum Current:** 1.5A
-- **Maximum Current:** 3A
-- **Voltage Range:** 4.9V to 5.2V
+- **Voltage:** DC 5V (4.9V to 5.2V)
+- **Rating:** 3A ("USB-C (3 Amp)" in the user manual) — use a 5V 3A supply
 
 ## Power-Up Checklist
 
@@ -59,7 +57,12 @@ Upon startup, the OLED display shows:
 
 The IRIV PiControl can operate in two network modes:
 
-**Access Point Mode (Default for tutorial setup):**
+**Access Point Mode (from Cytron's Node-RED tutorial setup):**
+
+:::note
+The access-point details and the `iriv.local` dashboard come from Cytron's Quick Start / Node-RED tutorial image, which the product page says is pre-loaded on stock shipped from 1 Jan 2024. They are not in the user manual. A unit you flash yourself will not have them.
+:::
+
 1. Device creates WiFi network named **"iriv"**
 2. Connect from your computer/device
 3. Password: **"iriv1234"**
@@ -111,13 +114,13 @@ After configuration, the OLED automatically displays:
 
 Press the **User Button** to cycle through status pages.
 
-The User Button can also be programmed as a safe shutdown button (configured by the background script - hold for 5 seconds to trigger shutdown).
+The User Button (GPIO4) is used by the background script as a safe-shutdown button. The user manual says the background script "shuts down the Pi safely when the button is pressed". Cytron's Node-RED tutorial describes a short press cycling the OLED pages and a 5-second hold (with buzzer) to shut down; this exact behaviour is not in the manual and may depend on the software version.
 
 ## Safe Shutdown
 
 Two methods to safely shut down the system:
 
-1. **User Button:** Hold for 5 seconds - buzzer will sound, then system shuts down
+1. **User Button:** The user manual says the background script "shuts down the Pi safely when the button is pressed". Cytron's Node-RED tutorial describes a short press cycling the OLED pages and a 5-second hold (with buzzer) to shut down; this exact behaviour is not in the manual and may depend on the software version.
 2. **Dashboard:** Use the shutdown function in the web UI at `iriv.local:1880/ui`
 
 The **Reset Button** can wake up the CM4 after shutdown.

@@ -51,7 +51,11 @@ The RS485 interface includes a 120Ω termination resistor that can be switched o
 
 ### Default Firmware
 
-The IRIV IO Controller ships preprogrammed as a **MODBUS RTU IO Expander** with counter function. The default firmware communicates via RS485 using the MODBUS RTU protocol.
+Cytron's getting-started material describes the unit as shipping preprogrammed as a **MODBUS RTU IO Expander** with counter function, communicating over RS485.
+
+:::note
+The default firmware is not described in the datasheet. Confirm the firmware version and MODBUS register map with Cytron support before relying on it.
+:::
 
 ## Ethernet (W5500)
 
@@ -96,7 +100,7 @@ The Ethernet interface is powered by the Wiznet W5500 Ethernet MAC and PHY chip.
 
 **IT (Information Technology) Protocols:**
 - MQTT
-- HTTP/HTTPS
+- HTTP
 
 ### W5500 Features
 
@@ -144,8 +148,8 @@ The USB-C port can power the entire IRIV IO Controller at 5V. The acceptable vol
 ### User Button
 
 - **GPIO:** GPIO28
-- **Type:** Active low (triggered when pressed)
-- **Access:** Pinhole button, requires paperclip
+- **Type:** Active low (reads LOW when pressed)
+- **Access:** Front-panel push button (only BOOT and RESET are pinhole buttons)
 
 User programmable button for custom applications.
 

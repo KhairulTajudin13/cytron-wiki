@@ -95,8 +95,8 @@ i2cdetect -y 1
 
 | LED | GPIO | Active State |
 |-----|------|--------------|
-| LED0 | GPIO20 | HIGH = ON |
-| LED1 | GPIO21 | HIGH = ON |
+| LED0 | GPIO20 | HIGH = ON (expected; not stated in the datasheet) |
+| LED1 | GPIO21 | HIGH = ON (expected; not stated in the datasheet) |
 
 Example:
 ```bash
@@ -162,7 +162,7 @@ The LED drivers support PWM for brightness control. Output voltage follows VIN.
 
 | Function | GPIO | Usage |
 |----------|------|-------|
-| Power | GPIO6 | HIGH = Power on |
+| Power | GPIO6 | Turns mini PCIe power on/off (polarity not stated in the datasheet) |
 | Reset | GPIO5 | LOW = Reset (active low) |
 
 ```bash
@@ -232,3 +232,9 @@ nmcli device wifi connect "SSID" password "password"
 To permanently disable WiFi or Bluetooth, solder the corresponding jumper pads on the internal board:
 - WL: WiFi disable
 - BT: Bluetooth disable
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

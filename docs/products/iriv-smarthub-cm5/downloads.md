@@ -11,14 +11,19 @@ This page provides links to official documentation, design files, and resources 
 
 | Document | Description | Link |
 |----------|-------------|------|
-| User Manual | Official IRIV SmartHub CM5 User Manual (PDF) | [IRIV SmartHub CM5 User Manual](../../../sources/manuals/IRIV%20SmartHub%20CM5%20User%20Manual.pdf) |
+| User Manual | Official IRIV SmartHub CM5 User Manual, Rev 1.3, Dec 2025 (PDF). A newer Rev 1.4 (Feb 2026) exists — check the product page for the latest | [IRIV SmartHub CM5 User Manual](../../../sources/manuals/IRIV%20SmartHub%20CM5%20User%20Manual.pdf) |
 | Product Page | Official product page with specifications and ordering | [Cytron Product Page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5) |
 
 ## Tutorials
 
 | Tutorial | Description |
 |----------|-------------|
-| [Getting Started Tutorial](https://my.cytron.io/tutorial/iriv-smarthub-getting-started) | Official getting started guide from Cytron |
+| [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started) | Official getting started series (6 parts) |
+| [Digital Signage With IRIV SmartHub CM5](https://my.cytron.io/tutorial/iriv-smarthub-digital-signage) | Digital signage project |
+| [Inventory Management System with IRIV SmartHub CM5](https://my.cytron.io/tutorial/inventory-management-system-with-smarthub) | Inventory system project |
+| [Milesight-BeaverIoT Quick Start Guide](https://my.cytron.io/tutorial/milesight-beaveriot-quick-start-guide-smarthub) | IoT platform setup (4 parts) |
+| [IRIV SmartHub CM5: 84 Days of Continuous Operation](https://my.cytron.io/tutorial/iriv-smarthub-cm5-84-days-continuous-operation) | Long-run reliability test |
+| [Can IRIV SmartHub CM5 Create a Simple MES System?](https://my.cytron.io/tutorial/iriv-smarthub-cm5-simple-mes-system) | MES use case |
 
 ## Design Files
 
@@ -49,3 +54,9 @@ This page provides links to official documentation, design files, and resources 
 - Email: support@cytron.io
 - Address: No. 1, Lorong Industri Impian 1, Taman Industri Impian, 14000 Bukit Mertajam, Penang, Malaysia
 - Tel: +604-548 0668
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026

@@ -74,7 +74,7 @@ The power input is protected by a 4A fuse. If the device fails to power on, chec
 1. Connect power supply to VIN and GND terminals
 2. Enable the power supply
 3. Observe the PWR LED indicator for confirmation
-4. The system will boot automatically
+4. Press the **Power Button** once to turn on (datasheet). Some units may start by themselves when VIN is applied, depending on the software image; this is not stated in the datasheet.
 
 ### From USB-C
 
@@ -89,10 +89,9 @@ Two methods are available:
 | Method | Action |
 |--------|--------|
 | Soft Shutdown | Double-press the Power Button |
-| Force Shutdown | Long-press the Power Button (5+ seconds) |
+| Force Shutdown | Long-press the Power Button |
 
-Alternative method:
-- Press and hold the **User Button** for 5 seconds
+Cytron's getting-started tutorial also describes holding the Power Button or the **User Button** for about 5 seconds to power off. This depends on the software image and is not in the datasheet.
 
 ## First Boot
 
@@ -145,3 +144,9 @@ To reflash the operating system:
 - Check [Interfaces and Mapping](./interfaces-and-mapping) for GPIO and terminal assignments
 - See [AI Quickstart](./ai-quickstart) for AI HAT+ setup
 - Review [Software Setup](./software-setup) for OS configuration
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

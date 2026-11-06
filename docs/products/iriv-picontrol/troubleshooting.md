@@ -42,7 +42,7 @@ Common issues and solutions for IRIV PiControl operation.
 
 **Solution:**
 - Check the 4A fuse on the internal board
-- Fuse protects Terminal 1 input only; USB-C power bypasses the fuse
+- The 4A fuse is on the power input. Whether it also covers the USB-C input is not stated in the user manual
 
 ## RS485 Communication Issues
 
@@ -99,7 +99,7 @@ Common issues and solutions for IRIV PiControl operation.
 3. Locate Boot/Debug Mode Switch on internal board
 4. Set switch to **Debug** position
 5. Connect USB-C cable
-6. Open serial terminal at 115200 baud (default UART settings)
+6. Open a serial terminal on the USB-C debug port (115200 baud is the usual Raspberry Pi console default; the baud rate is not stated in the user manual)
 
 **Note:** The USB-C port function is determined by the physical switch position, not by software configuration.
 
@@ -200,12 +200,11 @@ Common issues and solutions for IRIV PiControl operation.
 2. **ADC gain setting**
    - Use `gain=2` for 0-20mA measurement
 
-### All Analog Channels Must Be Same Mode
+### Mixing Voltage and Current Inputs
 
 **Remember:**
-- Voltage/current mode applies to all four channels
-- Cannot mix voltage and current measurement
-- Internal DIP switch sets mode for AI0, AI1, AI2, and AI3 simultaneously
+- Each analog input has its own current-mode switch (4-way DIP, one position per channel). The user manual wiring figure shows AI0/AI1 on 0-10V and AI2/AI3 on 0-20mA at the same time, so voltage and current channels can be mixed. Which DIP position maps to which channel is not labelled in the manual — check by testing or ask Cytron support.
+- AGND is common to all four channels
 
 ---
 

@@ -32,6 +32,19 @@ Comprehensive beginner tutorial designed to help users start working with the IR
 
 This tutorial includes links to 14 related subtutorials covering specific features and applications.
 
+## More Cytron Tutorials
+
+| Tutorial | Level |
+|---|---|
+| [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp) (5 parts, 2026) | Beginner |
+| [IRIV IO Controller - Send Sensor Readings to IRIV PiControl using MQTT](https://my.cytron.io/tutorial/iriv-ioc-sending-data-from-humidity-and-temperature-sensor-to-iriv-picontrol-using-mqtt-protocol) (2025) | Advanced |
+| [Modbus Configuration Tool for Slave ID and Baudrate Setup](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup) (3 parts, 2026) | Advanced |
+| [Building a Line-Crossing People Counter with IRIV Vision Studio](https://my.cytron.io/tutorial/building-a-line-crossing-people-counter-using-iriv-vision-studio) | — |
+
+## Example Code
+
+Official examples: [CytronTechnologies/Cytron-IRIV-IO-Controller on GitHub](https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller).
+
 ## Additional Resources
 
 For more tutorials and application examples, visit the official Cytron Technologies tutorial portal:

@@ -101,13 +101,13 @@ dtparam=ant2
 - Display IP addresses for eth0 and eth1
 - Display system status: CPU load, CPU temperature, RAM usage, storage usage
 - Monitor User Button state
-- Implement safe shutdown when User Button held for 5 seconds
+- Shut down the Pi safely when the User Button is pressed (user manual wording)
 
 **Auto-start:** The script is configured to run automatically on boot.
 
-**User interaction:**
+**User interaction (per Cytron's Node-RED tutorial — not stated in the user manual, may vary by software version):**
 - Press User Button to cycle through OLED display pages
-- Hold User Button for 5 seconds to initiate safe shutdown (buzzer sounds as confirmation)
+- Hold User Button for about 5 seconds to shut down safely (buzzer sounds)
 
 ## File Paths Reference
 

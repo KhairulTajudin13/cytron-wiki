@@ -16,7 +16,12 @@ Downloadable resources and support contact information for the IRIV IO Controlle
 - Date: July 2024
 - Format: PDF
 
-Download location: Available from the IRIV IO Controller product page.
+Download: [IRIV IO Controller Datasheet (PDF)](../../../sources/manuals/IRIV%20IO%20Controller%20Datasheet.pdf) — also linked from the product page.
+
+## Example Code
+
+- [CytronTechnologies/Cytron-IRIV-IO-Controller](https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller) — official example code (GitHub), linked from the product page
+- [CircuitPython board build for IRIV IO Controller](https://circuitpython.org/board/cytron_iriv_io_controller/)
 
 ## 3D Models
 
@@ -40,7 +45,11 @@ The 3D models are useful for:
 
 ### Default Firmware
 
-The IRIV IO Controller ships preprogrammed as a MODBUS RTU IO Expander with counter function.
+Cytron's getting-started material describes the unit as shipping preprogrammed as a MODBUS RTU IO Expander with counter function.
+
+:::note
+The default firmware is not described in the datasheet. Confirm the firmware version and MODBUS register map with Cytron support before relying on it.
+:::
 
 ### CircuitPython Firmware
 
@@ -106,9 +115,7 @@ Official product page:
 
 ### Warranty
 
-**Duration:** 12 months
-
-Warranty terms available from Cytron Technologies support.
+Warranty terms are not stated in the datasheet. Check the product page or contact Cytron Technologies support.
 
 ## Community Resources
 

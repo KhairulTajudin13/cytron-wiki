@@ -8,6 +8,10 @@ description: Industrial controller powered by Raspberry Pi Compute Module 4, fea
 
 Industrial-grade controller powered by Raspberry Pi Compute Module 4 (CM4), designed for Industry 4.0 applications.
 
+:::info CM4 and CM5 versions
+IRIV PiControl is also sold with a Raspberry Pi **CM5** (`IRIV-PICL5`). The I/O, terminals and setup are the same. These pages are written for the CM4 version — see [IRIV PiControl CM5](./cm5-version.md) for the differences.
+:::
+
 ## Overview
 
 IRIV PiControl combines industrial interfaces with Raspberry Pi's computing capability. The controller integrates isolated I/O, serial communication, and expansion options in a DIN rail-mountable metal enclosure.
@@ -32,6 +36,7 @@ Follow these steps to set up your IRIV PiControl:
 
 ### Hardware Reference
 
+- [IRIV PiControl CM5](./cm5-version.md) - Differences on the CM5 version
 - [Hardware Layout](./hardware-layout.md) - External ports, buttons, LEDs, terminals
 - [Internal Board Layout](./internal-board-layout.md) - M.2 socket, Mini PCIe, RTC, switches
 - [Terminal 1](./terminal-1.md) - Power, RS485, RS232, digital outputs
@@ -53,7 +58,7 @@ Follow these steps to set up your IRIV PiControl:
 
 | Parameter | Specification |
 |-----------|--------------|
-| RAM Options | 1GB / 2GB / 4GB / 8GB LPDDR4-3200 |
+| RAM Options | 1GB / 2GB / 4GB / 8GB LPDDR4-3200 (sold: Wireless 2GB/16GB, 4GB/32GB, 8GB/32GB) |
 | Storage | 8GB / 16GB / 32GB eMMC, expandable via M.2 NVMe SSD |
 | Wireless (optional) | 2.4GHz / 5.0GHz WiFi, Bluetooth 5.0, BLE |
 | Display Output | 1x Full-size HDMI 2.0 (up to 4K@60Hz) |

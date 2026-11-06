@@ -59,7 +59,7 @@ The USB-C port function is selected via the internal **Boot/Debug Mode Switch**.
 ### Debug Mode
 - Provides serial console access to CM4 UART
 - Connected via onboard USB-UART chip
-- Console output visible in terminal emulator (115200 baud)
+- Console output visible in a terminal emulator (115200 baud is the usual Raspberry Pi default; not stated in the user manual)
 
 **Both modes support 5V power input to the device.**
 
@@ -77,7 +77,7 @@ The USB-C port function is selected via the internal **Boot/Debug Mode Switch**.
 
 | Button | Primary Function | Secondary Function |
 |--------|-----------------|-------------------|
-| User Button | Cycle OLED display pages | Hold 5 seconds: Safe shutdown (when configured) |
+| User Button (GPIO4) | Safe shutdown via the background script (user manual) | Per Cytron tutorial: press cycles OLED pages, hold ~5 s to shut down |
 | Reset Button | Hard reset CM4 | Wake CM4 after shutdown |
 
 ## Physical Dimensions

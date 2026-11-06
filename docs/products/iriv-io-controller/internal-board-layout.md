@@ -62,12 +62,12 @@ The passive buzzer can play variable frequency tones or melodies when driven wit
 ### Analog Input Mode Switch
 
 **Location:** Bottom of enclosure
-**Function:** Configure analog inputs to measure voltage or current
+**Function:** One switch per channel (AN0, AN1) to set voltage or current mode. ON connects the 250Ω current shunt for that channel.
 **Modes:**
 - **Voltage Mode:** 0-10.56V measurement (input impedance: 32kΩ)
 - **Current Mode:** 0-42.58mA measurement (input impedance: 248Ω)
 
-**Note:** Both analog input channels (AN0 and AN1) share the same mode setting. The switch configuration applies to both channels simultaneously.
+**Note:** AN0 and AN1 have separate switches, so each channel can be set to voltage or current mode independently.
 
 ## Power Protection
 

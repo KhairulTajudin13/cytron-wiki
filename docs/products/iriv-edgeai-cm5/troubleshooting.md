@@ -29,9 +29,8 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
    - Verify negative (-) connected to GND
    - Ensure secure contact in terminal block
 
-4. **Power button** (for USB-C power):
-   - Press the Power Button once to turn on
-   - VIN power typically auto-starts
+4. **Power button**:
+   - Press the **Power Button** once to turn on (datasheet). Some units may start by themselves when VIN is applied, depending on the software image; this is not stated in the datasheet.
 
 ### LED Drivers Not Working
 
@@ -44,7 +43,7 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
 
 2. **LED Driver Fuse (2A)**: Check the independent 2A fuse for LED drivers
    - Located separately from the system fuse
-   - Replace if blown
+   - Contact Cytron support if blown (the datasheet does not say the 2A fuse is user-replaceable)
 
 3. **GPIO configuration**: Ensure GPIO12 (L0) or GPIO13 (L1) are configured as outputs
 
@@ -98,7 +97,7 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
    - GND connected (recommended for noise immunity)
 
 3. **Check termination**: Onboard 120 ohm termination resistor is present
-   - Only add external termination if required by your RS485 network topology
+   - Do not add an external 120Ω terminator — one is already on the board. The datasheet does not say whether the onboard terminator can be switched off
 
 4. **Baud rate**: Maximum supported is 500 kbps
 
@@ -162,7 +161,7 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
 
 2. **Camera detection**:
    ```bash
-   libcamera-hello --list-cameras
+   rpicam-hello --list-cameras   # older OS images: libcamera-hello
    ```
 
 3. **Enable camera interface** if required in raspi-config
@@ -229,3 +228,9 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
 1. **Battery installed**: Ensure CR2032 is installed in RTC battery holder
 2. **Battery condition**: Replace if depleted
 3. **Polarity**: Install with correct orientation (positive up)
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

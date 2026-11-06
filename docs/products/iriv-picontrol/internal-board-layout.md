@@ -69,14 +69,14 @@ sidebar_position: 4
 
 ### Analog Input Mode Switch
 
-**Function:** Configure analog inputs to measure voltage or current
+**Function:** Configure each analog input to measure voltage or current (one DIP position per channel)
 **Modes:**
 - **Voltage Mode:** 0-10V measurement
 - **Current Mode:** 0-20mA measurement
 
-**Important:** The DIP switch must be set to current mode to enable the internal shunt resistor for 0-20mA measurements.
+**Important:** Turn a channel's DIP position ON to connect its 250Ω shunt resistor for 0-20mA measurement.
 
-All four analog input channels share the same mode setting.
+Each analog input has its own current-mode switch (4-way DIP, one position per channel). The user manual wiring figure shows AI0/AI1 on 0-10V and AI2/AI3 on 0-20mA at the same time, so voltage and current channels can be mixed. Which DIP position maps to which channel is not labelled in the manual — check by testing or ask Cytron support.
 
 ### Boot/Debug Mode Switch
 
@@ -130,7 +130,7 @@ Not specified in current sources: Separate jumpers for WiFi vs Bluetooth, or sin
 
 ### Termination and Mode Switches
 - RS485 termination: Enable only at bus endpoints
-- Analog mode switch: Applies to all four channels simultaneously
+- Analog mode switch: one DIP position per channel; voltage and current channels can be mixed
 - Current mode requires DIP switch ON to enable shunt resistor
 
 ---

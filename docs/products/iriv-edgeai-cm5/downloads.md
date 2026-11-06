@@ -66,3 +66,9 @@ This page provides links to official documentation, design files, and resources 
 - Email: support@cytron.io
 - Address: No. 1, Lorong Industri Impian 1, Taman Industri Impian, 14000 Bukit Mertajam, Penang, Malaysia
 - Tel: +604-548 0668
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

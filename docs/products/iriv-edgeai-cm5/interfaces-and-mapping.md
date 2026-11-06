@@ -127,7 +127,7 @@ This page provides detailed specifications for all interfaces on the IRIV EdgeAI
 | Output Voltage | Same as VIN |
 | Maximum Current | 2A per channel |
 | PWM Capable | Yes |
-| Fuse | 2A (independent, replaceable) |
+| Fuse | 2A, independent per channel (the datasheet calls only the 4A system fuse replaceable) |
 | GPIO Mapping | L0: GPIO12, L1: GPIO13 |
 
 :::caution
@@ -205,3 +205,9 @@ LED Driver outputs are not powered when using USB-C power input. Use VIN termina
 | Bluetooth | Bluetooth 5.0, BLE |
 | Antenna | External antenna (included) |
 | Disable Option | Solder jumper on internal board (WL/BT) |
+
+---
+
+**Source(s):**
+- IRIV EdgeAI CM5 Datasheet, Rev 1.0, July 2025
+- IRIV EdgeAI CM5 product page (my.cytron.io), read Oct 2026

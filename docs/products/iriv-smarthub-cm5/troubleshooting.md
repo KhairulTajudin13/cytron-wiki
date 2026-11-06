@@ -17,7 +17,7 @@ This page addresses common issues with the IRIV SmartHub CM5 based on the offici
 
 1. **Power source**: Verify the power supply meets requirements:
    - DC Barrel Jack: 10-30V DC, minimum 2A recommended
-   - USB-C: 5V 5A PD-capable adapter
+   - USB-C: 4.9-5.2V; 5V 5A adapter recommended
 
 2. **Fuse**: The 4A fuse may have blown due to surge or overcurrent.
    - Open the enclosure and inspect the 4A fuse on the internal board
@@ -28,8 +28,7 @@ This page addresses common issues with the IRIV SmartHub CM5 based on the offici
    - Boot position is only for OS flashing via USB-C
 
 4. **Power button**:
-   - When using USB-C power, press the Power Button once to turn on
-   - DC barrel jack power typically auto-starts the device
+   - Press the Power Button once to turn on (DC jack or USB-C)
 
 ### Device Powers Off Unexpectedly
 
@@ -167,3 +166,9 @@ This page addresses common issues with the IRIV SmartHub CM5 based on the offici
    ```bash
    dmesg | grep nvme
    ```
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026

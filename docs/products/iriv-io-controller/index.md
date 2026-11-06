@@ -18,7 +18,7 @@ The IRIV IO Controller combines industrial I/O interfaces with the Raspberry Pi 
 **Power Input:** DC 10-30V (surge-protected up to 60V for 20ms)
 **Enclosure:** Metal, fanless design, DIN rail mountable
 
-The device ships preprogrammed as a MODBUS RTU IO Expander with counter function.
+It is a microcontroller-based controller, not a Linux computer: there is no Raspberry Pi OS or Node-RED on the device. Cytron's getting-started material describes it as shipping with MODBUS RTU IO Expander firmware with a counter function (not stated in the datasheet).
 
 ## Getting Started
 

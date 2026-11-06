@@ -93,20 +93,27 @@ The block diagram illustrates the following signal paths:
 | Dimension | Value |
 |-----------|-------|
 | Length | 147mm |
-| Width | 98mm |
-| Height | 35mm |
+| Width | 94mm |
+| Height | 35.7mm |
 
-*Note: Dimensions are for metal enclosure only, excluding antenna.*
+*Note: Dimensions are for metal enclosure only, excluding antenna (user manual Features table and product page). The dimension drawing shows 147 × 98 × 35mm; the difference may be the mounting flanges and has been raised with the design team.*
 
 ### Additional Measurements
 
 | Feature | Value |
 |---------|-------|
 | VESA Mount Pattern | 75x75mm (4x M4 screws) |
-| Mounting Holes | M4 (30mm spacing), M8 (48mm spacing) |
+| Mounting flange slots | Dimensioned 66mm / 30mm (M4) and 48mm (M8) on the drawing |
+| DIN rail | Not stated in the user manual |
 
 ### Detailed Dimensions from Drawings
 
-- Overall: 147mm x 98mm x 35mm
-- VESA mount: 66mm x 30mm pattern with M4 holes
-- Bottom mounting: 48mm spacing with M8 holes
+- Overall (drawing): 147mm x 98mm x 35mm — see note above
+- VESA mount: **75 x 75mm, 4x M4** on the base
+- Flange slots: 66.00 / 30.00 (labelled M4) and 48.00 (labelled M8) — these are slot dimensions, not the VESA pattern
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026

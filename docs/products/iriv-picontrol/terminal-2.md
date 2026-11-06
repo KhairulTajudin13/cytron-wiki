@@ -66,9 +66,9 @@ When sensor outputs 3V or higher, GPIO13 reads HIGH.
 | Voltage Mode Range | 0 | 10 | V |
 | Voltage Mode (0-5V) | 0 | 5 | V |
 | Current Mode Range | 0 | 20 | mA |
-| Input Impedance (Voltage) | - | 25 | kΩ |
-| Input Impedance (Current) | - | 250 | Ω |
-| Isolation Voltage | - | 3000 | Vrms |
+| Input Impedance (Voltage) | 25 (nominal) | 25 (nominal) | kΩ |
+| Input Impedance (Current) | 250 (nominal) | 250 (nominal) | Ω |
+| Isolation Voltage | - | 3000 (rated) | Vrms |
 
 ### ADC Specifications
 
@@ -85,7 +85,7 @@ The analog inputs support three measurement modes:
 - **0-10V** voltage measurement
 - **0-20mA** current measurement
 
-**Important:** All four channels share the same mode, configured via internal DIP switch.
+**Important:** Each analog input has its own current-mode switch (4-way DIP, one position per channel). The user manual wiring figure shows AI0/AI1 on 0-10V and AI2/AI3 on 0-20mA at the same time, so voltage and current channels can be mixed. Which DIP position maps to which channel is not labelled in the manual — check by testing or ask Cytron support.
 
 ### Voltage Mode Configuration
 
@@ -136,6 +136,10 @@ Ensure DIP switch is set to current mode and enabled.
 
 **Installation:**
 ```bash
+# Raspberry Pi OS Bookworm blocks system-wide pip installs,
+# so create a virtual environment first (one time):
+python3 -m venv --system-site-packages ~/iriv-env
+source ~/iriv-env/bin/activate
 pip install Adafruit_ADS1x15
 ```
 
@@ -208,7 +212,6 @@ current = val / 1600  # Result in mA
 
 ### Analog Input Issues
 - **Current mode not working** - DIP switch must be enabled for shunt resistor
-- **All channels must use same mode** - Cannot mix voltage and current on different channels
 - **AGND connected to system ground** - AGND is isolated; do not connect to system ground
 - **Wrong ADC gain setting** - Use gain=1 for 0-10V, gain=2 for 0-5V and 0-20mA
 

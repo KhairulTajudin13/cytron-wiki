@@ -23,7 +23,7 @@ The IRIV PiControl ships with a default dashboard flow that demonstrates basic f
 - Buttons to control digital outputs (DO0-DO3)
 - LED control switches (LED0, LED1)
 - Buzzer activation button
-- Safe shutdown button (hold User Button for 5 seconds)
+- Safe shutdown button (hold User Button for about 5 seconds, per the tutorial)
 
 **Monitoring elements:**
 - Display system status on OLED

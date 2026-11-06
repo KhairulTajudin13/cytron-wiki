@@ -72,7 +72,11 @@ This tutorial covers:
 
 ## Default Functionality
 
-The IRIV IO Controller ships **preprogrammed as a MODBUS RTU IO Expander** with counter function. This default firmware allows immediate use in MODBUS RTU networks without additional programming.
+Cytron's getting-started material describes the unit as shipping **preprogrammed as a MODBUS RTU IO Expander** with counter function, for use in MODBUS RTU networks.
+
+:::note
+The default firmware is not described in the datasheet. Confirm the firmware version and MODBUS register map with Cytron support before relying on it.
+:::
 
 To use custom applications, upload new firmware via the bootloader as described above.
 

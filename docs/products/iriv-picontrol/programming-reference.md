@@ -50,6 +50,10 @@ GPIO pin assignments and code examples for programming IRIV PiControl I/O.
 ### Python Library Installation
 
 ```bash
+# Raspberry Pi OS Bookworm blocks system-wide pip installs,
+# so create a virtual environment first (one time):
+python3 -m venv --system-site-packages ~/iriv-env
+source ~/iriv-env/bin/activate
 pip install Adafruit_ADS1x15
 ```
 

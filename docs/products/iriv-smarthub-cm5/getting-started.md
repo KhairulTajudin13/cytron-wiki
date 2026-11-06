@@ -11,7 +11,7 @@ This guide covers the initial setup and first boot process for the IRIV SmartHub
 
 To power up and use the IRIV SmartHub CM5, prepare the following:
 
-- IRIV SmartHub CM5 unit (ships with Raspberry Pi OS pre-installed)
+- IRIV SmartHub CM5 unit
 - Compatible power supply (see Power Requirements below)
 - HDMI-compatible monitor
 - USB keyboard and mouse
@@ -21,7 +21,7 @@ To power up and use the IRIV SmartHub CM5, prepare the following:
 
 - M.2 NVMe SSD for storage expansion
 - Gigabit Ethernet cable for wired connectivity
-- 4G/LTE module (regional variants available)
+- 4G/LTE module, USB type (not included; regional compatibility varies — SIM needed only for LTE)
 - CR2032 coin cell battery for RTC (sold separately)
 
 ## Power Requirements
@@ -70,8 +70,12 @@ The USB-C port is dual-function. Ensure the Boot/Run switch is set to **Run** po
 1. Connect a DC power adapter (10-30V) to the DC barrel jack
 2. Connect an HDMI monitor to either HDMI port
 3. Connect USB keyboard and mouse to the USB ports
-4. The device will automatically power on when DC power is connected
-5. Wait for Raspberry Pi OS to boot (pre-installed)
+4. Press the **Power Button** once to turn on the device
+5. Wait for the OS to boot
+
+:::note
+Raspberry Pi OS may be pre-installed (Cytron's tutorial says units "can have" it pre-installed; the user manual does not say). If the unit does not boot to a desktop, flash the OS as described below.
+:::
 
 ### Using USB-C Power
 
@@ -85,8 +89,7 @@ The USB-C port is dual-function. Ensure the Boot/Run switch is set to **Run** po
 
 ### Turning On
 
-- **DC Power**: Device powers on automatically when DC is connected
-- **USB-C Power**: Single press the Power Button
+- Single press the **Power Button** (user manual). Some users report the unit starting by itself on DC power; this is not stated in the manual.
 
 ### Turning Off
 
@@ -95,7 +98,7 @@ The USB-C port is dual-function. Ensure the Boot/Run switch is set to **Run** po
 
 ## OS Installation / Reflashing
 
-The IRIV SmartHub CM5 ships with Raspberry Pi OS pre-installed on the eMMC. If you need to reflash the OS:
+To install or reflash the OS on the eMMC:
 
 1. Open the enclosure to access the internal board
 2. Set the **Boot/Run Mode Switch** to **Boot** position
@@ -114,3 +117,9 @@ The IRIV SmartHub CM5 ships with Raspberry Pi OS pre-installed on the eMMC. If y
 - Review the [Hardware Layout](./hardware-layout) to understand all ports and connectors
 - Check [Interfaces and Mapping](./interfaces-and-mapping) for GPIO assignments
 - See [Software Setup](./software-setup) for boot configuration options
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026

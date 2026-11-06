@@ -42,7 +42,7 @@ The Gigabit Ethernet port is the default CM5 Ethernet interface.
 | Quantity | 1 port |
 | Function | Dual-function (Boot/Power) |
 | Boot Mode | OS image loading to eMMC |
-| Power Mode | 5V 5A (PD capable) |
+| Power Mode | 4.9–5.2V input; 5V 5A adapter recommended (Cytron's tutorial uses USB-C PD supplies) |
 | Mode Selection | Via internal Boot/Run switch |
 
 ## HDMI
@@ -97,7 +97,7 @@ Both HDMI ports support independent displays up to 4K resolution.
 | Parameter | Specification |
 |-----------|---------------|
 | Interface | USB 2.0 only (**No PCIe signal available**) |
-| Use Case | 4G/LTE modules, LoRa modules |
+| Use Case | USB 2.0 modules, e.g. 4G/LTE |
 | Power Control | GPIO6 (on/off) |
 | Reset Control | GPIO5 (active low) |
 
@@ -124,3 +124,9 @@ The mini PCIe socket only provides USB 2.0 connectivity. PCIe signals are not co
 | Bluetooth | Bluetooth 5.0, BLE |
 | Antenna | External antenna (included) |
 | Disable Option | Solder jumper on internal board |
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026

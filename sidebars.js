@@ -25,6 +25,7 @@ const sidebars = {
           link: { type: "doc", id: "products/iriv-picontrol/index" },
           items: [
             "products/iriv-picontrol/getting-started",
+            "products/iriv-picontrol/cm5-version",
             "products/iriv-picontrol/hardware-layout",
             "products/iriv-picontrol/internal-board-layout",
             "products/iriv-picontrol/terminal-1",

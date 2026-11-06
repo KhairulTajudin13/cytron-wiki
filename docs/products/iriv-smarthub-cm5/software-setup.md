@@ -9,11 +9,12 @@ This page covers operating system compatibility, boot modes, storage options, an
 
 ## Operating System Compatibility
 
-The IRIV SmartHub CM5 is based on the Raspberry Pi Compute Module 5 and ships with Raspberry Pi OS pre-installed.
+The IRIV SmartHub CM5 is based on the Raspberry Pi Compute Module 5 and runs Raspberry Pi OS. Raspberry Pi OS may be pre-installed (Cytron's tutorial says units "can have" it pre-installed; the user manual does not say). If the unit does not boot to a desktop, flash the OS as described below.
 
 | OS | Status |
 |----|--------|
-| Raspberry Pi OS | Supported (pre-installed) |
+| Raspberry Pi OS | Supported |
+| Ubuntu | Listed as an option in Cytron's getting-started tutorial |
 
 For other operating systems compatible with Raspberry Pi CM5, refer to the official Raspberry Pi documentation.
 
@@ -32,7 +33,7 @@ The IRIV SmartHub CM5 supports multiple boot configurations controlled by the in
 
 | Source | Support |
 |--------|---------|
-| eMMC | Yes (default, pre-installed OS) |
+| eMMC | Yes (default) |
 | NVMe SSD | Yes (via M.2 Key-M socket, bootable) |
 | USB | Not specified in official manual |
 | Network | Not specified in official manual |
@@ -75,8 +76,8 @@ Control the user LEDs by setting GPIO pins as outputs:
 
 | LED | GPIO | Active State |
 |-----|------|--------------|
-| LED0 | GPIO20 | HIGH = ON |
-| LED1 | GPIO21 | HIGH = ON |
+| LED0 | GPIO20 | HIGH = ON (expected; not stated in the user manual) |
+| LED1 | GPIO21 | HIGH = ON (expected; not stated in the user manual) |
 
 Example using `pinctrl` (Raspberry Pi OS):
 ```bash
@@ -108,7 +109,7 @@ pinctrl set 19 op dl
 | Parameter | Value |
 |-----------|-------|
 | GPIO | GPIO4 |
-| Read State | LOW when pressed (typical) |
+| Read State | Not stated in the user manual (commonly LOW when pressed — check before relying on it) |
 
 The user button can be configured for various functions including safe shutdown. Implementation requires software configuration.
 
@@ -116,7 +117,7 @@ The user button can be configured for various functions including safe shutdown.
 
 | Function | GPIO | Usage |
 |----------|------|-------|
-| Power | GPIO6 | HIGH = Power on, LOW = Power off |
+| Power | GPIO6 | Turns mini PCIe power on/off (polarity not stated in the user manual) |
 | Reset | GPIO5 | LOW = Reset (active low) |
 
 Use these GPIOs to control power cycling and reset of modules installed in the mini PCIe socket (e.g., 4G/LTE modules).
@@ -148,4 +149,10 @@ nmcli device wifi connect "SSID" password "password"
 
 ### Disabling Wireless
 
-To permanently disable WiFi or Bluetooth, solder the corresponding jumper pads on the internal board (labeled WL for WiFi, BT for Bluetooth).
+To permanently disable WiFi or Bluetooth, solder the corresponding jumper pads on the internal board (silkscreen **WLAN** for WiFi and **BT** for Bluetooth, under "DISABLE" on the back of the board).
+
+---
+
+**Source(s):**
+- IRIV SmartHub CM5 User Manual (IRIV-SH5), Rev 1.3, Dec 2025
+- IRIV SmartHub CM5 product page (my.cytron.io), read Oct 2026
