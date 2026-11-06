@@ -27,7 +27,7 @@ Download: [IRIV PiControl CM4 User Manual (PDF)](../../../sources/manuals/IRIV%2
 curl -L tinyurl.com/setup-iriv-picontrol | sudo bash
 ```
 
-Direct download URL: Not specified in current sources.
+The short link opens the setup script hosted by Cytron. Only Raspberry Pi OS is supported.
 
 ### OS Images
 
@@ -73,7 +73,7 @@ Download: [github.com/raspberrypi/usbboot](https://github.com/raspberrypi/usbboo
 
 ### Schematics
 
-Circuit schematics: Not specified in current sources.
+Circuit schematics are not published. The user manual includes the block diagram and a simplified analog-input schematic.
 
 ### 3D Models
 
@@ -83,11 +83,11 @@ Circuit schematics: Not specified in current sources.
 
 ### Sample Projects
 
-Example code repositories: Not specified in current sources.
+See [Programming Reference](./programming-reference.md) for GPIO, ADC and serial examples. Cytron has not published a separate example-code repository for IRIV PiControl.
 
 ### Node-RED Flows
 
-Example flows: Not specified in current sources.
+The Quick Start image's built-in dashboard flow is covered in the [IRIV PiControl hands-on using Node-RED in Industry 4.0](https://my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4) series (13 tutorials, including digital I/O, OLED, Modbus RTU, CSV/MySQL logging, ThingSpeak and Blynk).
 
 ## Tutorials and Guides
 
@@ -122,16 +122,14 @@ Penang, Malaysia
 **Fax:** +604 - 548 0669
 
 **Email:**
-- Technical support: support@cytron.io
-- Sales inquiries: sales@cytron.io
+- Technical support: [support@cytron.io](mailto:support@cytron.io)
+- Sales inquiries: [sales@cytron.io](mailto:sales@cytron.io)
 
 **Website:** [www.cytron.io](https://www.cytron.io)
 
 ### Warranty
 
-**Duration:** 12 months
-
-Warranty terms: Not specified in current sources.
+Warranty terms are not stated in the user manual. Check the product page or contact Cytron Technologies support.
 
 ## Community Resources
 
@@ -141,7 +139,7 @@ Official product page: [my.cytron.io/p-iriv-picontrol-cm4-industrial-controller]
 
 ### Forums and Discussion
 
-Community forum links: Not specified in current sources.
+Ask questions in the comments of the Cytron tutorials, or contact [support@cytron.io](mailto:support@cytron.io).
 
 ### Third-Party Resources
 

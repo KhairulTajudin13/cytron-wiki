@@ -57,7 +57,9 @@ To install the Raspberry Pi AI HAT+:
 5. Secure with standoffs if required
 6. Reassemble the enclosure
 
-> **Image placeholder** — AI HAT+ installation diagram (to be added later)
+![AI HAT+ mounted on the IRIV EdgeAI CM5 board](/img/products/iriv-edgeai-cm5/ai-hat-installation.png)
+
+*AI HAT+ position on the internal board (Datasheet, Section 3.2).*
 
 ## Configurations on Sale
 

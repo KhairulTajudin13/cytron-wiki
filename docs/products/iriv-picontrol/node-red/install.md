@@ -90,7 +90,7 @@ Common Node-RED nodes for industrial applications:
 **Dashboard:**
 - `node-red-dashboard` - Web-based UI components
 
-Installation commands for additional nodes not specified in current sources.
+Install extra nodes from the Node-RED editor (**Menu → Manage palette → Install**), or from the shell in `~/.node-red`, e.g. `npm install node-red-dashboard`, then restart Node-RED.
 
 ## Configuration Files
 

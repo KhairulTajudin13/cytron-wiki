@@ -11,7 +11,11 @@ This page documents the physical layout of the IRIV SmartHub CM5, including exte
 
 The IRIV SmartHub CM5 has ports and controls accessible from the left and right sides of the enclosure.
 
-> **Image placeholder** — External layout diagram showing LEFT and RIGHT panel views (to be added later)
+![IRIV SmartHub CM5 left panel](/img/products/iriv-smarthub-cm5/external-layout-left.png)
+
+![IRIV SmartHub CM5 right panel](/img/products/iriv-smarthub-cm5/external-layout-right.png)
+
+*External layout, left and right panels (User Manual, Section 3.1).*
 
 ### Left Panel
 
@@ -48,7 +52,11 @@ The IRIV SmartHub CM5 has ports and controls accessible from the left and right 
 
 Access to internal components requires removing the enclosure cover.
 
-> **Image placeholder** — Internal board layout diagram showing FRONT and BACK views (to be added later)
+![IRIV SmartHub CM5 internal board, front](/img/products/iriv-smarthub-cm5/internal-layout-front.png)
+
+![IRIV SmartHub CM5 internal board, back](/img/products/iriv-smarthub-cm5/internal-layout-back.png)
+
+*Internal board, front and back (User Manual, Section 3.2).*
 
 ### Front Side Components
 
@@ -72,7 +80,7 @@ Access to internal components requires removing the enclosure cover.
 
 ## Block Diagram
 
-> **Image placeholder** — System block diagram showing interconnections between CM5, USB hub, Ethernet, HDMI, GPIO connections, and expansion sockets (to be added later)
+![IRIV SmartHub CM5 block diagram](/img/products/iriv-smarthub-cm5/block-diagram.png)
 
 The block diagram illustrates the following signal paths:
 
@@ -86,7 +94,7 @@ The block diagram illustrates the following signal paths:
 
 ## Dimensions
 
-> **Image placeholder** — Mechanical dimension drawings with measurements (to be added later)
+![IRIV SmartHub CM5 dimensions](/img/products/iriv-smarthub-cm5/dimensions.png)
 
 ### Enclosure Dimensions
 

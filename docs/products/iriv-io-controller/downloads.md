@@ -103,8 +103,8 @@ Penang, Malaysia
 **Fax:** +604 - 548 0669
 
 **Email:**
-- Technical support: support@cytron.io
-- Sales inquiries: sales@cytron.io
+- Technical support: [support@cytron.io](mailto:support@cytron.io)
+- Sales inquiries: [sales@cytron.io](mailto:sales@cytron.io)
 
 **Website:** [www.cytron.io](https://www.cytron.io)
 

@@ -11,7 +11,9 @@ This page documents the physical layout of the IRIV EdgeAI CM5, including extern
 
 The IRIV EdgeAI CM5 has ports and controls accessible from multiple sides of the enclosure.
 
-> **Image placeholder** — External layout diagram showing FRONT, LEFT, and RIGHT panel views (to be added later)
+![IRIV EdgeAI CM5 external layout](/img/products/iriv-edgeai-cm5/external-layout.png)
+
+*External layout, front, left and right panels (Datasheet, Section 3.1).*
 
 ### Front Panel
 
@@ -65,7 +67,7 @@ The IRIV EdgeAI CM5 has ports and controls accessible from multiple sides of the
 
 Access to internal components requires removing the enclosure cover.
 
-> **Image placeholder** — Internal board layout diagram showing component locations (to be added later)
+![IRIV EdgeAI CM5 internal board](/img/products/iriv-edgeai-cm5/internal-layout.png)
 
 ### Internal Components
 
@@ -89,7 +91,7 @@ Access to internal components requires removing the enclosure cover.
 
 ## Block Diagram
 
-> **Image placeholder** — System block diagram showing interconnections between all components (to be added later)
+![IRIV EdgeAI CM5 block diagram](/img/products/iriv-edgeai-cm5/block-diagram.png)
 
 The block diagram illustrates the following signal paths:
 
@@ -106,7 +108,7 @@ The block diagram illustrates the following signal paths:
 
 ## Dimensions
 
-> **Image placeholder** — Mechanical dimension drawings (to be added later)
+![IRIV EdgeAI CM5 dimensions](/img/products/iriv-edgeai-cm5/dimensions.png)
 
 ### Enclosure Dimensions
 

@@ -29,16 +29,16 @@ This page provides links to official documentation, design files, and resources 
 
 | File | Description | Status |
 |------|-------------|--------|
-| 3D Model | Mechanical 3D model for enclosure design | *Placeholder - to be added* |
+| 3D CAD | Mechanical 3D model for enclosure design | Linked from the [product page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5) (Resources) |
 | Dimension Drawing | Detailed mechanical drawings | Available in User Manual |
 
 ## Application Notes
 
 | Note | Description | Status |
 |------|-------------|--------|
-| 4G/LTE Module Setup | Configuration guide for cellular modules | *Placeholder - to be added* |
-| NVMe Boot Configuration | Setting up boot from NVMe SSD | *Placeholder - to be added* |
-| GPIO Programming | Python/C examples for button, LED, buzzer | *Placeholder - to be added* |
+| 4G/LTE Module Setup | Configuration guide for cellular modules | Covered in the [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started) |
+| NVMe Boot Configuration | Setting up boot from NVMe SSD | Not published by Cytron yet — see [Raspberry Pi CM5 boot order docs](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#BOOT_ORDER) |
+| GPIO Programming | Button, LED, buzzer examples | See [Software Setup](./software-setup) (`pinctrl` examples) |
 
 ## Related Resources
 
@@ -51,7 +51,7 @@ This page provides links to official documentation, design files, and resources 
 ### Cytron Support
 
 - Website: [www.cytron.io](https://www.cytron.io)
-- Email: support@cytron.io
+- Email: [support@cytron.io](mailto:support@cytron.io)
 - Address: No. 1, Lorong Industri Impian 1, Taman Industri Impian, 14000 Bukit Mertajam, Penang, Malaysia
 - Tel: +604-548 0668
 

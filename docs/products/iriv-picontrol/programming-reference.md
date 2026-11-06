@@ -195,9 +195,26 @@ Access to onboard I2C devices requires I2C to be enabled (via configuration scri
 
 ## Complete Example: Digital I/O Control
 
-Not specified in current sources: Complete GPIO control example code.
+Cytron's user manual does not include a GPIO example, so this one uses `gpiozero` (pre-installed on Raspberry Pi OS; works on both CM4 and CM5) with the GPIO numbers above. Inputs and outputs are active HIGH.
 
-Standard Raspberry Pi GPIO libraries (RPi.GPIO, gpiozero) can be used with the GPIO pin numbers listed above.
+```python
+from gpiozero import DigitalInputDevice, DigitalOutputDevice
+from signal import pause
+
+# DI0 = GPIO13 (wet contact: needs 3-50V applied to read HIGH)
+di0 = DigitalInputDevice(13, pull_up=None, active_state=True)
+# DO0 = GPIO23 (SSR dry contact, max 50V 500mA)
+do0 = DigitalOutputDevice(23)
+
+# Mirror DI0 onto DO0
+di0.when_activated = do0.on
+di0.when_deactivated = do0.off
+
+print("DI0 is", "ON" if di0.value else "OFF")
+pause()
+```
+
+Quick test from the shell: `pinctrl get 13` reads DI0, `pinctrl set 23 op dh` closes DO0 and `pinctrl set 23 op dl` opens it.
 
 ## Additional Programming Resources
 

@@ -169,7 +169,7 @@ Save the file and reboot.
 
 ### OLED Script Installation
 
-Not specified in current sources: Manual installation procedure for the background_script.py.
+The setup script installs it automatically to `/usr/local/bin/iriv_pi_control/background_script.py`. Cytron has not published a separate manual install procedure — re-run the setup script if it is missing.
 
 ## Verification
 
