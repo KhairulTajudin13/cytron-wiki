@@ -16,14 +16,7 @@ This page provides links to official documentation, design files, and resources 
 
 ## Tutorials
 
-| Tutorial | Description |
-|----------|-------------|
-| [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started) | Official getting started series (6 parts) |
-| [Digital Signage With IRIV SmartHub CM5](https://my.cytron.io/tutorial/iriv-smarthub-digital-signage) | Digital signage project |
-| [Inventory Management System with IRIV SmartHub CM5](https://my.cytron.io/tutorial/inventory-management-system-with-smarthub) | Inventory system project |
-| [Milesight-BeaverIoT Quick Start Guide](https://my.cytron.io/tutorial/milesight-beaveriot-quick-start-guide-smarthub) | IoT platform setup (4 parts) |
-| [IRIV SmartHub CM5: 84 Days of Continuous Operation](https://my.cytron.io/tutorial/iriv-smarthub-cm5-84-days-continuous-operation) | Long-run reliability test |
-| [Can IRIV SmartHub CM5 Create a Simple MES System?](https://my.cytron.io/tutorial/iriv-smarthub-cm5-simple-mes-system) | MES use case |
+See **[Tutorials](./tutorials.md)** for all Cytron tutorials that use the IRIV SmartHub CM5.
 
 ## Design Files
 

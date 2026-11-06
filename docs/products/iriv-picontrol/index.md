@@ -52,6 +52,7 @@ Follow these steps to set up your IRIV PiControl:
 ### Support
 
 - [Troubleshooting](./troubleshooting.md) - Common issues and solutions
+- [Tutorials](./tutorials.md) - Node-RED series and projects
 - [Downloads](./downloads.md) - Resources and support contacts
 
 ## Quick Facts

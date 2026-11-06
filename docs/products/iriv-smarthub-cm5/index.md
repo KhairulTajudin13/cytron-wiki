@@ -46,6 +46,7 @@ Based on the official manual, the IRIV SmartHub CM5 is designed for:
 | [Interfaces and Mapping](./interfaces-and-mapping) | Port specifications and GPIO mapping |
 | [Software Setup](./software-setup) | OS compatibility, boot modes, and configuration |
 | [Troubleshooting](./troubleshooting) | Common issues and solutions |
+| [Tutorials](./tutorials) | Cytron tutorials and projects |
 | [Downloads](./downloads) | Datasheets, manuals, and resources |
 
 ## Product Link

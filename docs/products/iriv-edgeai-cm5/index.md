@@ -44,8 +44,10 @@ Based on the official datasheet, the IRIV EdgeAI CM5 is designed for:
 | [Hardware Layout](./hardware-layout) | External and internal board layout diagrams |
 | [AI Quickstart](./ai-quickstart) | AI accelerator setup and usage overview |
 | [Interfaces and Mapping](./interfaces-and-mapping) | Port specifications and GPIO mapping |
+| [I/O Reference](./io-reference) | Terminal pinout, wiring and example code for DI/DO, LED drivers and RS485 |
 | [Software Setup](./software-setup) | OS compatibility and configuration |
 | [Troubleshooting](./troubleshooting) | Common issues and solutions |
+| [Tutorials](./tutorials) | Cytron AI and vision tutorials |
 | [Downloads](./downloads) | Datasheets, manuals, and resources |
 
 ## Product Link

@@ -45,7 +45,8 @@ Follow these steps to set up your IRIV IO Controller:
 
 ### Support
 
-- [Downloads](./downloads.md) - Datasheet, 3D models, support contacts
+- [Troubleshooting](./troubleshooting.md) - Power, upload, I/O and RS485 fixes
+- [Downloads](./downloads.md) - Datasheet, example code, 3D models, support contacts
 
 ## Quick Facts
 

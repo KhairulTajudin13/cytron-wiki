@@ -7,95 +7,15 @@ sidebar_position: 1
 
 Welcome to the Cytron products documentation hub. Browse our industrial-grade controllers and automation solutions designed for Industry 4.0 applications.
 
-export const ProductCard = ({image, title, description, link}) => (
-  <div style={{
-    border: '1px solid var(--ifm-color-emphasis-300)',
-    borderRadius: '8px',
-    padding: '1rem',
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: 'var(--ifm-card-background-color)',
-    height: '100%',
-  }}>
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: '1rem',
-      marginBottom: '1rem',
-    }}>
-      <img
-        src={image}
-        alt={title}
-        style={{
-          maxWidth: '100%',
-          maxHeight: '180px',
-          objectFit: 'contain',
-        }}
-      />
-    </div>
-    <h3 style={{
-      margin: '0 0 0.5rem 0',
-      fontSize: '1.1rem',
-    }}>{title}</h3>
-    <p style={{
-      color: 'var(--ifm-color-emphasis-700)',
-      fontSize: '0.9rem',
-      flex: '1',
-      margin: '0 0 1rem 0',
-    }}>{description}</p>
-    <a
-      href={link}
-      style={{
-        display: 'inline-block',
-        padding: '0.5rem 1rem',
-        backgroundColor: 'var(--ifm-color-primary)',
-        color: 'white',
-        borderRadius: '4px',
-        textDecoration: 'none',
-        textAlign: 'center',
-        fontSize: '0.9rem',
-      }}
-    >
-      Open documentation
-    </a>
-  </div>
-);
+import ProductCards from '@site/src/components/ProductCards';
 
-export const ProductGrid = ({children}) => (
-  <div style={{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-    gap: '1.5rem',
-    marginTop: '2rem',
-  }}>
-    {children}
-  </div>
-);
+<ProductCards />
 
-<ProductGrid>
-  <ProductCard
-    image="/img/products/iriv-picontrol.png"
-    title="IRIV PiControl"
-    description="Industrial controller powered by Raspberry Pi Compute Module 4 or 5, featuring isolated I/O, serial communication, and expansion options in a DIN rail-mountable enclosure."
-    link="/docs/products/iriv-picontrol/"
-  />
-  <ProductCard
-    image="/img/products/iriv-io-controller.png"
-    title="IRIV IO Controller"
-    description="Industrial I/O controller powered by Raspberry Pi RP2350 microcontroller, designed for lightweight automation with digital and analog I/O, RS485, and Ethernet."
-    link="/docs/products/iriv-io-controller/"
-  />
-  <ProductCard
-    image="/img/products/iriv-smarthub-cm5.png"
-    title="IRIV SmartHub CM5"
-    description="Industrial gateway and controller powered by Raspberry Pi Compute Module 5, designed for edge computing, system integration, and industrial automation."
-    link="/docs/products/iriv-smarthub-cm5/"
-  />
-  <ProductCard
-    image="/img/products/iriv-edgeai-cm5.png"
-    title="IRIV EdgeAI CM5"
-    description="Industrial edge AI controller powered by Raspberry Pi Compute Module 5, designed for AI inference, vision-based applications, and high-performance edge processing."
-    link="/docs/products/iriv-edgeai-cm5/"
-  />
-</ProductGrid>
+## Which controller do I need?
+
+| If you need… | Choose |
+|---|---|
+| Linux + isolated digital/analog I/O, RS485 and RS232 (Node-RED, Python) | [IRIV PiControl](./iriv-picontrol/) |
+| Simple, low-power I/O or a Modbus I/O expander, no operating system | [IRIV IO Controller](./iriv-io-controller/) |
+| A fanless edge PC / gateway with dual HDMI and USB 3.0, no field I/O | [IRIV SmartHub CM5](./iriv-smarthub-cm5/) |
+| AI vision with cameras and an AI accelerator, plus isolated I/O | [IRIV EdgeAI CM5](./iriv-edgeai-cm5/) |

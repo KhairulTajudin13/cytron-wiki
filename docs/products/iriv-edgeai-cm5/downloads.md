@@ -16,9 +16,7 @@ This page provides links to official documentation, design files, and resources 
 
 ## Tutorials
 
-| Tutorial | Description |
-|----------|-------------|
-| [Getting Started Tutorial](https://my.cytron.io/tutorial/getting-started-with-iriv-edgeai-cm5) | Official getting started guide from Cytron |
+See **[Tutorials](./tutorials.md)** for all Cytron tutorials that use the IRIV EdgeAI CM5.
 
 ## Design Files
 

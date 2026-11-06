@@ -13,7 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  tutorialSidebar: [
+  productsSidebar: [
     {
       type: "category",
       label: "Products",
@@ -34,6 +34,7 @@ const sidebars = {
             "products/iriv-picontrol/software-configuration",
             "products/iriv-picontrol/programming-reference",
             "products/iriv-picontrol/troubleshooting",
+            "products/iriv-picontrol/tutorials",
             "products/iriv-picontrol/downloads",
 
             // Move Node-RED to the bottom
@@ -61,6 +62,7 @@ const sidebars = {
             "products/iriv-io-controller/interfaces-and-functions",
             "products/iriv-io-controller/software-support",
             "products/iriv-io-controller/tutorials",
+            "products/iriv-io-controller/troubleshooting",
             "products/iriv-io-controller/downloads",
           ],
         },
@@ -74,6 +76,7 @@ const sidebars = {
             "products/iriv-smarthub-cm5/interfaces-and-mapping",
             "products/iriv-smarthub-cm5/software-setup",
             "products/iriv-smarthub-cm5/troubleshooting",
+            "products/iriv-smarthub-cm5/tutorials",
             "products/iriv-smarthub-cm5/downloads",
           ],
         },
@@ -86,8 +89,10 @@ const sidebars = {
             "products/iriv-edgeai-cm5/hardware-layout",
             "products/iriv-edgeai-cm5/ai-quickstart",
             "products/iriv-edgeai-cm5/interfaces-and-mapping",
+            "products/iriv-edgeai-cm5/io-reference",
             "products/iriv-edgeai-cm5/software-setup",
             "products/iriv-edgeai-cm5/troubleshooting",
+            "products/iriv-edgeai-cm5/tutorials",
             "products/iriv-edgeai-cm5/downloads",
           ],
         },

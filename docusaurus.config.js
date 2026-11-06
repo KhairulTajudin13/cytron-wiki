@@ -10,18 +10,18 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Cytron Technologies Wiki',
   tagline: 'Technical documentation for Cytron products',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/CytronFavicon-01.svg',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://cytron-wiki.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cytron', // Usually your GitHub org/user name.
-  projectName: 'wiki', // Usually your repo name.
+  organizationName: 'KhairulTajudin13',
+  projectName: 'cytron-wiki',
 
   onBrokenLinks: 'throw',
 
@@ -46,26 +46,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/KhairulTajudin13/cytron-wiki/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/KhairulTajudin13/cytron-wiki/tree/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -89,7 +73,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/cytron-wiki-social-card.jpg',
       navbar: {
         title: 'Cytron Wiki',
         logo: {
@@ -99,16 +83,16 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'productsSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Products',
           },
           {
             type: 'search',
             position: 'right',
           },
           {
-            href: 'https://github.com/cytron',
+            href: 'https://github.com/KhairulTajudin13/cytron-wiki',
             label: 'GitHub',
             position: 'right',
           },
@@ -118,30 +102,28 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Products',
             items: [
-              {
-                label: 'Documentation',
-                to: '/docs/products/iriv-picontrol',
-              },
+              {label: 'IRIV PiControl', to: '/docs/products/iriv-picontrol/'},
+              {label: 'IRIV IO Controller', to: '/docs/products/iriv-io-controller/'},
+              {label: 'IRIV SmartHub CM5', to: '/docs/products/iriv-smarthub-cm5/'},
+              {label: 'IRIV EdgeAI CM5', to: '/docs/products/iriv-edgeai-cm5/'},
             ],
           },
           {
-            title: 'Community',
+            title: 'Cytron',
             items: [
-              {
-                label: 'Website',
-                href: 'https://www.cytron.io',
-              },
+              {label: 'Shop (my.cytron.io)', href: 'https://my.cytron.io/c-industrial-with-raspberry-pi'},
+              {label: 'Tutorials', href: 'https://my.cytron.io/tutorial'},
+              {label: 'Cytron website', href: 'https://www.cytron.io'},
             ],
           },
           {
-            title: 'More',
+            title: 'Help',
             items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/cytron',
-              },
+              {label: 'Technical support', href: 'mailto:support@cytron.io'},
+              {label: 'Sales enquiries', href: 'mailto:sales@cytron.io'},
+              {label: 'Wiki source on GitHub', href: 'https://github.com/KhairulTajudin13/cytron-wiki'},
             ],
           },
         ],

@@ -93,16 +93,7 @@ The Quick Start image's built-in dashboard flow is covered in the [IRIV PiContro
 
 ### Online Tutorials
 
-**IRIV PiControl Node-RED Hands-On:**
-- URL: [my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4](https://my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4)
-- Part of 13-part Node-RED series for industrial applications
-
-**More Cytron tutorials using IRIV PiControl:**
-- [AI Gesture Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol) (Advanced, 2025)
-- [AI Plant Disease Detection with IRIV PiControl](https://my.cytron.io/tutorial/ai-plant-disease-detection-with-iriv-picontrol) (Advanced, 2025)
-- [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp) (Beginner, 2026, 5 parts)
-
-The product page FAQ also notes that CodeSys and Ignition (paid) can be used on IRIV PiControl.
+See **[Tutorials](./tutorials.md)** for the 13-part Node-RED series and other Cytron projects using IRIV PiControl.
 
 ## Support and Contact
 
