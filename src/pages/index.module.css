@@ -24,7 +24,8 @@
 }
 .quickGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 280px));
+  justify-content: center;
   gap: 1.25rem;
   margin: 1rem 0 2rem;
 }
@@ -52,4 +53,14 @@
 .ghostButton:hover {
   color: var(--ifm-color-primary-darkest);
   background: #fff;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.sectionIntro {
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+  margin-top: -0.5rem;
 }

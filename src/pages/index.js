@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ProductCards from '@site/src/components/ProductCards';
+import ProductCards, {kits} from '@site/src/components/ProductCards';
 import styles from './index.module.css';
 
 const quickLinks = [
@@ -79,9 +79,12 @@ export default function Home() {
       description="Technical documentation for Cytron IRIV industrial controllers: IRIV PiControl, IO Controller, SmartHub CM5 and EdgeAI CM5.">
       <Hero />
       <main className="container margin-vert--lg">
-        <h2>Products</h2>
+        <h2 className={styles.sectionTitle}>Products</h2>
         <ProductCards />
-        <h2 className="margin-top--xl">Find what you need</h2>
+        <h2 className={styles.sectionTitle}>Kits &amp; Solutions</h2>
+        <p className={styles.sectionIntro}>Ready-made kits and training bundles built on the IRIV controllers.</p>
+        <ProductCards items={kits} />
+        <h2 className={styles.sectionTitle}>Find what you need</h2>
         <div className={styles.quickGrid}>
           {quickLinks.map((q) => (
             <div key={q.title} className={styles.quickCard}>

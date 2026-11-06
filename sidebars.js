@@ -56,6 +56,7 @@ const sidebars = {
           link: { type: "doc", id: "products/iriv-io-controller/index" },
           items: [
             "products/iriv-io-controller/getting-started",
+            "products/iriv-io-controller/mqtt-gateway",
             "products/iriv-io-controller/hardware-layout",
             "products/iriv-io-controller/internal-board-layout",
             "products/iriv-io-controller/io-reference",
@@ -96,6 +97,17 @@ const sidebars = {
             "products/iriv-edgeai-cm5/downloads",
           ],
         },
+      ],
+    },
+    {
+      type: "category",
+      label: "Kits & Solutions",
+      link: { type: "doc", id: "kits/index" },
+      items: [
+        "kits/iriv-edgeai-safety-box-kit",
+        "kits/iriv-picontrol-agribox",
+        "kits/iriv-picontrol-industry40-training",
+        "kits/iriv-edgeai-vision-training",
       ],
     },
   ],

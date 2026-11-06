@@ -41,6 +41,7 @@ Follow these steps to set up your IRIV IO Controller:
 ### Software & Programming
 
 - [Software Support](./software-support.md) - Supported platforms and protocols
+- [IRIV IOC MQTT Gateway](./mqtt-gateway.md) - Same hardware with ready-made MQTT firmware
 - [Tutorials](./tutorials.md) - Hands-on guides and examples
 
 ### Support

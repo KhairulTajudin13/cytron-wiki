@@ -1,6 +1,7 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 280px));
+  justify-content: center;
   gap: 1.25rem;
   margin: 1.5rem 0;
 }
@@ -39,6 +40,10 @@
   font-weight: 600;
   padding: 0.1rem 0.5rem;
   border-radius: 999px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background: var(--ifm-color-emphasis-200);
   margin-bottom: 0.5rem;
 }

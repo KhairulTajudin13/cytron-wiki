@@ -38,12 +38,46 @@ export const products = [
   },
 ];
 
+export const kits = [
+  {
+    title: 'IRIV EdgeAI Safety Box Kit',
+    tag: 'EdgeAI CM5 · 26 TOPS',
+    link: '/docs/kits/iriv-edgeai-safety-box-kit',
+    description:
+      'Ready-to-deploy PPE and danger-zone detection for up to 6 RTSP IP cameras, in an IP67 enclosure with alarm outputs.',
+  },
+  {
+    title: 'IRIV PiControl Industry 4.0 Agribox',
+    tag: 'PiControl CM4 + IO Controller',
+    link: '/docs/kits/iriv-picontrol-agribox',
+    description:
+      'Smart-agriculture control box with 5 relays, RS485 soil and climate sensors, and the MyAgritech dashboard.',
+  },
+  {
+    title: 'IRIV PiControl Industry 4.0 Training Kit & Workshop',
+    tag: 'PiControl CM4 · Workshop',
+    link: '/docs/kits/iriv-picontrol-industry40-training',
+    description:
+      'DIN-rail training panel with RS485 sensor and power meter, sold alone or with a 2-day Node-RED / Modbus / IoT workshop.',
+  },
+  {
+    title: 'IRIV EdgeAI Industry 4.0 Vision Training',
+    tag: 'EdgeAI CM5 · 13 TOPS · Workshop',
+    link: '/docs/kits/iriv-edgeai-vision-training',
+    description:
+      'Two-day Edge AI vision workshop with a take-home EdgeAI training kit: Hailo pipelines, custom models, Node-RED and Blynk.',
+  },
+];
+
 function Card({title, tag, image, link, description}) {
+  const src = useBaseUrl(image || '/');
   return (
     <Link to={link} className={styles.card}>
-      <div className={styles.imageWrap}>
-        <img src={useBaseUrl(image)} alt={title} loading="lazy" />
-      </div>
+      {image && (
+        <div className={styles.imageWrap}>
+          <img src={src} alt={title} loading="lazy" />
+        </div>
+      )}
       <span className={styles.tag}>{tag}</span>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
@@ -52,10 +86,10 @@ function Card({title, tag, image, link, description}) {
   );
 }
 
-export default function ProductCards() {
+export default function ProductCards({items = products}) {
   return (
     <div className={styles.grid}>
-      {products.map((p) => (
+      {items.map((p) => (
         <Card key={p.title} {...p} />
       ))}
     </div>
