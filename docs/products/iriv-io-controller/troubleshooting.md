@@ -1,5 +1,6 @@
 ---
-title: Troubleshooting
+title: "IRIV IO Controller Troubleshooting"
+sidebar_label: "Troubleshooting"
 sidebar_position: 9
 description: Common problems with the IRIV IO Controller (power, uploading, digital and analog inputs, RS485) and how to fix them.
 ---

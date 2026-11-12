@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Downloads"
+sidebar_label: "Downloads"
 sidebar_position: 7
-title: Downloads
+description: "This page provides links to official documentation, design files, and resources for the IRIV SmartHub CM5."
 ---
 
 # Downloads
@@ -11,7 +13,9 @@ This page provides links to official documentation, design files, and resources 
 
 | Document | Description | Link |
 |----------|-------------|------|
-| User Manual | Official IRIV SmartHub CM5 User Manual, Rev 1.3, Dec 2025 (PDF). A newer Rev 1.4 (Feb 2026) exists — check the product page for the latest | [IRIV SmartHub CM5 User Manual](../../../sources/manuals/IRIV%20SmartHub%20CM5%20User%20Manual.pdf) |
+| User Manual (live) | Official IRIV SmartHub CM5 user manual, kept up to date by Cytron (Rev 1.4 or later) | [Google Docs](https://docs.google.com/document/d/1yE7WPk3X-04fX7NflaSuRjtDZFWt5IN03UsM9mVk9qs/edit?usp=sharing) |
+| Brochure | IRIV SmartHub brochure | [PDF](https://drive.google.com/file/d/1D24ULSwX1W38NKT1_vbnC7j-XiYHT7KJ/view?usp=sharing) |
+| User Manual Rev 1.3, Dec 2025 | Archived copy used for this wiki | [PDF](../../../sources/manuals/IRIV%20SmartHub%20CM5%20User%20Manual.pdf) |
 | Product Page | Official product page with specifications and ordering | [Cytron Product Page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5) |
 
 ## Tutorials
@@ -22,7 +26,7 @@ See **[Tutorials](./tutorials.md)** for all Cytron tutorials that use the IRIV S
 
 | File | Description | Status |
 |------|-------------|--------|
-| 3D CAD | Mechanical 3D model for enclosure design | Linked from the [product page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5) (Resources) |
+| 3D CAD | Mechanical 3D model for enclosure design | [Google Drive](https://drive.google.com/drive/folders/1dSTe8pU8Vp0AuzEBsfYOS47g2xI-C4i7?usp=sharing) |
 | Dimension Drawing | Detailed mechanical drawings | Available in User Manual |
 
 ## Application Notes

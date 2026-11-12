@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Hardware Layout"
+sidebar_label: "Hardware Layout"
 sidebar_position: 3
-title: Hardware Layout
+description: "This page documents the physical layout of the IRIV SmartHub CM5, including external ports, internal board components, and mechanical dimensions."
 ---
 
 # Hardware Layout
@@ -52,9 +54,9 @@ The IRIV SmartHub CM5 has ports and controls accessible from the left and right 
 
 Access to internal components requires removing the enclosure cover.
 
-![IRIV SmartHub CM5 internal board, front](/img/products/iriv-smarthub-cm5/internal-layout-front.png)
+![IRIV SmartHub CM5 internal board, front](/img/products/iriv-smarthub-cm5/internal-layout-front.webp)
 
-![IRIV SmartHub CM5 internal board, back](/img/products/iriv-smarthub-cm5/internal-layout-back.png)
+![IRIV SmartHub CM5 internal board, back](/img/products/iriv-smarthub-cm5/internal-layout-back.webp)
 
 *Internal board, front and back (User Manual, Section 3.2).*
 
@@ -75,7 +77,7 @@ Access to internal components requires removing the enclosure cover.
 
 | No. | Component | Description |
 |-----|-----------|-------------|
-| 9 | Wireless Disable Jumper | Solder and short the jumper to disable WiFi or Bluetooth (BT). |
+| 9 | Wireless Disable Jumper | Two solder jumpers on the back of the board, silkscreen **WLAN** and **BT** under "DISABLE". Solder-short one to disable WiFi or Bluetooth. |
 | 10 | CM5 Socket | Mount the CM5 following the graphical silkscreen orientation. |
 
 ## Block Diagram

@@ -1,11 +1,22 @@
 ---
-title: Terminal 1
+title: "IRIV PiControl Terminal 1"
+sidebar_label: "Terminal 1"
 sidebar_position: 5
+description: "IRIV PiControl Terminal 1 pinout and wiring: 10-30V power, isolated RS485 and RS232, and 4 isolated digital outputs."
 ---
 
 # Terminal 1
 
 Terminal 1 provides power input, serial communication (RS485 and RS232), and isolated digital outputs.
+
+## Terminal Pinout
+
+Pluggable 2 × 8 block, viewed from the front, positions 1–8 left to right (user manual front-panel figure):
+
+| Row | 1 | 2 | 3 | 4 | 5–6 | 7–8 |
+|---|---|---|---|---|---|---|
+| **Upper** | VIN (10–30V) | RS485 A | RS485 B | 485G | DO0 (pair) | DO2 (pair) |
+| **Lower** | GND | RS232 TX | RS232 RX | 232G | DO1 (pair) | DO3 (pair) |
 
 ## Power Supply Input
 
@@ -20,8 +31,8 @@ Terminal 1 provides power input, serial communication (RS485 and RS232), and iso
 ### Wiring
 
 Connect DC power supply to Terminal 1:
-- **+** terminal: Positive voltage
-- **-** terminal: Ground/negative
+- **VIN**: supply positive (10–30V DC)
+- **GND**: supply negative
 
 **No earth connection is required.**
 
@@ -131,7 +142,7 @@ Isolation rating: 3000 Vrms
 
 Each digital output provides two terminals for dry contact switching:
 - Connect load between the two terminals for each output
-- Polarity does not matter (AC or DC loads supported)
+- AC or DC loads are supported (for DC loads, put the supply positive on the side shown in the user manual wiring figure)
 - Maximum ratings: 50V, 500mA per channel
 
 **Example - Controlling a 24V DC relay:**
@@ -146,7 +157,7 @@ When GPIO23 is HIGH, the solid state relay closes and activates the load.
 
 ### Power Input Issues
 - **Using voltage outside 10-30V range** - May damage device or fail to power up
-- **Exceeding surge limit** - Fuse will blow to protect circuitry
+- **Exceeding surge limit** - The 4A fuse may blow
 - **Ignoring blown fuse** - Device will not power up via Terminal 1 if fuse is blown
 
 ### RS485 Communication Issues

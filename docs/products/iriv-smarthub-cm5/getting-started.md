@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 2
-title: Getting Started
+description: "This guide covers the initial setup and first boot process for the IRIV SmartHub CM5."
 ---
 
 # Getting Started with IRIV SmartHub CM5
@@ -110,7 +112,7 @@ To install or reflash the OS on the eMMC:
 ## Network Connectivity
 
 - **Wired**: Connect an Ethernet cable to the Gigabit Ethernet port (eth0)
-- **Wireless**: WiFi is enabled by default (2.4GHz / 5.0GHz 802.11 b/g/n/ac)
+- **Wireless**: 2.4GHz / 5.0GHz 802.11 b/g/n/ac. On Raspberry Pi OS, WiFi stays blocked until the WiFi country is set (in Raspberry Pi Imager or `sudo raspi-config` → Localisation Options → WLAN Country)
 
 ## Next Steps
 

@@ -1,5 +1,6 @@
 ---
-title: Tutorials
+title: "IRIV PiControl Tutorials"
+sidebar_label: "Tutorials"
 sidebar_position: 12
 description: Cytron tutorials and projects for IRIV PiControl, including the 13-part Node-RED series.
 ---
@@ -32,6 +33,9 @@ See also this wiki's [Node-RED Documentation](./node-red/index.md).
 
 | Tutorial | Level |
 |---|---|
+| [Setup Bluetooth in IRIV PiControl using Node-RED](https://my.cytron.io/tutorial/setup-bluetooth-in-iriv-picontrol-using-node-red) (Oct 2026) | — |
+| [Autonics Incremental Rotary Encoder with IRIV](https://my.cytron.io/tutorial/autonics-incremental-rotary-encoder-with-iriv) (Oct 2026) | — |
+| [Milesight IoT Setup Guide for IRIV PiControl Node-RED](https://my.cytron.io/tutorial/milesight-iot-setup-guide-for-iriv-picontrol-node-red) (Jul 2026) | — |
 | [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp) (5 parts, 2026) | Beginner |
 | [IRIV IO Controller — Send Sensor Readings to IRIV PiControl using MQTT](https://my.cytron.io/tutorial/iriv-ioc-sending-data-from-humidity-and-temperature-sensor-to-iriv-picontrol-using-mqtt-protocol) (2025) | Advanced |
 | [AI Gesture Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol) (2025) | Advanced |

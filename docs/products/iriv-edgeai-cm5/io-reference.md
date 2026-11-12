@@ -1,6 +1,7 @@
 ---
+title: "IRIV EdgeAI CM5 I/O Reference"
+sidebar_label: "I/O Reference"
 sidebar_position: 5
-title: I/O Reference
 description: Terminal pinout, wiring and example code for the IRIV EdgeAI CM5 isolated digital I/O, LED lighting drivers and RS485.
 ---
 

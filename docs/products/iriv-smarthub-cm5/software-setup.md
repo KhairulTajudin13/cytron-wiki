@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Software Setup"
+sidebar_label: "Software Setup"
 sidebar_position: 5
-title: Software Setup
+description: "This page covers operating system compatibility, boot modes, storage options, and GPIO-controlled features for the IRIV SmartHub CM5."
 ---
 
 # Software Setup
@@ -137,7 +139,7 @@ The RTC is built into the CM5 module. Install a CR2032 battery to maintain time 
 
 ### WiFi
 
-WiFi is enabled by default. Configure using standard Raspberry Pi OS network tools:
+Set the WiFi country first (Raspberry Pi Imager, or `sudo raspi-config` → Localisation Options → WLAN Country) — Raspberry Pi OS keeps WiFi blocked until it is set. Then connect with the standard network tools:
 
 ```bash
 # Scan for networks

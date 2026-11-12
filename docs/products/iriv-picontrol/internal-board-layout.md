@@ -1,11 +1,13 @@
 ---
-title: Internal Board Layout
+title: "IRIV PiControl Internal Board Layout"
+sidebar_label: "Internal Board Layout"
 sidebar_position: 4
+description: "IRIV PiControl internal board: M.2 and mini PCIe sockets, RTC, crypto chip, DIP switches, fuse and wireless jumper."
 ---
 
 # Internal Board Layout
 
-![IRIV PiControl Internal Board Layout](/img/products/iriv-picontrol/internal-layout.png)
+![IRIV PiControl Internal Board Layout](/img/products/iriv-picontrol/internal-layout.webp)
 
 *Internal board layout highlighting M.2 Key-M socket, Mini PCIe socket, RTC, secure authentication chip, and configuration switches.*
 

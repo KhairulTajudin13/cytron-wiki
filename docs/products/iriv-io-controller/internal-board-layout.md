@@ -1,11 +1,13 @@
 ---
-title: Internal Board Layout
+title: "IRIV IO Controller Internal Board Layout"
+sidebar_label: "Internal Board Layout"
 sidebar_position: 4
+description: "IRIV IO Controller internal board: RP2350A MCU, PCF85063A RTC, W5500 Ethernet, buzzer, DIP switches and PTC fuse."
 ---
 
 # Internal Board Layout
 
-![IRIV IO Controller Internal Board Layout](/img/products/iriv-io-controller/internal-board-layout.png)
+![IRIV IO Controller Internal Board Layout](/img/products/iriv-io-controller/internal-board-layout.webp)
 
 *Internal board layout highlighting internal components such as MCU, RTC, Ethernet controller, and onboard devices.*
 

@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Hardware Layout"
+sidebar_label: "Hardware Layout"
 sidebar_position: 3
-title: Hardware Layout
+description: "This page documents the physical layout of the IRIV EdgeAI CM5, including external ports, internal board components, and mechanical dimensions."
 ---
 
 # Hardware Layout
@@ -67,7 +69,7 @@ The IRIV EdgeAI CM5 has ports and controls accessible from multiple sides of the
 
 Access to internal components requires removing the enclosure cover.
 
-![IRIV EdgeAI CM5 internal board](/img/products/iriv-edgeai-cm5/internal-layout.png)
+![IRIV EdgeAI CM5 internal board](/img/products/iriv-edgeai-cm5/internal-layout.webp)
 
 ### Internal Components
 
@@ -76,7 +78,7 @@ Access to internal components requires removing the enclosure cover.
 | 1 | GPIO Header for AI HAT+ | 40-pin header for Raspberry Pi AI HAT+ connection. Only key pins connected (5V, 3V3, GND, ID_SC, ID_SD). |
 | 2 | Boot/Run Switch | **Boot**: USB-C for OS programming. **Run**: Normal operation with USB-C debug console. |
 | 3 | PCIe Port for AI HAT+ | PCIe connection for Raspberry Pi AI HAT+. Similar to PCIe port on Raspberry Pi 5. |
-| 4 | Wireless Disable | Solder jumper to disable WiFi (WL) or Bluetooth (BT). |
+| 4 | Wireless Disable | Solder jumpers WL (WiFi) and BT (Bluetooth); solder-short one to disable it. |
 | 5 | RTC Battery | CR2032 coin cell holder for RTC backup. |
 | 6 | System Fuse (4A) | 4A replaceable fuse for system power (LED drivers excluded). |
 | 7 | Secure Authentication | ATECC608B chip (I2C Address: 0x60). Located on bottom layer. |

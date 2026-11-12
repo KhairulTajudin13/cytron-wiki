@@ -1,13 +1,15 @@
 ---
-title: Interfaces and Functions
+title: "IRIV IO Controller Interfaces and Functions"
+sidebar_label: "Interfaces and Functions"
 sidebar_position: 6
+description: "Technical reference for communication interfaces on the IRIV IO Controller."
 ---
 
 # Interfaces and Functions
 
 Technical reference for communication interfaces on the IRIV IO Controller.
 
-![IRIV IO Controller Block Diagram](/img/products/iriv-io-controller/block-diagram.png)
+![IRIV IO Controller Block Diagram](/img/products/iriv-io-controller/block-diagram.webp)
 
 *Block diagram providing a high-level overview of system interfaces and signal flow.*
 

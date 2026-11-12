@@ -1,6 +1,8 @@
 ---
-title: Downloads
+title: "IRIV PiControl Downloads"
+sidebar_label: "Downloads"
 sidebar_position: 11
+description: "Downloadable resources and support contact information for IRIV PiControl."
 ---
 
 # Downloads
@@ -11,12 +13,14 @@ Downloadable resources and support contact information for IRIV PiControl.
 
 ### User Manual
 
-**IRIV PiControl CM4 User Manual**
-- Version: Rev 1.3
-- Date: November 2025
-- Format: PDF
+Always use the live manuals below — Cytron updates them in place, so they are newer than any downloaded copy.
 
-Download: [IRIV PiControl CM4 User Manual (PDF)](../../../sources/manuals/IRIV%20PiControl%20CM4%20User%20Manual.pdf). The product page also links the CM4 and CM5 user manuals, 3D CAD, OS images (Bookworm and Bullseye) and a brochure.
+| Document | Link |
+|---|---|
+| IRIV PiControl **CM4** User Manual (live) | [Google Docs](https://docs.google.com/document/d/1p-vkd4Mo6jo5eyJNYteiMlDj0v4FB1QaCtm9nPxw_6g/edit?usp=sharing) |
+| IRIV PiControl **CM5** User Manual (live) | [Google Docs](https://docs.google.com/document/d/1bbRILpRxjq1vMsS7YbCQ24jX8AQsf40NUcQ_WF_xHCc/edit?usp=sharing) |
+| IRIV PiControl brochure | [PDF](https://drive.google.com/file/d/1RTGSiJ0V6rmAZ39GbwgU8OwYRri6kY_7/view?usp=sharing) |
+| CM4 User Manual Rev 1.3, Nov 2025 (archived copy used for this wiki) | [PDF](../../../sources/manuals/IRIV%20PiControl%20CM4%20User%20Manual.pdf) |
 
 ## Software and Firmware
 
@@ -31,11 +35,9 @@ The short link opens the setup script hosted by Cytron. Only Raspberry Pi OS is 
 
 ### OS Images
 
-**Raspberry Pi OS Images:**
-- Available from official Raspberry Pi website
-- Compatible versions: Bullseye, Bookworm
+**Cytron image (recommended):** [Bookworm OS for IRIV PiControl](https://drive.google.com/file/d/102NEIwVMQYr2e7foh_mHuBLMuZOCUxTR/view) — the image linked from the product page, with Cytron's setup and Quick Start dashboard.
 
-Download: [www.raspberrypi.com/software/operating-systems/](https://www.raspberrypi.com/software/operating-systems/)
+**Plain Raspberry Pi OS:** [raspberrypi.com/software/operating-systems](https://www.raspberrypi.com/software/operating-systems/) — run the setup script above after flashing.
 
 ### Python Libraries
 
@@ -77,7 +79,7 @@ Circuit schematics are not published. The user manual includes the block diagram
 
 ### 3D Models
 
-3D CAD files are linked from the [product page](https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller) (Resources section).
+[IRIV PiControl 3D CAD (Google Drive)](https://drive.google.com/drive/folders/11rdPOow4ErHUyNKBKKNPCmCvhTMkd--6?usp=sharing)
 
 ## Example Code
 

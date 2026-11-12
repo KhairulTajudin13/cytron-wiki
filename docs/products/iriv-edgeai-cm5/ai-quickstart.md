@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 AI Quickstart"
+sidebar_label: "AI Quickstart"
 sidebar_position: 4
-title: AI Quickstart
+description: "This page provides an overview of AI capabilities and setup for the IRIV EdgeAI CM5 based on the official datasheet."
 ---
 
 # AI Quickstart
@@ -57,7 +59,7 @@ To install the Raspberry Pi AI HAT+:
 5. Secure with standoffs if required
 6. Reassemble the enclosure
 
-![AI HAT+ mounted on the IRIV EdgeAI CM5 board](/img/products/iriv-edgeai-cm5/ai-hat-installation.png)
+![AI HAT+ mounted on the IRIV EdgeAI CM5 board](/img/products/iriv-edgeai-cm5/ai-hat-installation.webp)
 
 *AI HAT+ position on the internal board (Datasheet, Section 3.2).*
 
@@ -81,6 +83,36 @@ Kits (product page):
 ## Software Configuration
 
 Cytron's datasheet does not describe the AI software stack. The AI HAT+ is the standard Raspberry Pi accessory, so follow the [Raspberry Pi AI HAT+ documentation](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html) and [AI software guide](https://www.raspberrypi.com/documentation/computers/ai.html) (Raspberry Pi OS Bookworm; Hailo packages are installed with `sudo apt install hailo-all`).
+
+### Check the AI HAT+ Is Working
+
+These commands come from Raspberry Pi's AI software guide. The IRIV EdgeAI CM5 uses the **AI HAT+** (13 or 26 TOPS), which needs the `hailo-all` package — not `hailo-h10-all`, which is for the newer AI HAT+ 2.
+
+```bash
+sudo apt update && sudo apt full-upgrade
+sudo apt install hailo-all
+sudo reboot
+
+# After reboot: the accelerator should be identified
+hailortcli fw-control identify
+
+# Kernel log should show the hailo driver loading
+dmesg | grep -i hailo
+```
+
+### First Detection Demo
+
+With a CSI camera connected (see [camera setup](./troubleshooting.md#camera-not-detected)):
+
+```bash
+rpicam-hello -t 0 --post-process-file /usr/share/rpi-camera-assets/hailo_yolov8_inference.json
+```
+
+This runs Raspberry Pi's YOLOv8 object-detection demo on the AI HAT+. For USB cameras, RTSP streams, custom models and Node-RED integration, follow Cytron's [EdgeAI tutorials](./tutorials.md).
+
+:::note PCIe speed
+Raspberry Pi's guide suggests enabling PCIe Gen 3 for the AI HAT+ on a Raspberry Pi 5. On the IRIV EdgeAI CM5 the AI HAT+ shares the CM5's PCIe lane with the M.2 socket through a PCIe switch, and the datasheet lists the link as Gen 2. Check with Cytron before forcing Gen 3.
+:::
 
 ## Cytron AI Tutorials
 

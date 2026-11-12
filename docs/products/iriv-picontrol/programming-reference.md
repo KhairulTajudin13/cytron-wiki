@@ -1,6 +1,8 @@
 ---
-title: Programming Reference
+title: "IRIV PiControl Programming Reference"
+sidebar_label: "Programming Reference"
 sidebar_position: 9
+description: "GPIO pin assignments and code examples for programming IRIV PiControl I/O."
 ---
 
 # Programming Reference
@@ -35,11 +37,11 @@ GPIO pin assignments and code examples for programming IRIV PiControl I/O.
 
 | Function | GPIO Pin | Description |
 |----------|----------|-------------|
-| User Button | GPIO4 | Input, active LOW when pressed |
+| User Button | GPIO4 | Input (read level when pressed not stated in the user manual) |
 | LED0 | GPIO20 | Output, user-programmable LED |
 | LED1 | GPIO21 | Output, user-programmable LED |
 | Buzzer | GPIO19 | Output, beeps when HIGH |
-| Mini PCIe Power | GPIO6 | Output, HIGH to enable power to Mini PCIe socket |
+| Mini PCIe Power | GPIO6 | Output, turns mini PCIe power on/off (polarity not stated in the user manual) |
 
 ## Analog Input (ADC)
 

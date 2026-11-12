@@ -1,6 +1,8 @@
 ---
-title: Downloads
+title: "IRIV IO Controller Downloads"
+sidebar_label: "Downloads"
 sidebar_position: 9
+description: "Downloadable resources and support contact information for the IRIV IO Controller."
 ---
 
 # Downloads
@@ -16,7 +18,7 @@ Downloadable resources and support contact information for the IRIV IO Controlle
 - Date: July 2024
 - Format: PDF
 
-Download: [IRIV IO Controller Datasheet (PDF)](../../../sources/manuals/IRIV%20IO%20Controller%20Datasheet.pdf) — also linked from the product page.
+Live datasheet (kept up to date by Cytron): [Google Docs](https://docs.google.com/document/d/11kB7ksORlUmeBtVMzUjjfoPzr-JKMBwNWlKuRJWYtzs/edit?usp=sharing) · Archived Rev 1.0 copy: [PDF](../../../sources/manuals/IRIV%20IO%20Controller%20Datasheet.pdf) · [RP2350 datasheet](https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf)
 
 ## Example Code
 
@@ -37,7 +39,7 @@ The 3D models are useful for:
 
 ## Mechanical Drawings
 
-![IRIV IO Controller Dimensions and DIN Rail Mounting](/img/products/iriv-io-controller/dimension-din-rail-mounting.png)
+![IRIV IO Controller Dimensions and DIN Rail Mounting](/img/products/iriv-io-controller/dimension-din-rail-mounting.webp)
 
 *Enclosure dimensions and DIN rail mounting specifications.*
 

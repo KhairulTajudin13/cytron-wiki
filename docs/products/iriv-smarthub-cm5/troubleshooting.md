@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Troubleshooting"
+sidebar_label: "Troubleshooting"
 sidebar_position: 6
-title: Troubleshooting
+description: "This page addresses common issues with the IRIV SmartHub CM5 based on the official user manual."
 ---
 
 # Troubleshooting
@@ -140,9 +142,9 @@ This page addresses common issues with the IRIV SmartHub CM5 based on the offici
 
 1. **Power cycle the module**: Use GPIO6 to toggle power:
    ```bash
-   pinctrl set 6 op dl  # Power off
+   pinctrl set 6 op dl  # toggle mini PCIe power (on/off polarity not confirmed)
    sleep 1
-   pinctrl set 6 op dh  # Power on
+   pinctrl set 6 op dh
    ```
 
 2. **Reset the module**: Use GPIO5:

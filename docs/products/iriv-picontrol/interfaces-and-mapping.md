@@ -1,13 +1,15 @@
 ---
-title: Interfaces and Mapping
+title: "IRIV PiControl Interfaces and Mapping"
+sidebar_label: "Interfaces and Mapping"
 sidebar_position: 7
+description: "IRIV PiControl: quick reference for network interfaces, serial device mappings, I2C addresses, and GPIO assignments."
 ---
 
 # Interfaces and Mapping
 
 Quick reference for network interfaces, serial device mappings, I2C addresses, and GPIO assignments.
 
-![IRIV PiControl Block Diagram](/img/products/iriv-picontrol/block-diagram.png)
+![IRIV PiControl Block Diagram](/img/products/iriv-picontrol/block-diagram.webp)
 
 *Block diagram showing system architecture, interface connections, and signal flow between CM4, I/O subsystems, and peripheral devices.*
 
@@ -90,12 +92,12 @@ Quick reference for network interfaces, serial device mappings, I2C addresses, a
 
 ## Analog Input Channel Mapping
 
-| Channel | Terminal 2 Label | ADS1115 Input |
+| Channel (manual / code) | Terminal 2 label | ADS1115 input |
 |---------|------------------|---------------|
-| AI0 | AI0 | AIN0 |
-| AI1 | AI1 | AIN1 |
-| AI2 | AI2 | AIN2 |
-| AI3 | AI3 | AIN3 |
+| AI0 | AN0 | AIN0 (channel 0) |
+| AI1 | AN1 | AIN1 (channel 1) |
+| AI2 | AN2 | AIN2 (channel 2) |
+| AI3 | AN3 | AIN3 (channel 3) |
 
 **Common Ground:** AGND (isolated from system ground)
 

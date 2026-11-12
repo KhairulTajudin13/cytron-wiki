@@ -1,6 +1,8 @@
 ---
-title: Tutorials
+title: "IRIV IO Controller Tutorials"
+sidebar_label: "Tutorials"
 sidebar_position: 8
+description: "Curated tutorials and hands-on guides for the IRIV IO Controller."
 ---
 
 # Tutorials

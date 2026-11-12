@@ -1,6 +1,7 @@
 ---
 title: Node-RED Documentation
 sidebar_position: 1
+description: "Visual programming environment for industrial automation and IoT workflows on IRIV PiControl."
 ---
 
 # Node-RED on IRIV PiControl
@@ -84,7 +85,7 @@ The pre-configured Node-RED dashboard on IRIV PiControl includes:
 **Access Point Mode:**
 When operating in AP mode:
 - Network SSID: `iriv`
-- Password: `iriv1234`
+- Password: `iriv1234` (default — change it before deploying on site)
 - Dashboard accessible at: `iriv.local:1880/ui`
 
 ## Integration with IRIV PiControl Hardware

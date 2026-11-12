@@ -1,11 +1,24 @@
 ---
-title: Terminal 2
+title: "IRIV PiControl Terminal 2"
+sidebar_label: "Terminal 2"
 sidebar_position: 6
+description: "IRIV PiControl Terminal 2 pinout and wiring for the 4 isolated digital inputs and 4 isolated analog inputs (0-10V, 0-5V, 0-20mA), with ADC code."
 ---
 
 # Terminal 2
 
 Terminal 2 provides isolated digital inputs and isolated analog inputs for voltage and current measurement.
+
+## Terminal Pinout
+
+Pluggable 2 × 8 block, viewed from the front, positions 1–8 left to right (user manual front-panel figure):
+
+| Row | 1–2 | 3–4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|
+| **Upper** | DI0 (+, −) | DI2 (+, −) | AN0 | AGND | AN2 | AGND |
+| **Lower** | DI1 (+, −) | DI3 (+, −) | AN1 | AGND | AN3 | AGND |
+
+The panel prints the analog inputs as **AN0–AN3**; the manual text and the code call them AI0–AI3 (ADC channels 0–3).
 
 ## Isolated Digital Input
 
@@ -91,8 +104,8 @@ The analog inputs support three measurement modes:
 
 **For 0-5V or 0-10V measurements:**
 1. Set internal **Analog Input Mode Switch** to voltage position
-2. Connect signal to **AI[n] +** terminal
-3. Connect ground to **AGND** terminal
+2. Connect the signal to the channel's **AN0–AN3** terminal
+3. Connect the sensor ground to an **AGND** terminal
 
 **Input impedance:** 25kΩ
 
@@ -101,8 +114,8 @@ The analog inputs support three measurement modes:
 **For 0-20mA measurements:**
 1. Set internal **Analog Input Mode Switch** to current position
 2. **DIP switch MUST be ON to enable internal shunt resistor**
-3. Connect current loop to **AI[n] +** terminal
-4. Connect current return to **AGND** terminal
+3. Connect the current loop to the channel's **AN0–AN3** terminal
+4. Connect the current return to an **AGND** terminal
 
 **Input impedance:** 250Ω (shunt resistor)
 
@@ -118,13 +131,13 @@ The analog inputs support three measurement modes:
 
 **Voltage measurement (0-10V sensor):**
 ```
-Sensor Output (+) ----[AI0]
+Sensor Output (+) ----[AN0]
 Sensor Ground     ----[AGND]
 ```
 
 **Current measurement (0-20mA sensor):**
 ```
-Sensor Current Output (+) ----[AI0]
+Sensor Current Output (+) ----[AN0]
 Sensor Current Return     ----[AGND]
 ```
 

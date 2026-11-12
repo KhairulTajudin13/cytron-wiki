@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Troubleshooting"
+sidebar_label: "Troubleshooting"
 sidebar_position: 7
-title: Troubleshooting
+description: "This page addresses common issues with the IRIV EdgeAI CM5 based on the official datasheet."
 ---
 
 # Troubleshooting
@@ -164,16 +166,15 @@ This page addresses common issues with the IRIV EdgeAI CM5 based on the official
    rpicam-hello --list-cameras   # older OS images: libcamera-hello
    ```
 
-3. **Enable camera interface** if required in raspi-config
+3. **Configure the camera in config.txt.** On Compute Modules, cameras on the CSI ports are not always auto-detected. Raspberry Pi's [Compute Module camera guide](https://www.raspberrypi.com/documentation/computers/compute-module.html) says to remove `camera_auto_detect=1` from `/boot/firmware/config.txt` and add the overlay for your sensor and port, for example `dtoverlay=imx708,cam0` (Camera Module 3 on MIPI0) or `dtoverlay=imx219,cam1` (v2 on MIPI1), then reboot. Cytron's Bookworm image for IRIV EdgeAI may already do this — check before changing it. There is no camera option to enable in `raspi-config` on Bookworm.
 
 ## Mini PCIe Module Issues
 
 ### 4G/LoRa Module Not Detected
 
-1. **Check power GPIO**:
+1. **Check the power GPIO** (GPIO6 switches the socket power; the on/off polarity is not stated in the datasheet, so try both levels):
    ```bash
-   # Ensure power is enabled
-   pinctrl set 6 op dh
+   pinctrl get 6
    ```
 
 2. **Reset the module**:

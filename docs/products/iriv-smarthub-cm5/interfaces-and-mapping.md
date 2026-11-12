@@ -1,6 +1,8 @@
 ---
+title: "IRIV SmartHub CM5 Interfaces and Mapping"
+sidebar_label: "Interfaces and Mapping"
 sidebar_position: 4
-title: Interfaces and Mapping
+description: "This page provides detailed specifications for all interfaces on the IRIV SmartHub CM5 and their GPIO mappings."
 ---
 
 # Interfaces and Mapping

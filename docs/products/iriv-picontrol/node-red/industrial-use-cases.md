@@ -1,6 +1,7 @@
 ---
 title: Industrial Use Cases
 sidebar_position: 4
+description: "Common industrial automation patterns and applications using Node-RED on IRIV PiControl."
 ---
 
 # Industrial Use Cases
@@ -81,8 +82,11 @@ Start → Activate Output 1 → Wait for Input 1 → Activate Output 2 → Compl
 
 **Applications:**
 - Quality control sorting
-- Safety interlock systems
 - Adaptive process control
+
+:::danger Not for safety functions
+IRIV PiControl with Node-RED is not a safety-rated controller. Never use it for emergency stops, machine guarding, safety interlocks or any function where a failure could injure people. Use a certified safety relay or safety PLC for those, and let IRIV PiControl only monitor them.
+:::
 
 **Logic elements:**
 - Switch nodes for conditional routing
@@ -260,9 +264,10 @@ RS485 Modbus Devices → Node-RED Processing → MQTT/Cloud
 **Pattern:** Synchronized control of multiple actuators
 
 **Applications:**
-- Multi-axis positioning
-- Conveyor coordination
-- Gripper control sequences
+- Conveyor start/stop coordination
+- Simple timed actuator sequences (e.g. gripper open/close)
+
+Linux and Node-RED are not real-time, and the digital outputs are solid-state relays, so IRIV PiControl is not suited to motion control, positioning or anything that needs millisecond timing. Use a motion controller or PLC for those and let IRIV PiControl supervise.
 
 **Coordination:**
 - Timed output sequences
@@ -284,7 +289,6 @@ RS485 Modbus Devices → Node-RED Processing → MQTT/Cloud
 **Cloud platforms:**
 - AWS IoT Core
 - Microsoft Azure IoT
-- Google Cloud IoT
 - ThingSpeak
 - MQTT brokers
 

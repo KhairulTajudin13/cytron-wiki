@@ -45,6 +45,7 @@ const sidebars = {
               items: [
                 "products/iriv-picontrol/node-red/install",
                 "products/iriv-picontrol/node-red/first-flow",
+                "products/iriv-picontrol/node-red/example-flows",
                 "products/iriv-picontrol/node-red/industrial-use-cases",
               ],
             },

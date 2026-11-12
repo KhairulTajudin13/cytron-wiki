@@ -1,6 +1,8 @@
 ---
-title: Software Configuration
+title: "IRIV PiControl Software Configuration"
+sidebar_label: "Software Configuration"
 sidebar_position: 8
+description: "System configuration requirements and setup script details for IRIV PiControl."
 ---
 
 # Software Configuration
@@ -25,6 +27,15 @@ The configuration script is hosted online and executed via curl:
 ```bash
 curl -L tinyurl.com/setup-iriv-picontrol | sudo bash
 ```
+
+:::tip Prefer to check the script first?
+The command runs a script from a short link with root rights. To read it before running it:
+```bash
+curl -L tinyurl.com/setup-iriv-picontrol -o setup-iriv-picontrol.sh
+less setup-iriv-picontrol.sh
+sudo bash setup-iriv-picontrol.sh
+```
+:::
 
 **Requirements:**
 - Active internet connection
@@ -179,7 +190,7 @@ After configuration and reboot, verify:
    ```bash
    i2cdetect -y 1
    ```
-   Should show devices at addresses 0x3C, 0x48, and 0x60.
+   Should show 0x3C (OLED) and 0x48 (ADC). The ATECC608B (0x60) sleeps when idle and may not appear in the scan — that is normal.
 
 2. **OLED display active:**
    - IP addresses visible on screen

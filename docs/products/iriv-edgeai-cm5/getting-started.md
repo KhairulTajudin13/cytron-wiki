@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 2
-title: Getting Started
+description: "This guide covers the initial setup and first boot process for the IRIV EdgeAI CM5."
 ---
 
 # Getting Started with IRIV EdgeAI CM5

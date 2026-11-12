@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Downloads"
+sidebar_label: "Downloads"
 sidebar_position: 8
-title: Downloads
+description: "This page provides links to official documentation, design files, and resources for the IRIV EdgeAI CM5."
 ---
 
 # Downloads
@@ -11,7 +13,9 @@ This page provides links to official documentation, design files, and resources 
 
 | Document | Description | Link |
 |----------|-------------|------|
-| Datasheet | Official IRIV EdgeAI CM5 Datasheet (PDF) | [IRIV EdgeAI CM5 Datasheet](../../../sources/manuals/IRIV%20EdgeAI%20CM5%20Datasheet.pdf) |
+| Datasheet (live) | Official IRIV EdgeAI CM5 datasheet, kept up to date by Cytron | [Google Docs](https://docs.google.com/document/d/1c-OdqDxVR9OYU43wxlrLvDKK-tqbt_qHP0Djd0DKk4c/edit?usp=sharing) |
+| OS image | Bookworm OS for IRIV Edge AI (from the product page) | [Google Drive](https://drive.google.com/file/d/1JjVeKVUSM2XcbTG6yrLtcOxo9jgXMvW-/view?usp=sharing) |
+| Datasheet Rev 1.0, Jul 2025 | Archived copy used for this wiki | [PDF](../../../sources/manuals/IRIV%20EdgeAI%20CM5%20Datasheet.pdf) |
 | Product Page | Official product page with specifications and ordering | [Cytron Product Page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-edge-ai-cm5) |
 
 ## Tutorials
@@ -22,7 +26,7 @@ See **[Tutorials](./tutorials.md)** for all Cytron tutorials that use the IRIV E
 
 | File | Description | Status |
 |------|-------------|--------|
-| 3D CAD | Mechanical 3D model for enclosure design | Check the [product page](https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-edge-ai-cm5) Resources |
+| 3D CAD | Mechanical 3D model for enclosure design | Not linked on the product page yet — ask [support@cytron.io](mailto:support@cytron.io) |
 | Dimension Drawing | Detailed mechanical drawings | Available in Datasheet |
 
 ## Application Notes

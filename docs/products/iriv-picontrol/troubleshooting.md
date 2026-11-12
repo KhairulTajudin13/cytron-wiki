@@ -1,6 +1,8 @@
 ---
-title: Troubleshooting
+title: "IRIV PiControl Troubleshooting"
+sidebar_label: "Troubleshooting"
 sidebar_position: 10
+description: "Common issues and solutions for IRIV PiControl operation."
 ---
 
 # Troubleshooting
@@ -125,9 +127,9 @@ Common issues and solutions for IRIV PiControl operation.
      ```bash
      ls -l /usr/local/bin/iriv_pi_control/background_script.py
      ```
-   - Manually run script to test:
+   - Manually run the script to see any error messages (stop the background service first if it is already running, so the two copies don't fight over the OLED):
      ```bash
-     python3 /usr/local/bin/iriv_pi_control/background_script.py
+     sudo python3 /usr/local/bin/iriv_pi_control/background_script.py
      ```
 
 4. **I2C device not detected**
@@ -141,15 +143,19 @@ Common issues and solutions for IRIV PiControl operation.
 
 **Verify:**
 - Background script is running (see above)
-- Button is not held for 5+ seconds (this triggers shutdown instead)
+- Button is not held down too long — per Cytron's tutorial, holding it for about 5 seconds shuts the unit down
 
 ## Ethernet and Network Issues
 
-### eth1 (10/100M Ethernet) Not Present
+### eth1, USB Ports or RS485/RS232 Missing
+
+The USB 2.0 ports, eth1 (10/100M), RS485 (`/dev/ttyACM0`), RS232 (`/dev/ttyACM1`) and the mini PCIe USB all sit behind the same onboard USB hub, so they usually disappear together.
 
 **Symptoms:**
 - Only eth0 appears in `ip addr` output
-- eth1 missing
+- eth1, USB devices or `/dev/ttyACM*` missing
+
+**Also check:** the internal Boot/Debug switch is on **Debug** for normal running.
 
 **Solution:**
 - Verify USB host is enabled in config.txt:

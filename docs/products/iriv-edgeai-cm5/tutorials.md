@@ -1,5 +1,6 @@
 ---
-title: Tutorials
+title: "IRIV EdgeAI CM5 Tutorials"
+sidebar_label: "Tutorials"
 sidebar_position: 9
 description: Cytron AI and vision tutorials for the IRIV EdgeAI CM5 — object detection, YOLO, PPE detection, Mediapipe and more.
 ---

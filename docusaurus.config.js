@@ -132,7 +132,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Cytron Technologies. Built with Docusaurus.`,
       },
       prism: {
-        theme: prismThemes.github,
+        theme: prismThemes.vsLight,
         darkTheme: prismThemes.dracula,
       },
     }),

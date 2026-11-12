@@ -1,6 +1,8 @@
 ---
-title: Software Support
+title: "IRIV IO Controller Software Support"
+sidebar_label: "Software Support"
 sidebar_position: 7
+description: "Software platforms and communication protocols supported by the IRIV IO Controller."
 ---
 
 # Software Support
@@ -67,7 +69,7 @@ The default firmware is not described in the datasheet. Confirm the firmware ver
 **Maximum Baud Rate:** 500 kbps
 **Function:** IO expansion and pulse counting
 
-Cytron also publishes a [Modbus Configuration Tool tutorial](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup) for setting the slave ID and baud rate.
+This matches Cytron's open-source [Modbus IO Expander example](#modbus-io-expander-example) (register map below). Cytron also publishes a [Modbus Configuration Tool tutorial](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup) for setting the slave ID and baud rate.
 
 ### MODBUS TCP
 
@@ -103,6 +105,87 @@ The W5500 provides hardwired support for:
 - ARP (Address Resolution Protocol)
 - IGMP (Internet Group Management Protocol)
 - PPPoE (Point-to-Point Protocol over Ethernet)
+
+## CircuitPython Pin Names
+
+The official CircuitPython build defines friendly names in the `board` module, so you don't need GPIO numbers:
+
+| `board` name | Function | GPIO |
+|---|---|---|
+| `DI0` … `DI10` | Digital inputs | GP0–GP10 |
+| `DO0` … `DO3` | Digital outputs | GP12–GP15 |
+| `AN0`, `AN1` (also `A0`, `A1`) | Analog inputs | GP26, GP27 |
+| `BUTTON` (`BTN`) | User button (reads 0 when pressed) | GP28 |
+| `LED` | USR LED | GP29 |
+| `BUZZER` | Passive buzzer (use PWM) | GP11 |
+| `TX`, `RX`, `RS485` (UART object) | RS485 | GP24, GP25 |
+| `SDA`, `SCL`, `I2C` | RTC (PCF85063A at 0x51) | GP16, GP17 |
+| `MOSI`, `MISO`, `SCK`, `W5500_CS`, `W5500_INT`, `W5500_RST` | W5500 Ethernet | GP19, GP20, GP22, GP21, GP18, GP23 |
+
+### Example: Digital I/O and Analog Input
+
+```python
+import time
+import board
+import digitalio
+import analogio
+
+di0 = digitalio.DigitalInOut(board.DI0)
+di0.direction = digitalio.Direction.INPUT
+
+do0 = digitalio.DigitalInOut(board.DO0)
+do0.direction = digitalio.Direction.OUTPUT
+
+an0 = analogio.AnalogIn(board.AN0)   # AN-IN switch for AN0 set to Voltage
+an1 = analogio.AnalogIn(board.AN1)   # AN-IN switch for AN1 set to Current
+
+SUPPLY_MV = 3320  # measured ADC reference, about 3.3 V
+
+while True:
+    do0.value = di0.value  # DI0 active -> close DO0
+
+    an0_mv = an0.value * SUPPLY_MV / 65536 * 16 / 5           # voltage mode, mV
+    an1_ua = an1.value * SUPPLY_MV / 65536 * 16 / 5 / 248 * 1000  # current mode, uA
+    print("DI0:", di0.value, "AN0:", round(an0_mv), "mV", "AN1:", round(an1_ua), "uA")
+    time.sleep(1)
+```
+
+The analog scaling follows Cytron's [analog_input.py example](https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller/tree/main/examples/circuitpython/analog_input): pin voltage × 16/5 gives the input voltage, and ÷ 248 Ω gives the current. Note that this example reads AN0 in voltage mode and AN1 in current mode at the same time.
+
+## Modbus IO Expander Example
+
+Cytron's [Modbus IO Expander example](https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller/tree/main/examples/circuitpython/modbus_io_expander) (CircuitPython, tested on CircuitPython 9.2.8) turns the IRIV IO Controller into a Modbus RTU (RS485) or Modbus TCP (Ethernet) I/O module with 5 pulse counters.
+
+**Setup:** load CircuitPython, copy **either** the `source` **or** the `bin` folder contents to the `CIRCUITPY` drive, then reboot. The USR LED blinks when the code is running. Settings are in `settings.toml`:
+
+| Setting | Default | Notes |
+|---|---|---|
+| `MODBUS_MODE` | `"RTU"` | `"RTU"` (RS485) or `"TCP"` (Ethernet) |
+| `MODBUS_RTU_BAUDRATE` | 9600 | Up to 115200 |
+| `MODBUS_RTU_SLAVE_ADDRESS` | 1 | 1–247 |
+| `DHCP` | 1 | TCP mode: set 0 and fill `IP_ADDRESS`, `SUBNET_MASK`, `GATEWAY_ADDRESS`, `DNS_SERVER` for a static IP |
+
+In TCP mode the slave ID is fixed at 255 — address devices by IP. Typical Modbus TCP response time is about 20 ms.
+
+**Register map**
+
+| Address (dec) | Data | Access | Function code |
+|---|---|---|---|
+| 0–10 | DI0–DI10 | Read | FC2 Read Discrete Inputs |
+| 256–259 | DO0–DO3 | Read/Write | FC1 / FC5 / FC15 (coils) |
+| 512, 513 | AN0, AN1 voltage, 0–10560 mV | Read | FC4 Read Input Registers |
+| 528, 529 | AN0, AN1 current, 0–42580 µA | Read | FC4 |
+| 768–772 | Counter enable for DI1, DI3, DI5, DI7, DI9 | Read/Write | FC1 / FC5 / FC15 |
+| 784–788 | Counter reset for DI1, DI3, DI5, DI7, DI9 | Read/Write | FC1 / FC5 / FC15 |
+| 1024–1033 | 32-bit counters for DI1, DI3, DI5, DI7, DI9 (high word, then low word) | Read | FC4 |
+| 3840, 3841 | Model name ("IO", "C") | Read | FC4 |
+| 3856–3858 | Firmware version major / minor / patch | Read | FC4 |
+
+- The voltage/current mode must also be set on the AN-IN switches.
+- Enabling a counter disables that DI as a normal input. Read the high and low counter words in one request.
+- Supported function codes: 1, 2, 3, 4, 5, 6, 15, 16.
+
+An importable Node-RED flow that reads this map from IRIV PiControl is on [PiControl Example Flows](../iriv-picontrol/node-red/example-flows.md).
 
 ## Firmware Upload
 

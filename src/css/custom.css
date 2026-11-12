@@ -6,14 +6,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* Cytron brand blue (from the Cytron logo), darkened for text contrast */
-  --ifm-color-primary: #13799f;
-  --ifm-color-primary-dark: #116d8f;
-  --ifm-color-primary-darker: #106787;
-  --ifm-color-primary-darkest: #0d556f;
-  --ifm-color-primary-light: #1585af;
-  --ifm-color-primary-lighter: #168bb7;
-  --ifm-color-primary-lightest: #1a9dcf;
+  /* Cytron brand blue (from the Cytron logo), darkened to pass WCAG AA (5.2:1 on light grey) */
+  --ifm-color-primary: #116d8f;
+  --ifm-color-primary-dark: #0f6281;
+  --ifm-color-primary-darker: #0e5d7a;
+  --ifm-color-primary-darkest: #0c4c64;
+  --ifm-color-primary-light: #13789d;
+  --ifm-color-primary-lighter: #137ea5;
+  --ifm-color-primary-lightest: #1690bd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -31,3 +31,16 @@
 
 /* Wide spec tables scroll inside themselves on small screens */
 .markdown table { display: block; overflow-x: auto; }
+
+/* Search shortcut hint (Ctrl K) readable in the navbar */
+.navbar kbd {
+  color: #525860;
+}
+
+/* Links inside text are underlined so they don't rely on colour alone (WCAG 1.4.1) */
+.markdown p a,
+.markdown li a,
+.markdown td a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

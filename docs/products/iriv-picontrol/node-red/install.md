@@ -1,6 +1,7 @@
 ---
 title: Node-RED Installation
 sidebar_position: 2
+description: "Overview of Node-RED installation on IRIV PiControl."
 ---
 
 # Node-RED Installation
@@ -77,8 +78,8 @@ Dashboard customization requires Node-RED flow editing.
 Common Node-RED nodes for industrial applications:
 
 **GPIO Control:**
-- `node-red-node-pi-gpio` - Raspberry Pi GPIO nodes
-- Pre-installed on Raspberry Pi OS with Node-RED
+- `node-red-node-pi-gpio` - Raspberry Pi GPIO nodes, installed by the Node-RED Raspberry Pi install script
+- The `rpi-gpio` nodes use **physical header pin numbers**, not GPIO (BCM) numbers — e.g. DI0 = GPIO13 = pin 33, DO0 = GPIO23 = pin 16 (see [Example Flows](./example-flows.md))
 
 **Serial Communication:**
 - `node-red-node-serialport` - RS232/RS485 communication
@@ -87,27 +88,24 @@ Common Node-RED nodes for industrial applications:
 **I2C Devices:**
 - Custom nodes or function nodes with I2C libraries
 
+**Modbus (RS485 sensors and meters):**
+- `node-red-contrib-modbus` - Modbus RTU/TCP read and write nodes, used by Cytron's Modbus tutorials
+
 **Dashboard:**
-- `node-red-dashboard` - Web-based UI components
+- `node-red-dashboard` (Dashboard 1, URL `/ui`) - used by Cytron's Quick Start image and tutorials. It is **deprecated** by the Node-RED project and no longer maintained
+- `@flowfuse/node-red-dashboard` (Dashboard 2.0, URL `/dashboard`) - the maintained successor; use it for new projects
 
 Install extra nodes from the Node-RED editor (**Menu → Manage palette → Install**), or from the shell in `~/.node-red`, e.g. `npm install node-red-dashboard`, then restart Node-RED.
 
 ## Configuration Files
 
-**Node-RED user directory:**
-```
-/home/pi/.node-red/
-```
+Node-RED keeps its files in the `.node-red` folder of the user that runs it. Raspberry Pi OS Bookworm has no default `pi` user — it is the user you created when flashing the OS.
 
-**Flows file:**
-```
-/home/pi/.node-red/flows.json
-```
-
-**Settings file:**
-```
-/home/pi/.node-red/settings.js
-```
+| File | Path |
+|---|---|
+| User directory | `~/.node-red/` |
+| Flows | `~/.node-red/flows.json` |
+| Settings | `~/.node-red/settings.js` |
 
 ## Auto-Start Configuration
 
@@ -150,7 +148,7 @@ http://[IP_ADDRESS]:1880
 **Access Point mode:**
 When IRIV PiControl is in AP mode:
 1. Connect to WiFi SSID: `iriv`
-2. Password: `iriv1234`
+2. Password: `iriv1234` (default — change it before deploying on site)
 3. Navigate to: `http://iriv.local:1880/ui`
 
 ## Next Steps

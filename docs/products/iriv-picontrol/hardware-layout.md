@@ -1,11 +1,13 @@
 ---
-title: Hardware Layout
+title: "IRIV PiControl Hardware Layout"
+sidebar_label: "Hardware Layout"
 sidebar_position: 3
+description: "IRIV PiControl external layout: ports, terminals, buttons, LEDs, USB-C boot/debug modes and dimensions."
 ---
 
 # Hardware Layout
 
-![IRIV PiControl External Layout](/img/products/iriv-picontrol/external-layout.png)
+![IRIV PiControl External Layout](/img/products/iriv-picontrol/external-layout.webp)
 
 *External layout showing all ports, terminals, buttons, LEDs, and connectors on the IRIV PiControl enclosure.*
 
@@ -69,8 +71,8 @@ The USB-C port function is selected via the internal **Boot/Debug Mode Switch**.
 |-----|----------|---------|
 | PWR | CM4 power status (red) | Hardware-controlled |
 | ACT | CM4 SD/eMMC activity (green) | Hardware-controlled |
-| LED0 | User-programmable (blue/white) | GPIO20 |
-| LED1 | User-programmable (blue/white) | GPIO21 |
+| LED0 | User-programmable | GPIO20 |
+| LED1 | User-programmable | GPIO21 |
 | M.2 | NVMe SSD activity | Hardware-controlled |
 
 ## Button Functions

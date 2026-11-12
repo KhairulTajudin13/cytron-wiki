@@ -37,6 +37,11 @@ IRIV PiControl is sold in two versions: **CM4** (`IRIV-PICL`, Raspberry Pi Compu
 - **Reset button** is wired to CM5 `GLOBAL_EN`: hard reset, and wakes the CM5 after shutdown.
 - **Front-panel LEDs:** the CM5 user manual shows **mPCIe PWR** and **mPCIe STAT** LEDs. The shared datasheet (whose pictures are of the CM4 version) lists 4G PWR / WWAN LEDs and a Micro SIM socket instead. 4G/SIM hardware on CM5 is not confirmed.
 
+## Documentation
+
+- [IRIV PiControl CM5 User Manual (live, Google Docs)](https://docs.google.com/document/d/1bbRILpRxjq1vMsS7YbCQ24jX8AQsf40NUcQ_WF_xHCc/edit?usp=sharing)
+- Terminal pinouts are the same as CM4: see [Terminal 1](./terminal-1.md) and [Terminal 2](./terminal-2.md). The CM4 layout diagrams on the [Hardware Layout](./hardware-layout.md) page also apply; the CM5 unit carries a CM5 marking.
+
 ## Still to be confirmed with Cytron
 
 - Whether `dtoverlay=dwc2,dr_mode=host` (set by the setup script) is needed on CM5. The CM5 manual repeats the CM4 text.

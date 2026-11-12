@@ -1,6 +1,8 @@
 ---
-title: Getting Started
+title: "IRIV IO Controller Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 2
+description: "High-level guide to set up and configure your IRIV IO Controller for first use."
 ---
 
 # Getting Started

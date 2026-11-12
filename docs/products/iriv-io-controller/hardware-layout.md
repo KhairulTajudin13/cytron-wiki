@@ -1,11 +1,13 @@
 ---
-title: Hardware Layout
+title: "IRIV IO Controller Hardware Layout"
+sidebar_label: "Hardware Layout"
 sidebar_position: 3
+description: "IRIV IO Controller front panel, buttons, LEDs, Terminal 1 and Terminal 2 pinouts, DIP switches and dimensions."
 ---
 
 # Hardware Layout
 
-![IRIV IO Controller External Layout](/img/products/iriv-io-controller/external-layout.png)
+![IRIV IO Controller External Layout](/img/products/iriv-io-controller/external-layout.webp)
 
 *External layout showing all buttons, terminals, LEDs, and connectors on the IRIV IO Controller enclosure.*
 

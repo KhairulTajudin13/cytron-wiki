@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Software Setup"
+sidebar_label: "Software Setup"
 sidebar_position: 6
-title: Software Setup
+description: "This page covers operating system compatibility, boot configuration, and software setup for the IRIV EdgeAI CM5."
 ---
 
 # Software Setup
@@ -167,9 +169,9 @@ The LED drivers support PWM for brightness control. Output voltage follows VIN.
 
 ```bash
 # Power cycle mPCIe module
-pinctrl set 6 op dl  # Power off
+pinctrl set 6 op dl  # toggle mini PCIe power (on/off polarity not confirmed)
 sleep 1
-pinctrl set 6 op dh  # Power on
+pinctrl set 6 op dh
 
 # Reset mPCIe module
 pinctrl set 5 op dl  # Assert reset

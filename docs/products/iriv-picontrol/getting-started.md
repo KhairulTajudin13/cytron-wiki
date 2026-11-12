@@ -1,6 +1,8 @@
 ---
-title: Getting Started
+title: "IRIV PiControl Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 2
+description: "Task-based guide to set up and configure your IRIV PiControl for first use."
 ---
 
 # Getting Started
@@ -68,6 +70,10 @@ The access-point details and the `iriv.local` dashboard come from Cytron's Quick
 3. Password: **"iriv1234"**
 4. Note: This network has no internet connection
 
+:::warning Change the default password
+`iriv1234` is published in Cytron's tutorials, so anyone nearby can join this network. Change the access-point password before installing the unit on site.
+:::
+
 **Standard Network Mode:**
 1. Connect Gigabit Ethernet to **eth0** (mapped to CM4 default Ethernet)
 2. Connect 10/100M Ethernet to **eth1** (USB Ethernet controller)
@@ -89,6 +95,15 @@ Run the configuration script to enable all IRIV PiControl features.
 ```bash
 curl -L tinyurl.com/setup-iriv-picontrol | sudo bash
 ```
+
+:::tip Prefer to check the script first?
+The command runs a script from a short link with root rights. To read it before running it:
+```bash
+curl -L tinyurl.com/setup-iriv-picontrol -o setup-iriv-picontrol.sh
+less setup-iriv-picontrol.sh
+sudo bash setup-iriv-picontrol.sh
+```
+:::
 
 **Important:** Reboot the CM4 when the script completes.
 

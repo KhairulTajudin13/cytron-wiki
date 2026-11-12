@@ -1,6 +1,8 @@
 ---
+title: "IRIV EdgeAI CM5 Interfaces and Mapping"
+sidebar_label: "Interfaces and Mapping"
 sidebar_position: 5
-title: Interfaces and Mapping
+description: "This page provides detailed specifications for all interfaces on the IRIV EdgeAI CM5 and their GPIO/system mappings."
 ---
 
 # Interfaces and Mapping

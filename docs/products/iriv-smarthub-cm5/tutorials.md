@@ -1,5 +1,6 @@
 ---
-title: Tutorials
+title: "IRIV SmartHub CM5 Tutorials"
+sidebar_label: "Tutorials"
 sidebar_position: 7
 description: Cytron tutorials and projects for the IRIV SmartHub CM5.
 ---

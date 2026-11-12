@@ -1,6 +1,8 @@
 ---
-title: I/O Reference
+title: "IRIV IO Controller I/O Reference"
+sidebar_label: "I/O Reference"
 sidebar_position: 5
+description: "Complete reference for digital inputs, digital outputs, and analog inputs on the IRIV IO Controller."
 ---
 
 # I/O Reference
