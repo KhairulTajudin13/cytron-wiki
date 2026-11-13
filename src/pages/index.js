@@ -31,6 +31,7 @@ const quickLinks = [
     text: 'Cytron tutorials, Node-RED and AI vision projects.',
     links: [
       ['Node-RED on PiControl', '/docs/products/iriv-picontrol/node-red/'],
+      ['IRIV EdgeAI Studio (no-code AI)', '/docs/products/iriv-edgeai-cm5/edgeai-studio/'],
       ['EdgeAI AI Quickstart', '/docs/products/iriv-edgeai-cm5/ai-quickstart'],
       ['All Cytron tutorials', 'https://my.cytron.io/tutorial'],
     ],

@@ -9,6 +9,18 @@ description: Cytron AI and vision tutorials for the IRIV EdgeAI CM5 — object d
 
 Cytron tutorials that use the IRIV EdgeAI CM5. They are good for AI setup and project ideas; for specs, this wiki and the datasheet take priority.
 
+## IRIV EdgeAI Studio (No-Code)
+
+Step-by-step tutorials for the no-code [IRIV EdgeAI Studio](./edgeai-studio/) are in this wiki:
+
+| Tutorial | Level |
+|---|---|
+| [Getting Started with IRIV EdgeAI Studio](./edgeai-studio/getting-started.md) | — |
+| [AI People Counting](./edgeai-studio/tutorials/people-counting.md) | — |
+| [AI Object Detection](./edgeai-studio/tutorials/object-detection.md) | — |
+| [AI Restricted Zone](./edgeai-studio/tutorials/restricted-zone.md) | — |
+| [AI Smart Parking](./edgeai-studio/tutorials/smart-parking.md) | — |
+
 ## Getting Started
 
 | Tutorial | Level |

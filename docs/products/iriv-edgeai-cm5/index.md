@@ -49,6 +49,7 @@ Based on the official datasheet, the IRIV EdgeAI CM5 is designed for:
 | [Troubleshooting](./troubleshooting) | Common issues and solutions |
 | [Tutorials](./tutorials) | Cytron AI and vision tutorials |
 | [Downloads](./downloads) | Datasheets, manuals, and resources |
+| [IRIV EdgeAI Studio](./edgeai-studio/) | No-code AI vision software: user manual, tutorials and troubleshooting |
 
 ## Product Link
 
