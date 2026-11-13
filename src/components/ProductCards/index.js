@@ -38,6 +38,17 @@ export const products = [
   },
 ];
 
+export const software = [
+  {
+    title: 'IRIV EdgeAI Studio',
+    tag: 'Runs on IRIV EdgeAI CM5',
+    link: '/docs/software/iriv-edgeai-studio/',
+    image: '/img/software/iriv-edgeai-studio/image142.webp',
+    description:
+      'No-code AI vision in the browser: people counting, object detection, restricted zones and smart parking, built by wiring nodes.',
+  },
+];
+
 export const kits = [
   {
     title: 'IRIV EdgeAI Safety Box Kit',

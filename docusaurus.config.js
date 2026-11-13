@@ -88,6 +88,7 @@ const config = {
             label: 'Products',
           },
           {to: '/docs/kits/', label: 'Kits & Solutions', position: 'left'},
+          {to: '/docs/software/', label: 'Software', position: 'left'},
           {
             type: 'search',
             position: 'right',
@@ -110,6 +111,7 @@ const config = {
               {label: 'IRIV SmartHub CM5', to: '/docs/products/iriv-smarthub-cm5/'},
               {label: 'IRIV EdgeAI CM5', to: '/docs/products/iriv-edgeai-cm5/'},
               {label: 'Kits & Solutions', to: '/docs/kits/'},
+              {label: 'Software', to: '/docs/software/'},
             ],
           },
           {

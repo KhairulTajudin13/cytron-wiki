@@ -13,7 +13,7 @@ Every row your workflow saves can be browsed, queried and exported. The Dataset 
 
 Go to **Data > Database** to browse, search and export the rows your workflow saves.
 
-![Database page](/img/products/iriv-edgeai-cm5/edgeai-studio/image4.webp)
+![Database page](/img/software/iriv-edgeai-studio/image4.webp)
 
 The Database page consists of several sections that you should be familiar with.
 
@@ -35,7 +35,7 @@ The Database page consists of several sections that you should be familiar with.
 
     4. **Search rows** - find values in the open table.
 
-    ![Table toolbar buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image201.webp)
+    ![Table toolbar buttons](/img/software/iriv-edgeai-studio/image201.webp)
 
 6. **Edit / Delete Table** - Change or remove the open table.
 7. **Summary** - Total Rows, Columns, Table Size and Last updated for the open table.
@@ -46,7 +46,7 @@ The Database page consists of several sections that you should be familiar with.
 
 Open the **SQL Playground** tab, type a read-only query and click **Run query**.
 
-![SQL Playground](/img/products/iriv-edgeai-cm5/edgeai-studio/image93.webp)
+![SQL Playground](/img/software/iriv-edgeai-studio/image93.webp)
 
 1. **Editor / History / Saved** - Write a query in Editor, or reopen earlier and saved queries.
 
@@ -62,7 +62,7 @@ Open the **SQL Playground** tab, type a read-only query and click **Run query**.
 
 5. **SQL Snippets** - Use the Basic, Numbers, Dates, Text and Advanced tabs, then click a button to insert SQL for you.
 
-    ![SQL snippet buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image56.webp)
+    ![SQL snippet buttons](/img/software/iriv-edgeai-studio/image56.webp)
 
 6. **Tables** - The tables you can query (e.g. events, dataset_rows, demo).
 
@@ -80,7 +80,7 @@ Clear the query box before typing a new query. Leftover lines from an earlier qu
 
 Go to **AI Preparation > Dataset** to capture raw photos and clips for training your own model. Detection must be running, because capture uses the live camera stream.
 
-![Dataset page](/img/products/iriv-edgeai-cm5/edgeai-studio/image77.webp)
+![Dataset page](/img/software/iriv-edgeai-studio/image77.webp)
 
 1. **NVMe Status and Dataset Library**
 
@@ -96,7 +96,7 @@ Go to **AI Preparation > Dataset** to capture raw photos and clips for training 
     - **Start / stop or Fixed length** - record until you press Stop, or for a fixed length.
     - **Take photo / Start recording** - take a single picture or record a clip.
 
-    ![Capture controls](/img/products/iriv-edgeai-cm5/edgeai-studio/image130.webp)
+    ![Capture controls](/img/software/iriv-edgeai-studio/image130.webp)
 
 4. **Where It Goes** - Photos are saved to `/mnt/nvme/dataset_image` and clips to `/mnt/nvme/dataset_rec`.
 5. **Latest Photos / Latest Clips** - What you have captured so far, with the total count.
@@ -105,7 +105,7 @@ Go to **AI Preparation > Dataset** to capture raw photos and clips for training 
 
 Open **Dataset Library** to review, download or delete captured sessions.
 
-![Dataset Library](/img/products/iriv-edgeai-cm5/edgeai-studio/image123.webp)
+![Dataset Library](/img/software/iriv-edgeai-studio/image123.webp)
 
 1. **Capture** - Returns to the Dataset page to capture more.
 

@@ -10,7 +10,7 @@ description: "This page covers operating system compatibility, boot configuratio
 This page covers operating system compatibility, boot configuration, and software setup for the IRIV EdgeAI CM5.
 
 :::tip No-code AI vision
-For people counting, object detection, restricted zones and smart parking without writing code, use [IRIV EdgeAI Studio](./edgeai-studio/) in a web browser.
+For people counting, object detection, restricted zones and smart parking without writing code, use [IRIV EdgeAI Studio](../../software/iriv-edgeai-studio/) in a web browser.
 :::
 
 ## Operating System

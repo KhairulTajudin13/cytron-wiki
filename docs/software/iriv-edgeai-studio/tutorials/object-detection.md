@@ -43,7 +43,7 @@ If you are new to IRIV EdgeAI Studio, follow [Getting Started](../getting-starte
 
 Open IRIV EdgeAI Studio in your browser and select the **AI Object Detection** system. It opens on the **Dashboard** page.
 
-![AI Object Detection dashboard](/img/products/iriv-edgeai-cm5/edgeai-studio/image155.webp)
+![AI Object Detection dashboard](/img/software/iriv-edgeai-studio/image155.webp)
 
 ### The sidebar
 
@@ -75,7 +75,7 @@ The bar along the bottom shows live board health: **CPU** load, **RAM** use, **C
 
 Go to **AI Configuration > AI Models**. The page has two panels: **Default Model** on the left and **Custom Models** on the right.
 
-![AI Models page](/img/products/iriv-edgeai-cm5/edgeai-studio/image173.webp)
+![AI Models page](/img/software/iriv-edgeai-studio/image173.webp)
 
 ### Default models
 
@@ -102,7 +102,7 @@ When the model is set, click **Camera Setup** at the top right to move on.
 
 On **Camera Setup**, the system already has a **Camera 1** entry, but no video source yet. A blue **No camera connected** banner says detection cannot start until one is set up.
 
-![Camera Setup with No camera connected](/img/products/iriv-edgeai-cm5/edgeai-studio/image32.webp)
+![Camera Setup with No camera connected](/img/software/iriv-edgeai-studio/image32.webp)
 
 1. Plug the USB camera into the IRIV board.
 
@@ -120,7 +120,7 @@ On **Camera Setup**, the system already has a **Camera 1** entry, but no video s
 
 8. Click **Save all** at the top right.
 
-![Add a camera window, USB tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image18.webp)
+![Add a camera window, USB tab](/img/software/iriv-edgeai-studio/image18.webp)
 
 | Option                    | Accuracy and load                 | Notes                                                                                    |
 |---------------------------|-----------------------------------|------------------------------------------------------------------------------------------|
@@ -139,11 +139,11 @@ The **Overlay** panel adds **link line**, **guard zone** and **motion tracking**
 
 Click **Workflow** to open the node editor. The AI Object Detection system comes with its workflow already built, so you only need to understand how the pieces connect.
 
-![How the Object Detection workflow flows](/img/products/iriv-edgeai-cm5/edgeai-studio/image108.webp)
+![How the Object Detection workflow flows](/img/software/iriv-edgeai-studio/image108.webp)
 
 The top row turns each frame into a decision; the two rows below show it on the Dashboard and store it in the database.
 
-![AI Object Detection workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image172.webp)
+![AI Object Detection workflow](/img/software/iriv-edgeai-studio/image172.webp)
 
 The header shows the workflow state: **AI off**, **workflow running (detection off)**, and **saved** with **auto-save** ticked. It also shows that the built-in **MQTT broker** is running on port 1883. The node palette on the left lists every node group, from **Source** and **Filters** to **Database**, **Dashboard** and **Integration**.
 
@@ -155,7 +155,7 @@ The header shows the workflow state: **AI off**, **workflow running (detection o
 
 - **Object Detection** (AI) counts the filtered objects. Its **What** field is set to chair, person, and **Zone (optional)** is left empty so it detects in the whole view. It has three outputs: **found**, **chair** (chair count) and **person** (person count).
 
-![Input and AI nodes](/img/products/iriv-edgeai-cm5/edgeai-studio/image82.webp)
+![Input and AI nodes](/img/software/iriv-edgeai-studio/image82.webp)
 
 - The **chair** count is wired to **input1** and the **person** count to **input2** of the **If / Else if** node. It has three outputs, one per case, and only the first case that is true fires.
 
@@ -173,7 +173,7 @@ The header shows the workflow state: **AI off**, **workflow running (detection o
 
 - Three **Set Variable** nodes (SET) each take one branch of the If / Else if as **In**, plus a variable and a value. They write the result into **object_type** and **object_type_2**.
 
-![Decision nodes: Set Variable and Variable](/img/products/iriv-edgeai-cm5/edgeai-studio/image102.webp)
+![Decision nodes: Set Variable and Variable](/img/software/iriv-edgeai-studio/image102.webp)
 
 - Each **Set Variable** node has three inputs: **In** (the If / Else if branch that tells it when to run), **Variable** (which variable to write) and **Value** (what to write). Its **output** sends the result on.
 
@@ -193,7 +193,7 @@ The header shows the workflow state: **AI off**, **workflow running (detection o
 
 - On the Analytics side, **People Detected** and **Chair Detected** (CARD) show the totals, **Object Detection Log** (CARD) lists each row, and **People Detection** (CHRT) is an area chart with two series, one per wired value: people and chairs.
 
-![Dashboard and database nodes](/img/products/iriv-edgeai-cm5/edgeai-studio/image110.webp)
+![Dashboard and database nodes](/img/software/iriv-edgeai-studio/image110.webp)
 
 In the chart node, **Series 1** (blue) is people detected and **Series 2** (green) is chair detected. Click **+** to add another series.
 
@@ -231,7 +231,7 @@ Click **Analytics** on the Dashboard, or open it from the sidebar. Pick a date r
 
 - **Object Detection Log** lists each logged row with **When**, **object type**, **people detected** and **chair detected**.
 
-![Object Detection analytics](/img/products/iriv-edgeai-cm5/edgeai-studio/image63.webp)
+![Object Detection analytics](/img/software/iriv-edgeai-studio/image63.webp)
 
 Click **Edit layout** to rearrange the cards, or **Footage** to review recorded clips.
 
@@ -251,7 +251,7 @@ The summary cards show **Total Rows**, **Columns**, **Table Size** and **Last up
 
 Go to **Diagnostics > Events Logs**. Each time a rule fires, detection writes an event here. Filter by **Severity**, **Type**, **Zone**, **Camera** and **Date range**, and export with **Export CSV** or **Export LOG**. How long events are kept is set in [Data Retention](../settings/system-and-data-retention.md#data-retention).
 
-![Events Log](/img/products/iriv-edgeai-cm5/edgeai-studio/image10.webp)
+![Events Log](/img/software/iriv-edgeai-studio/image10.webp)
 
 ## Optional: Capture a dataset for a custom model
 
@@ -267,7 +267,7 @@ If you want to detect something that is not in the 80 COCO classes, such as a sp
 
 5. Click **Take photo** for single images, or **Start recording** for a clip.
 
-![Dataset page](/img/products/iriv-edgeai-cm5/edgeai-studio/image19.webp)
+![Dataset page](/img/software/iriv-edgeai-studio/image19.webp)
 
 Photos are saved to `/mnt/nvme/dataset_image` and clips to `/mnt/nvme/dataset_rec`. The **Latest photos** and **Latest clips** panels show what you have captured.
 

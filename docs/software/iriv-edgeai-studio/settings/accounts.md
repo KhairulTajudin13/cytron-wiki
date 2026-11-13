@@ -13,7 +13,7 @@ Device settings apply to the whole IRIV, not one system. Open **Settings** from 
 
 Go to **Settings > Accounts** to manage who can sign in and what they can open.
 
-![Accounts page](/img/products/iriv-edgeai-cm5/edgeai-studio/image44.webp)
+![Accounts page](/img/software/iriv-edgeai-studio/image44.webp)
 
 The Accounts page consists of several sections that you should be familiar with.
 
@@ -38,7 +38,7 @@ The Accounts page consists of several sections that you should be familiar with.
     - **Change email** - set a new email address.
     - **Remove email** - remove the email (Set email if it has none).
 
-    ![Account buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image191.webp)
+    ![Account buttons](/img/software/iriv-edgeai-studio/image191.webp)
 
 6. **Systems Access and Activity**
 
@@ -48,7 +48,7 @@ The Accounts page consists of several sections that you should be familiar with.
 
 ## Roles
 
-![Roles tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image86.webp)
+![Roles tab](/img/software/iriv-edgeai-studio/image86.webp)
 
 1. **Roles Sub-tab** - Assign a role to describe each account.
 
@@ -64,7 +64,7 @@ A role is only a label. Which accounts can open is determined by their Systems a
 
 ## Sessions
 
-![Sessions tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image127.webp)
+![Sessions tab](/img/software/iriv-edgeai-studio/image127.webp)
 
 1. **Sessions Sub-tab** - Lists every live sign-in on the device.
 

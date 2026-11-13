@@ -47,7 +47,7 @@ From the Systems page, open the **AI Restricted Zone** system. It opens on the *
 
 Before detection starts, the video shows *Detection is stopped* and the Violation card shows **AI OFFLINE**.
 
-![AI Restricted Zone dashboard before detection](/img/products/iriv-edgeai-cm5/edgeai-studio/image5.webp)
+![AI Restricted Zone dashboard before detection](/img/software/iriv-edgeai-studio/image5.webp)
 
 | Area          | What it shows                                                                     |
 |-------------------|---------------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ Before detection starts, the video shows *Detection is stopped* and the Violatio
 
 Go to **AI Configuration > AI Models**. The template runs **yolov8s** by default, marked **Active**, which detects the *person* class needed for this system.
 
-![AI Models page with yolov8s active](/img/products/iriv-edgeai-cm5/edgeai-studio/image28.webp)
+![AI Models page with yolov8s active](/img/software/iriv-edgeai-studio/image28.webp)
 
 | Model    | Best for                                                                            |
 |--------------|-----------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ To switch models, click **Add onto this system** on the model you want. Click **
 
 Go to **AI Configuration > Camera Setup**. The template has a **Camera 1** entry but no source yet, so the page shows **No camera connected**.
 
-![Camera Setup with No camera connected](/img/products/iriv-edgeai-cm5/edgeai-studio/image79.webp)
+![Camera Setup with No camera connected](/img/software/iriv-edgeai-studio/image79.webp)
 
 1. Click **Add a camera** and choose your USB, IP (RTSP) or GigE camera.
 
@@ -89,13 +89,13 @@ The **Overlay** panel can add a link line, guard zone or motion tracking on top 
 
 Go to **AI Configuration > Workflow**. The template's nodes are already wired: detections flow left to right, from the camera to a violation on the dashboard and in the database.
 
-![AI Restricted Zone workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image181.webp)
+![AI Restricted Zone workflow](/img/software/iriv-edgeai-studio/image181.webp)
 
 The node library is on the left, and the template's nodes run left to right from detection to dashboard. The toolbar shows the MQTT broker, AI and workflow status.
 
 ### Detect people inside the zone
 
-![Detection nodes: Detection Stream, Class Filter, Zone Filter, Counter](/img/products/iriv-edgeai-cm5/edgeai-studio/image15.webp)
+![Detection nodes: Detection Stream, Class Filter, Zone Filter, Counter](/img/software/iriv-edgeai-studio/image15.webp)
 
 This is the detection part of the workflow. Detections pass through the Class Filter (person) and Zone Filter, then the Counter counts people inside Zone 1.
 
@@ -114,7 +114,7 @@ If the Zone Filter shows *zone missing - pick one in the inspector*, click the n
 
 ### Raise the violation
 
-![Violation nodes: If / Else if, Violate, Set Variable, database](/img/products/iriv-edgeai-cm5/edgeai-studio/image115.webp)
+![Violation nodes: If / Else if, Violate, Set Variable, database](/img/software/iriv-edgeai-studio/image115.webp)
 
 This is the violation logic. When the count is above 0, the Violate node raises the alert, the Variable nodes set the status, and the violation node saves the status and person ID to the database.
 
@@ -127,7 +127,7 @@ This is the violation logic. When the count is above 0, the Violate node raises 
 
 ### Show it on the dashboard
 
-![Dashboard nodes: Violation Log, total violation chart and tile](/img/products/iriv-edgeai-cm5/edgeai-studio/image7.webp)
+![Dashboard nodes: Violation Log, total violation chart and tile](/img/software/iriv-edgeai-studio/image7.webp)
 
 These are the dashboard nodes. These cards and the area chart feed the Violation Log, hourly chart and Total Violation tile on the Analytics page.
 
@@ -156,7 +156,7 @@ Walk into the zone: the Violate node paints the person's box and the zone, and t
 
 Go to **Overview > Analytics** and pick a day from the date strip, or set a range at the top right.
 
-![Restricted Zone analytics](/img/products/iriv-edgeai-cm5/edgeai-studio/image14.webp)
+![Restricted Zone analytics](/img/software/iriv-edgeai-studio/image14.webp)
 
 *It shows the total violations, an hourly chart and the violation log; all are empty until detection has run.*
 
@@ -170,7 +170,7 @@ Go to **Overview > Analytics** and pick a day from the date strip, or set a rang
 
 Go to **Data > Database** and open the **violation** table. The workflow fills it with one row per alert, in two text columns: status and person_id.
 
-![Database page with the violation table selected](/img/products/iriv-edgeai-cm5/edgeai-studio/image65.webp)
+![Database page with the violation table selected](/img/software/iriv-edgeai-studio/image65.webp)
 
 The table has 0 rows until the first violation is logged.
 

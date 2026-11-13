@@ -11,15 +11,15 @@ Cytron tutorials that use the IRIV EdgeAI CM5. They are good for AI setup and pr
 
 ## IRIV EdgeAI Studio (No-Code)
 
-Step-by-step tutorials for the no-code [IRIV EdgeAI Studio](./edgeai-studio/) are in this wiki:
+Step-by-step tutorials for the no-code [IRIV EdgeAI Studio](../../software/iriv-edgeai-studio/) are in this wiki:
 
 | Tutorial | Level |
 |---|---|
-| [Getting Started with IRIV EdgeAI Studio](./edgeai-studio/getting-started.md) | — |
-| [AI People Counting](./edgeai-studio/tutorials/people-counting.md) | — |
-| [AI Object Detection](./edgeai-studio/tutorials/object-detection.md) | — |
-| [AI Restricted Zone](./edgeai-studio/tutorials/restricted-zone.md) | — |
-| [AI Smart Parking](./edgeai-studio/tutorials/smart-parking.md) | — |
+| [Getting Started with IRIV EdgeAI Studio](../../software/iriv-edgeai-studio/getting-started.md) | — |
+| [AI People Counting](../../software/iriv-edgeai-studio/tutorials/people-counting.md) | — |
+| [AI Object Detection](../../software/iriv-edgeai-studio/tutorials/object-detection.md) | — |
+| [AI Restricted Zone](../../software/iriv-edgeai-studio/tutorials/restricted-zone.md) | — |
+| [AI Smart Parking](../../software/iriv-edgeai-studio/tutorials/smart-parking.md) | — |
 
 ## Getting Started
 

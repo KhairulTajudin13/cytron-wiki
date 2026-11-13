@@ -11,7 +11,7 @@ description: "The IRIV EdgeAI Studio main screen: sidebar, system buttons, notif
 
 After logging in to IRIV EdgeAI Studio, you will be directed to the main interface.
 
-![IRIV EdgeAI Studio Main Interface](/img/products/iriv-edgeai-cm5/edgeai-studio/image223.webp)
+![IRIV EdgeAI Studio Main Interface](/img/software/iriv-edgeai-studio/image223.webp)
 
 *IRIV EdgeAI Studio Main Interface*
 
@@ -21,7 +21,7 @@ The main interface contains several sections that help you navigate the software
 
 The sidebar provides quick access to the system's main navigation features.
 
-![Sidebar Navigation and Toggle Controls](/img/products/iriv-edgeai-cm5/edgeai-studio/image215.webp)
+![Sidebar Navigation and Toggle Controls](/img/software/iriv-edgeai-studio/image215.webp)
 
 *Sidebar Navigation and Toggle Controls*
 
@@ -52,7 +52,7 @@ The System page provides three buttons for managing system configurations.
 
 3. **+ New System** - Create a new system.
 
-![System Management Buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image217.webp)
+![System Management Buttons](/img/software/iriv-edgeai-studio/image217.webp)
 
 *System Management Buttons*
 
@@ -62,7 +62,7 @@ Click the Bell icon to open the notification panel. The panel contains two tabs:
 
 **Inbox** - The **Inbox** tab displays recent activity notifications, including information about the latest system updates.
 
-![Inbox Notification Panel](/img/products/iriv-edgeai-cm5/edgeai-studio/image164.webp)
+![Inbox Notification Panel](/img/software/iriv-edgeai-studio/image164.webp)
 
 *Inbox Notification Panel*
 
@@ -76,7 +76,7 @@ Click the Bell icon to open the notification panel. The panel contains two tabs:
 
 4. **Check for Updates Automatically** - Enable this option to check for updates automatically. When disabled, the system checks for updates only when you click Check Now.
 
-![System Update and Version Management](/img/products/iriv-edgeai-cm5/edgeai-studio/image129.webp)
+![System Update and Version Management](/img/software/iriv-edgeai-studio/image129.webp)
 
 *System Update and Version Management*
 
@@ -98,7 +98,7 @@ IRIV EdgeAI Studio supports up to four systems, four running AI processes, and f
 
 :::
 
-![System Capacity Monitor](/img/products/iriv-edgeai-cm5/edgeai-studio/image6.webp)
+![System Capacity Monitor](/img/software/iriv-edgeai-studio/image6.webp)
 
 *System Capacity Monitor*
 
@@ -120,9 +120,9 @@ Each system card may include the following elements:
 
 If no systems have been created, the System Space displays a message prompting you to create your first system.
 
-![Empty System Space](/img/products/iriv-edgeai-cm5/edgeai-studio/image144.webp)
+![Empty System Space](/img/software/iriv-edgeai-studio/image144.webp)
 
-![System Space and System Cards](/img/products/iriv-edgeai-cm5/edgeai-studio/image205.webp)
+![System Space and System Cards](/img/software/iriv-edgeai-studio/image205.webp)
 
 *System Space and System Cards*
 
@@ -140,7 +140,7 @@ The menu contains the following options:
 
 The currently signed-in account name is displayed at the bottom of the menu.
 
-![Account and Device Power Menu](/img/products/iriv-edgeai-cm5/edgeai-studio/image31.webp)
+![Account and Device Power Menu](/img/software/iriv-edgeai-studio/image31.webp)
 
 *Account and Device Power Menu*
 
@@ -148,37 +148,37 @@ The currently signed-in account name is displayed at the bottom of the menu.
 
 1. On the main page, click the **Bell** icon to open the notifications panel.
 
-![Checking the Current Software Version](/img/products/iriv-edgeai-cm5/edgeai-studio/image97.webp)
+![Checking the Current Software Version](/img/software/iriv-edgeai-studio/image97.webp)
 
 *Checking the Current Software Version*
 
 2. Click **Check Now** to check for the latest software version. If an update is available, the new version will be displayed.
 
-![Available Software Update](/img/products/iriv-edgeai-cm5/edgeai-studio/image232.webp)
+![Available Software Update](/img/software/iriv-edgeai-studio/image232.webp)
 
 *Available Software Update*
 
 3. Click **Update**. A confirmation pop-up will appear.
 
-![Update Confirmation](/img/products/iriv-edgeai-cm5/edgeai-studio/image152.webp)
+![Update Confirmation](/img/software/iriv-edgeai-studio/image152.webp)
 
 *Update Confirmation*
 
 4. Wait for the update to finish. Do not navigate away from the page or interrupt the update process.
 
-![Software Update Progress](/img/products/iriv-edgeai-cm5/edgeai-studio/image156.webp)
+![Software Update Progress](/img/software/iriv-edgeai-studio/image156.webp)
 
 *Software Update Progress*
 
 5. Once the update is complete, a prompt will ask you to restart the device. Click **Restart Now**.
 
-![Restart Prompt After Updating](/img/products/iriv-edgeai-cm5/edgeai-studio/image85.webp)
+![Restart Prompt After Updating](/img/software/iriv-edgeai-studio/image85.webp)
 
 *Restart Prompt After Updating*
 
 6. Wait for the device to restart, then refresh the browser page after a few seconds. Check the update status to confirm that the latest version has been installed successfully.
 
-![Verifying the Installed Version](/img/products/iriv-edgeai-cm5/edgeai-studio/image13.webp)
+![Verifying the Installed Version](/img/software/iriv-edgeai-studio/image13.webp)
 
 *Verifying the Installed Version*
 
@@ -190,13 +190,13 @@ Enable **Check for updates automatically** if you want to be notified when new u
 
 7. Click **Inbox** to see the updated version details.
 
-![Updated Version Notification](/img/products/iriv-edgeai-cm5/edgeai-studio/image131.webp)
+![Updated Version Notification](/img/software/iriv-edgeai-studio/image131.webp)
 
 *Updated Version Notification*
 
 8. Click the **Read more** link to see what changed.
 
-![Software Update Details](/img/products/iriv-edgeai-cm5/edgeai-studio/image106.webp)
+![Software Update Details](/img/software/iriv-edgeai-studio/image106.webp)
 
 *Software Update Details*
 

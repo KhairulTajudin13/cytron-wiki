@@ -13,7 +13,7 @@ The workflow decides what happens with each detection. You build it by dragging 
 
 Go to **AI Configuration > Workflow**.
 
-![Workflow page with node palette, canvas and top bar](/img/products/iriv-edgeai-cm5/edgeai-studio/image135.webp)
+![Workflow page with node palette, canvas and top bar](/img/software/iriv-edgeai-studio/image135.webp)
 
 1. **Node Palette** - Every node, grouped by job, with a **Search nodes** box at the top. The number beside a group is how many nodes it holds.
 2. **Canvas** - Drop nodes here, then drag from the output dot on the right of one node to the input dot on the left of the next. Click a node to open its settings.
@@ -23,7 +23,7 @@ Go to **AI Configuration > Workflow**.
 
 ### Top bar
 
-![Workflow top bar](/img/products/iriv-edgeai-cm5/edgeai-studio/image112.webp)
+![Workflow top bar](/img/software/iriv-edgeai-studio/image112.webp)
 
 1. **MQTT broker status** - shows the built-in MQTT broker, e.g. running on :1883 (network, open - no password). Set a password in [Settings > MQTT Broker](./settings/email-telegram-mqtt.md#mqtt-broker).
 
@@ -71,7 +71,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 1. Source - Detection Stream
 
-![Detection Stream node](/img/products/iriv-edgeai-cm5/edgeai-studio/image68.webp)
+![Detection Stream node](/img/software/iriv-edgeai-studio/image68.webp)
 
 **What it does:** the starting point of every workflow. It sends out every object the AI model detects from the camera.
 
@@ -81,7 +81,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 2. Filter - Class Filter
 
-![Class Filter node](/img/products/iriv-edgeai-cm5/edgeai-studio/image73.webp)
+![Class Filter node](/img/software/iriv-edgeai-studio/image73.webp)
 
 **What it does:** keeps only the objects you care about and passes them on.
 
@@ -91,7 +91,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 3. Filter - Zone Filter
 
-![Zone Filter node](/img/products/iriv-edgeai-cm5/edgeai-studio/image2.webp)
+![Zone Filter node](/img/software/iriv-edgeai-studio/image2.webp)
 
 **What it does:** brings a zone or line drawn in Camera Setup into the workflow.
 
@@ -101,7 +101,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 4. AI Processing Nodes - Counter
 
-![Counter node](/img/products/iriv-edgeai-cm5/edgeai-studio/image60.webp)
+![Counter node](/img/software/iriv-edgeai-studio/image60.webp)
 
 **What it does:** counts objects and sends out a number.
 
@@ -117,7 +117,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 5. Dashboard - Card
 
-![Card node](/img/products/iriv-edgeai-cm5/edgeai-studio/image179.webp)
+![Card node](/img/software/iriv-edgeai-studio/image179.webp)
 
 **What it does:** shows a value as a card on the Dashboard and Analytics.
 
@@ -127,7 +127,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 ### 6. Dashboard - Chart
 
-![Chart node](/img/products/iriv-edgeai-cm5/edgeai-studio/image84.webp)
+![Chart node](/img/software/iriv-edgeai-studio/image84.webp)
 
 **What it does:** shows recorded values over time as a chart in Analytics.
 
@@ -141,7 +141,7 @@ A simple system is built from six main nodes: Detection Stream > Class Filter > 
 
 Counts people in the whole view, shows the number on a card, and records it every 60 seconds for a line chart.
 
-![Example: object counter workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image202.webp)
+![Example: object counter workflow](/img/software/iriv-edgeai-studio/image202.webp)
 
 1. **Detection Stream** - sends the detections from yolov8n.
 
@@ -159,7 +159,7 @@ Counts people in the whole view, shows the number on a card, and records it ever
 
 Counts people inside a zone.
 
-![Example: object in zone counter workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image113.webp)
+![Example: object in zone counter workflow](/img/software/iriv-edgeai-studio/image113.webp)
 
 1. **Detection Stream** - sends the detections.
 
@@ -175,7 +175,7 @@ Counts people inside a zone.
 
 Counts people crossing a line.
 
-![Example: line crossing counter workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image118.webp)
+![Example: line crossing counter workflow](/img/software/iriv-edgeai-studio/image118.webp)
 
 1. **Detection Stream** - sends the detections.
 
@@ -191,7 +191,7 @@ Counts people crossing a line.
 
 Raises an alert when more than one person is in view, and records each alert.
 
-![Example: alert workflow](/img/products/iriv-edgeai-cm5/edgeai-studio/image80.webp)
+![Example: alert workflow](/img/software/iriv-edgeai-studio/image80.webp)
 
 1. **Detection Stream** - sends the detections.
 

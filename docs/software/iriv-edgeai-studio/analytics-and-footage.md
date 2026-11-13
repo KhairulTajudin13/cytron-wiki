@@ -13,7 +13,7 @@ Look back at what a system recorded, and review the photos and clips it captured
 
 Go to **Overview > Analytics** to see totals, charts and logs for any date range.
 
-![Analytics page](/img/products/iriv-edgeai-cm5/edgeai-studio/image138.webp)
+![Analytics page](/img/software/iriv-edgeai-studio/image138.webp)
 
 The Analytics page consists of several sections that you should be familiar with. Its cards follow whatever your Workflow tracks, so other templates show different cards.
 
@@ -27,7 +27,7 @@ The Analytics page consists of several sections that you should be familiar with
 
     - **Footage** - jumps to the Footage page.
 
-    ![Date range, CSV, Edit layout and Footage buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image134.webp)
+    ![Date range, CSV, Edit layout and Footage buttons](/img/software/iriv-edgeai-studio/image134.webp)
 
 2. **Calendar Strip** - Click a day to show only that day; Today is highlighted. Use the arrows to move between days.
 
@@ -41,7 +41,7 @@ The Analytics page consists of several sections that you should be familiar with
 
 Click **Edit layout** to open the Analytics Builder. It looks like the Dashboard Builder, with an extra time range so you can preview the charts with real data.
 
-![Analytics Builder](/img/products/iriv-edgeai-cm5/edgeai-studio/image54.webp)
+![Analytics Builder](/img/software/iriv-edgeai-studio/image54.webp)
 
 1. **Widgets**
 
@@ -87,7 +87,7 @@ Click **Edit layout** to open the Analytics Builder. It looks like the Dashboard
 
 Go to **Overview > Footage** to view, download or export the photos and clips the system has captured (e.g. by a Snapshot or Record Clip node). **Snap** and **Record** must be switched on in [System Control](./run-and-dashboard.md#system-control).
 
-![Footage page](/img/products/iriv-edgeai-cm5/edgeai-studio/image35.webp)
+![Footage page](/img/software/iriv-edgeai-studio/image35.webp)
 
 1. **Date Range and Events Logs**
 
@@ -111,7 +111,7 @@ Go to **Overview > Footage** to view, download or export the photos and clips th
 
     - **Delete** - removes the selected items.
 
-    ![Grid/List, Download all, Export evidence and Delete](/img/products/iriv-edgeai-cm5/edgeai-studio/image83.webp)
+    ![Grid/List, Download all, Export evidence and Delete](/img/software/iriv-edgeai-studio/image83.webp)
 
 4. **Captured Items** - Each card shows the picture, its tag (e.g. capture) and the time it was taken; tick its box to select it.
 

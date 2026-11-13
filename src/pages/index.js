@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ProductCards, {kits} from '@site/src/components/ProductCards';
+import ProductCards, {kits, software} from '@site/src/components/ProductCards';
 import styles from './index.module.css';
 
 const quickLinks = [
@@ -31,7 +31,7 @@ const quickLinks = [
     text: 'Cytron tutorials, Node-RED and AI vision projects.',
     links: [
       ['Node-RED on PiControl', '/docs/products/iriv-picontrol/node-red/'],
-      ['IRIV EdgeAI Studio (no-code AI)', '/docs/products/iriv-edgeai-cm5/edgeai-studio/'],
+      ['IRIV EdgeAI Studio (no-code AI)', '/docs/software/iriv-edgeai-studio/'],
       ['EdgeAI AI Quickstart', '/docs/products/iriv-edgeai-cm5/ai-quickstart'],
       ['All Cytron tutorials', 'https://my.cytron.io/tutorial'],
     ],
@@ -85,6 +85,9 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>Kits &amp; Solutions</h2>
         <p className={styles.sectionIntro}>Ready-made kits and training bundles built on the IRIV controllers.</p>
         <ProductCards items={kits} />
+        <h2 className={styles.sectionTitle}>Software</h2>
+        <p className={styles.sectionIntro}>Cytron software that runs on the IRIV controllers.</p>
+        <ProductCards items={software} />
         <h2 className={styles.sectionTitle}>Find what you need</h2>
         <div className={styles.quickGrid}>
           {quickLinks.map((q) => (

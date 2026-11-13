@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects (moved pages keep working)
+# 2026-11: IRIV EdgeAI Studio moved from Products > IRIV EdgeAI CM5 to Software
+/docs/products/iriv-edgeai-cm5/edgeai-studio /docs/software/iriv-edgeai-studio/ 301
+/docs/products/iriv-edgeai-cm5/edgeai-studio/ /docs/software/iriv-edgeai-studio/ 301
+/docs/products/iriv-edgeai-cm5/edgeai-studio/* /docs/software/iriv-edgeai-studio/:splat 301
+/img/products/iriv-edgeai-cm5/edgeai-studio/* /img/software/iriv-edgeai-studio/:splat 301

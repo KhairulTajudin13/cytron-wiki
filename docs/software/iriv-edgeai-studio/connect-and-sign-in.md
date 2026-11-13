@@ -11,7 +11,7 @@ Use the OLED screen and the USER button on the front of the IRIV to find the add
 
 ## Power Up the IRIV EdgeAI CM5
 
-Power on the IRIV EdgeAI CM5. If this is your first time setting up the device, refer to the [Getting Started with IRIV EdgeAI CM5](../getting-started.md) page.
+Power on the IRIV EdgeAI CM5. If this is your first time setting up the device, refer to the [Getting Started with IRIV EdgeAI CM5](../../products/iriv-edgeai-cm5/getting-started.md) page.
 
 ## Connect Your Computer to the IRIV
 
@@ -25,13 +25,13 @@ IRIV EdgeAI Studio runs as a **server on the device** and can **only** be access
 
 3. Enter the Wi-Fi password shown on the OLED screen to connect to the device's access point.
 
-![Access Dashboard in Access Point Mode](/img/products/iriv-edgeai-cm5/edgeai-studio/image233.webp)
+![Access Dashboard in Access Point Mode](/img/software/iriv-edgeai-studio/image233.webp)
 
 *Access Dashboard in Access Point Mode*
 
 4. Press the **USER** button repeatedly until the **IP ADDRESSES** screen appears on the OLED display. If the IP address displayed for wlan0 is **10.42.0.1**, the device is operating in Hotspot (Access Point) mode.
 
-![Hotspot IP Address](/img/products/iriv-edgeai-cm5/edgeai-studio/image216.webp)
+![Hotspot IP Address](/img/software/iriv-edgeai-studio/image216.webp)
 
 *Hotspot IP Address*
 
@@ -47,7 +47,7 @@ Change the default access point password later in [Settings > Network](./setting
 
 2. Locate the IP address listed under **eth0** or **eth1**, depending on which Ethernet interface is connected and assigned an IP address.
 
-![Ethernet IP Address](/img/products/iriv-edgeai-cm5/edgeai-studio/image216.webp)
+![Ethernet IP Address](/img/software/iriv-edgeai-studio/image216.webp)
 
 *Ethernet IP Address*
 
@@ -57,7 +57,7 @@ Change the default access point password later in [Settings > Network](./setting
 
 2. Check the IP address displayed under wlan0. If the address is different from **10.42.0.1**, the device is operating in Wi-Fi mode.
 
-![Wi-Fi IP Address](/img/products/iriv-edgeai-cm5/edgeai-studio/image231.webp)
+![Wi-Fi IP Address](/img/software/iriv-edgeai-studio/image231.webp)
 
 *Wi-Fi IP Address*
 
@@ -75,7 +75,7 @@ When you first access IRIV EdgeAI Studio, your browser may display a **“Your c
 
 Proceed only if you have confirmed that the IP address belongs to your IRIV EdgeAI device and that this warning is expected in your setup.
 
-![Browser Security Warning When Accessing IRIV EdgeAI Studio](/img/products/iriv-edgeai-cm5/edgeai-studio/image71.webp)
+![Browser Security Warning When Accessing IRIV EdgeAI Studio](/img/software/iriv-edgeai-studio/image71.webp)
 
 *Browser Security Warning When Accessing IRIV EdgeAI Studio*
 
@@ -83,7 +83,7 @@ Proceed only if you have confirmed that the IP address belongs to your IRIV Edge
 
 On the warning page, click **Advanced** to display additional options.
 
-![Advanced Options on the Browser Security Warning Page](/img/products/iriv-edgeai-cm5/edgeai-studio/image165.webp)
+![Advanced Options on the Browser Security Warning Page](/img/software/iriv-edgeai-studio/image165.webp)
 
 *Advanced Options on the Browser Security Warning Page*
 
@@ -93,7 +93,7 @@ If you have verified that you are connecting to your IRIV EdgeAI device and the 
 
 For example, if the device's IP address is **192.168.1.60**, the link may read Proceed to **192.168.1.60 (unsafe)**.
 
-![Proceed to the IRIV EdgeAI Studio Web Interface](/img/products/iriv-edgeai-cm5/edgeai-studio/image128.webp)
+![Proceed to the IRIV EdgeAI Studio Web Interface](/img/software/iriv-edgeai-studio/image128.webp)
 
 *Proceed to the IRIV EdgeAI Studio Web Interface*
 
@@ -101,7 +101,7 @@ For example, if the device's IP address is **192.168.1.60**, the link may read P
 
 When the sign-in page appears, enter your login credentials to access the software.
 
-![IRIV EdgeAI Studio sign-in page](/img/products/iriv-edgeai-cm5/edgeai-studio/image200.webp)
+![IRIV EdgeAI Studio sign-in page](/img/software/iriv-edgeai-studio/image200.webp)
 
 *IRIV EdgeAI Studio sign-in page*
 
@@ -129,7 +129,7 @@ On first use, no account exists yet. Create the master account by choosing a use
 
 :::
 
-![IRIV EdgeAI Studio Master Account Sign-In Page](/img/products/iriv-edgeai-cm5/edgeai-studio/image72.webp)
+![IRIV EdgeAI Studio Master Account Sign-In Page](/img/software/iriv-edgeai-studio/image72.webp)
 
 *IRIV EdgeAI Studio Master Account Sign-In Page*
 
@@ -157,7 +157,7 @@ No email is needed to reset the master password.
 
 :::
 
-![Master Password Reset Page](/img/products/iriv-edgeai-cm5/edgeai-studio/image23.webp)
+![Master Password Reset Page](/img/software/iriv-edgeai-studio/image23.webp)
 
 *Master Password Reset Page*
 

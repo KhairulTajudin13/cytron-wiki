@@ -6,9 +6,13 @@ description: "IRIV EdgeAI Studio is Cytron's no-code AI vision platform for the 
 
 # IRIV EdgeAI Studio
 
-IRIV EdgeAI Studio is Cytron's **no-code AI vision platform** for the [IRIV EdgeAI CM5](../index.md). You build vision applications in a web browser by connecting ready-made blocks (nodes), and the AI runs on the device itself, on the Hailo AI accelerator. No cloud service is needed.
+IRIV EdgeAI Studio is Cytron's **no-code AI vision platform** for the [IRIV EdgeAI CM5](../../products/iriv-edgeai-cm5/index.md). You build vision applications in a web browser by connecting ready-made blocks (nodes), and the AI runs on the device itself, on the Hailo AI accelerator. No cloud service is needed.
 
-![IRIV EdgeAI Studio, an all-in-one AI vision platform](/img/products/iriv-edgeai-cm5/edgeai-studio/image142.webp)
+:::note Runs on
+IRIV EdgeAI Studio runs on the **IRIV EdgeAI CM5** (with its Hailo AI HAT+ and an NVMe drive). It is not for IRIV PiControl, IRIV IO Controller or IRIV SmartHub CM5.
+:::
+
+![IRIV EdgeAI Studio, an all-in-one AI vision platform](/img/software/iriv-edgeai-studio/image142.webp)
 
 :::info Draft manual
 These pages follow the **IRIV EdgeAI Studio User Manual, Rev 1.0 (Draft)**. Screens and wording may change as the software is updated. Older screenshots may still show the earlier name "IRIV Vision Studio".
@@ -53,7 +57,7 @@ Every IRIV EdgeAI Studio project, called a **system**, is built from three thing
 |---|---|
 | IRIV EdgeAI CM5 | With its Hailo AI HAT+ and an NVMe drive (models, footage and datasets are stored on the NVMe). |
 | Camera | USB (UVC) camera, IP camera with an RTSP stream, or an industrial GigE camera. |
-| Power supply | See [Getting Started with the IRIV EdgeAI CM5](../getting-started.md). |
+| Power supply | See [Getting Started with the IRIV EdgeAI CM5](../../products/iriv-edgeai-cm5/getting-started.md). |
 | Computer with a browser | On the same network as the IRIV. Google Chrome or Microsoft Edge is recommended. |
 | Ethernet cable (optional) | To join your local network instead of using the device's Wi-Fi hotspot. |
 
@@ -99,9 +103,9 @@ Every IRIV EdgeAI Studio project, called a **system**, is built from three thing
 
 ## Related Pages
 
-- [IRIV EdgeAI CM5 AI Quick Start](../ai-quickstart.md): check the Hailo accelerator from the command line.
-- [IRIV EdgeAI CM5 I/O Reference](../io-reference.md): wiring for the terminals IRIV EdgeAI Studio can drive.
-- [IRIV EdgeAI Safety Box Kit](../../../kits/iriv-edgeai-safety-box-kit.md) and [IRIV EdgeAI Industry 4.0 Vision Training](../../../kits/iriv-edgeai-vision-training.md).
+- [IRIV EdgeAI CM5 AI Quick Start](../../products/iriv-edgeai-cm5/ai-quickstart.md): check the Hailo accelerator from the command line.
+- [IRIV EdgeAI CM5 I/O Reference](../../products/iriv-edgeai-cm5/io-reference.md): wiring for the terminals IRIV EdgeAI Studio can drive.
+- [IRIV EdgeAI Safety Box Kit](../../kits/iriv-edgeai-safety-box-kit.md) and [IRIV EdgeAI Industry 4.0 Vision Training](../../kits/iriv-edgeai-vision-training.md).
 
 ---
 

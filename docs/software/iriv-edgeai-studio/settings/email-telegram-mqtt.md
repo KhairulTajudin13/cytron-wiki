@@ -13,7 +13,7 @@ Go to **Settings** to set up how the device sends email and Telegram messages, a
 
 Open the **Email** tab, click **Add mailbox** and fill in the form.
 
-![Email tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image21.webp)
+![Email tab](/img/software/iriv-edgeai-studio/image21.webp)
 
 1. **Email Tab** - Lists the mailboxes the device can send from.
 
@@ -39,7 +39,7 @@ Email must also be switched on in [Settings > System](./system-and-data-retentio
 
 First create a bot with @BotFather in Telegram to get its token. Then open the **Telegram** tab, click **Add bot** and fill in the form.
 
-![Telegram tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image48.webp)
+![Telegram tab](/img/software/iriv-edgeai-studio/image48.webp)
 
 1. **Telegram Tab** - Lists the Telegram bots the device can post as.
 
@@ -67,7 +67,7 @@ To find a chat id, add the bot to the chat, send one message, then open `api.tel
 
 The device has its own MQTT broker for Workflow MQTT nodes and other machines on the network. Open the **MQTT Broker** tab. Out of the box it runs on port 1883 for any device on the network, **with no password**.
 
-![MQTT Broker tab: status and login](/img/products/iriv-edgeai-cm5/edgeai-studio/image158.webp)
+![MQTT Broker tab: status and login](/img/software/iriv-edgeai-studio/image158.webp)
 
 1. **MQTT Broker Tab** - Shows the broker's ports and who may connect, with which login.
 
@@ -77,7 +77,7 @@ The device has its own MQTT broker for Workflow MQTT nodes and other machines on
 
 3. **Username and password** - Tick Require a username and password, then enter the Username and Password (8 to 128 characters) other devices must log in with.
 
-![MQTT Broker tab: ports and who can connect](/img/products/iriv-edgeai-cm5/edgeai-studio/image190.webp)
+![MQTT Broker tab: ports and who can connect](/img/software/iriv-edgeai-studio/image190.webp)
 
 4. **MQTT port and WebSocket port** - MQTT port is 1883 by default. WebSocket port is for browser clients; leave it blank to turn it off.
 

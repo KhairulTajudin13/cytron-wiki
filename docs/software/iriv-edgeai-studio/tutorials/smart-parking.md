@@ -21,7 +21,7 @@ The system does four jobs at once:
 
 - **Raises a Lot Full alert** when the capacity reaches 0.
 
-![AI Smart Parking dashboard with numbered parts](/img/products/iriv-edgeai-cm5/edgeai-studio/image180.webp)
+![AI Smart Parking dashboard with numbered parts](/img/software/iriv-edgeai-studio/image180.webp)
 
 1. **Live video** - the camera feeds with a box around each detected car.
 
@@ -55,7 +55,7 @@ Every IRIV EdgeAI Studio tutorial starts by creating a new system. On the System
 
 Click **AI Smart Parking**, then click **Next**. The other templates are AI People Counting, AI Object Detection, AI Restricted Zone and Blank Canvas.
 
-![New system wizard with AI Smart Parking selected](/img/products/iriv-edgeai-cm5/edgeai-studio/image133.webp)
+![New system wizard with AI Smart Parking selected](/img/software/iriv-edgeai-studio/image133.webp)
 
 ### 2. Give it a title and create it
 
@@ -63,7 +63,7 @@ Click **AI Smart Parking**, then click **Next**. The other templates are AI Peop
 
 2. **Create system** - click **Next**, then **Create system**. The new system appears as a card on the Systems page; open it to continue.
 
-![Naming the new system](/img/products/iriv-edgeai-cm5/edgeai-studio/image145.webp)
+![Naming the new system](/img/software/iriv-edgeai-studio/image145.webp)
 
 ## Step 2: Load the Example Video
 
@@ -77,7 +77,7 @@ This tutorial uses a recorded top-down car park video, so you can follow along w
 
 4. Pick **car_parking_3.mp4 (video, 1.7 MB)** from the drop-down list.
 
-![Video / Image tab with car_parking_3.mp4 selected](/img/products/iriv-edgeai-cm5/edgeai-studio/image153.webp)
+![Video / Image tab with car_parking_3.mp4 selected](/img/software/iriv-edgeai-studio/image153.webp)
 
 5. Leave **High Resolution** off. The system runs at 640×480, the AI's working size, which is enough for this video and keeps the load low.
 
@@ -87,7 +87,7 @@ This tutorial uses a recorded top-down car park video, so you can follow along w
 
     - **Embed boxes in the video** - higher accuracy, boxes stay in the video and in recorded clips. This tutorial uses this option.
 
-![Quality and Detection Box Display settings](/img/products/iriv-edgeai-cm5/edgeai-studio/image157.webp)
+![Quality and Detection Box Display settings](/img/software/iriv-edgeai-studio/image157.webp)
 
 :::note
 
@@ -107,7 +107,7 @@ The system uses the built-in **yolov8s** model, set to detect cars only.
 
     - **yolov8s** - slightly larger and more accurate, used in this tutorial.
 
-![AI Models page: add yolov8s](/img/products/iriv-edgeai-cm5/edgeai-studio/image16.webp)
+![AI Models page: add yolov8s](/img/software/iriv-edgeai-studio/image16.webp)
 
 3. Click the arrow at the bottom of the yolov8s card to open **Detection settings**.
 
@@ -115,7 +115,7 @@ The system uses the built-in **yolov8s** model, set to detect cars only.
 
 5. Under **Classes to keep**, tick **car** only, then click **Save settings**. The card shows **1 of 80 classes kept**.
 
-![yolov8s detection settings: confidence 0.5, car only](/img/products/iriv-edgeai-cm5/edgeai-studio/image34.webp)
+![yolov8s detection settings: confidence 0.5, car only](/img/software/iriv-edgeai-studio/image34.webp)
 
 :::note
 
@@ -148,7 +148,7 @@ You need four zones in total:
 
 6. Click **Save all** at the top right.
 
-![Entrance line and three bay zones drawn](/img/products/iriv-edgeai-cm5/edgeai-studio/image185.webp)
+![Entrance line and three bay zones drawn](/img/software/iriv-edgeai-studio/image185.webp)
 
 :::tip
 
@@ -162,7 +162,7 @@ The workflow is split into four parts that all start from the same car detection
 
 ### Part A: Detect cars
 
-![Workflow Part A (top row) and Part B (bottom row)](/img/products/iriv-edgeai-cm5/edgeai-studio/image198.webp)
+![Workflow Part A (top row) and Part B (bottom row)](/img/software/iriv-edgeai-studio/image198.webp)
 
 In this picture, **A1-A4** mark the Part A nodes (top row) and **B1-B7** the Part B nodes (bottom row), in the same order as the lists.
 
@@ -198,7 +198,7 @@ The Part B nodes are the bottom row (B1-B7) of the picture above.
 
 ### Part C: Check each parking bay
 
-![Workflow Part C: one row per parking bay](/img/products/iriv-edgeai-cm5/edgeai-studio/image33.webp)
+![Workflow Part C: one row per parking bay](/img/software/iriv-edgeai-studio/image33.webp)
 
 Each bay has its own row of nodes. The Zone 1A row works like this:
 
@@ -222,7 +222,7 @@ The Zone 2A and Zone 3A rows are the same, using **lot2a** and **lot3a**.
 
 ### Part D: Park Capacity and Lot Full alert
 
-![Workflow Part D: Park Capacity and Lot Full](/img/products/iriv-edgeai-cm5/edgeai-studio/image174.webp)
+![Workflow Part D: Park Capacity and Lot Full](/img/software/iriv-edgeai-studio/image174.webp)
 
 1. **Custom Formula (Parking Counter)** - calculates the free bays with *3 − (lot1a + lot2a + lot3a)*. 3 is the total number of bays.
 
@@ -274,7 +274,7 @@ Go to **Overview > Analytics** to see the history.
 
 7. **CSV** - download the Total table.
 
-![Smart Parking analytics](/img/products/iriv-edgeai-cm5/edgeai-studio/image159.webp)
+![Smart Parking analytics](/img/software/iriv-edgeai-studio/image159.webp)
 
 ### Database
 
@@ -290,7 +290,7 @@ Go to **Data > Database** to see the saved counts.
 
 5. **Open SQL Playground** - run read-only queries, e.g. `SELECT * FROM car_count ORDER BY Datetime DESC;`
 
-![car_count database table](/img/products/iriv-edgeai-cm5/edgeai-studio/image45.webp)
+![car_count database table](/img/software/iriv-edgeai-studio/image45.webp)
 
 ### Events Log
 
@@ -302,7 +302,7 @@ Go to **Diagnostics > Events Logs** to see what the system recorded.
 
 3. **Events** - each event, such as car detected (with a footage link) and car count. The Lot Full crit alert also appears here.
 
-![Events Log](/img/products/iriv-edgeai-cm5/edgeai-studio/image137.webp)
+![Events Log](/img/software/iriv-edgeai-studio/image137.webp)
 
 ### Dataset (optional)
 
@@ -314,7 +314,7 @@ Go to **AI Preparation > Dataset** to save photos or clips, e.g. to train a cust
 
 3. **Where it goes** - photos are saved to `/mnt/nvme/dataset_image` and clips to `/mnt/nvme/dataset_rec`.
 
-![Dataset page](/img/products/iriv-edgeai-cm5/edgeai-studio/image92.webp)
+![Dataset page](/img/software/iriv-edgeai-studio/image92.webp)
 
 ## Conclusion
 

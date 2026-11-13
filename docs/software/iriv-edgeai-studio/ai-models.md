@@ -23,7 +23,7 @@ The 80 COCO classes include everyday objects such as person, car, bicycle, chair
 
 Go to **AI Configuration > AI Models**.
 
-![AI Models page](/img/products/iriv-edgeai-cm5/edgeai-studio/image166.webp)
+![AI Models page](/img/software/iriv-edgeai-studio/image166.webp)
 
 The AI Models page consists of several sections that you should be familiar with.
 
@@ -43,7 +43,7 @@ The AI Models page consists of several sections that you should be familiar with
 
 Follow the numbers below to pick a model for the system.
 
-![Steps to add a built-in model](/img/products/iriv-edgeai-cm5/edgeai-studio/image50.webp)
+![Steps to add a built-in model](/img/software/iriv-edgeai-studio/image50.webp)
 
 1. **+ Add a model** - Shows the built-in models stored on the device.
 
@@ -69,7 +69,7 @@ Follow the numbers below to pick a model for the system.
 
 Expand the model card to set what the model reports.
 
-![Detection settings: confidence and classes](/img/products/iriv-edgeai-cm5/edgeai-studio/image178.webp)
+![Detection settings: confidence and classes](/img/software/iriv-edgeai-studio/image178.webp)
 
 1. **Minimum confidence** - The minimum confidence for a detection to count (e.g. 0.5). Lower it to catch more objects; raise it to reduce false detections. It is enforced on the accelerator, so raising it costs nothing.
 

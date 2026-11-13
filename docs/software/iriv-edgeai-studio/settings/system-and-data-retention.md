@@ -13,7 +13,7 @@ Account-wide switches, how long data is kept, and how to clear a system's data.
 
 Go to **Settings > System**.
 
-![System tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image192.webp)
+![System tab](/img/software/iriv-edgeai-studio/image192.webp)
 
 The System tab has two switches that apply to every account on the device.
 
@@ -25,7 +25,7 @@ The System tab has two switches that apply to every account on the device.
 
 Go to **Settings > Data Retention**.
 
-![Data Retention tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image162.webp)
+![Data Retention tab](/img/software/iriv-edgeai-studio/image162.webp)
 
 The Data Retention page consists of several sections that you should be familiar with. One policy applies to every system on the device.
 
@@ -57,7 +57,7 @@ The Data Retention page consists of several sections that you should be familiar
 
 Scroll further down the Data Retention page.
 
-![Delete a system's data, and the Trash](/img/products/iriv-edgeai-cm5/edgeai-studio/image1.webp)
+![Delete a system's data, and the Trash](/img/software/iriv-edgeai-studio/image1.webp)
 
 1. **Never removed** - Accounts, the audit log, configuration, templates and workflows are never deleted by the policy.
 

@@ -7,13 +7,13 @@ description: "Choose which IRIV EdgeAI CM5 terminals IRIV EdgeAI Studio controls
 
 # Board I/O and Front Panel
 
-Choose which IRIV terminals IRIV EdgeAI Studio controls, and set up the OLED screen, USER button and buzzer on the front panel. For wiring, see the [IRIV EdgeAI CM5 I/O Reference](../../io-reference.md).
+Choose which IRIV terminals IRIV EdgeAI Studio controls, and set up the OLED screen, USER button and buzzer on the front panel. For wiring, see the [IRIV EdgeAI CM5 I/O Reference](../../../products/iriv-edgeai-cm5/io-reference.md).
 
 ## Board I/O
 
 Go to **Settings > Board I/O**.
 
-![Board I/O tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image171.webp)
+![Board I/O tab](/img/software/iriv-edgeai-studio/image171.webp)
 
 Board I/O decides which of the board's terminals IRIV EdgeAI Studio controls. Terminals it owns can be used by Board I/O nodes in the Workflow.
 
@@ -45,7 +45,7 @@ Board I/O decides which of the board's terminals IRIV EdgeAI Studio controls. Te
 
 Go to **Settings > Front Panel**.
 
-![Front Panel tab](/img/products/iriv-edgeai-cm5/edgeai-studio/image49.webp)
+![Front Panel tab](/img/software/iriv-edgeai-studio/image49.webp)
 
 The Front Panel controls the board's OLED display, the USER button and the buzzer.
 
@@ -67,7 +67,7 @@ The Front Panel controls the board's OLED display, the USER button and the buzze
 
 Scroll down to edit the wording and controls, then click **Save**.
 
-![Front panel wording and controls](/img/products/iriv-edgeai-cm5/edgeai-studio/image46.webp)
+![Front panel wording and controls](/img/software/iriv-edgeai-studio/image46.webp)
 
 1. **Wording lines** - Every line of the page can be edited, including a footer line shown under the rule on every page.
 

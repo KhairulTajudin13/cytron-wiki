@@ -13,7 +13,7 @@ Check the health of the device, the Hailo accelerator and each running model.
 
 Open **Performance** from the main sidebar (under **Run**) to check the device, the Hailo accelerator and each model.
 
-![Performance page](/img/products/iriv-edgeai-cm5/edgeai-studio/image11.webp)
+![Performance page](/img/software/iriv-edgeai-studio/image11.webp)
 
 The Performance page consists of several sections that you should be familiar with.
 

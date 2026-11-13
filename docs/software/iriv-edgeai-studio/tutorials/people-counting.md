@@ -50,7 +50,7 @@ Two bars are worth watching:
 
 - **Bottom bar:** CPU and RAM usage, CPU and NPU temperature, loaded models and FPS. It shows **IDLE** when detection is off.
 
-![AI People Counting dashboard](/img/products/iriv-edgeai-cm5/edgeai-studio/image160.webp)
+![AI People Counting dashboard](/img/software/iriv-edgeai-studio/image160.webp)
 
 ## Step 2: Check the AI model
 
@@ -70,7 +70,7 @@ The template already runs **yolov8s**, so for people counting you can leave this
 
 "person" is one of the 80 COCO classes, which is why the built-in models work for this project without any training.
 
-![AI Models page with yolov8s active](/img/products/iriv-edgeai-cm5/edgeai-studio/image37.webp)
+![AI Models page with yolov8s active](/img/software/iriv-edgeai-studio/image37.webp)
 
 ## Step 3: Connect a camera and draw the counting line
 
@@ -80,25 +80,25 @@ Detection cannot start until the system has a camera source and a counting line.
 
 2. In the **Cameras** panel, make sure the Camera 1 toggle is on. Use the sliders icon to adjust its settings.
 
-![Camera 1 entry with Camera OK](/img/products/iriv-edgeai-cm5/edgeai-studio/image235.webp)
+![Camera 1 entry with Camera OK](/img/software/iriv-edgeai-studio/image235.webp)
 
 3. Click **Start** above the feed. The live view appears and the badge changes from **Stopped**.
 
-![Start button above the feed](/img/products/iriv-edgeai-cm5/edgeai-studio/image213.webp)
+![Start button above the feed](/img/software/iriv-edgeai-studio/image213.webp)
 
 4. Pick the **Line** tool from the toolbar and draw a line across the doorway, where every person must cross it: click one side, then the other.
 
-![Drawing toolbar: Box, Circle, Polygon, Line](/img/products/iriv-edgeai-cm5/edgeai-studio/image227.webp)
+![Drawing toolbar: Box, Circle, Polygon, Line](/img/software/iriv-edgeai-studio/image227.webp)
 
-![Counting line drawn across the doorway](/img/products/iriv-edgeai-cm5/edgeai-studio/image66.webp)
+![Counting line drawn across the doorway](/img/software/iriv-edgeai-studio/image66.webp)
 
    In the **Zones** panel on the right, set the line's properties: **Detected when**, **Line type** and the IN direction (**Flip direction** swaps it). Then click **Save** on the line.
 
-![Line settings in the Zones panel](/img/products/iriv-edgeai-cm5/edgeai-studio/image89.webp)
+![Line settings in the Zones panel](/img/software/iriv-edgeai-studio/image89.webp)
 
 5. Check that the line now appears under **Zones**, then click **Save all**.
 
-![Camera Setup with the saved line](/img/products/iriv-edgeai-cm5/edgeai-studio/image237.webp)
+![Camera Setup with the saved line](/img/software/iriv-edgeai-studio/image237.webp)
 
 The other tools (Box, Circle, Polygon) draw areas instead of lines. Use them for zone-based counting, such as how many people stand in a queue. The **Overlay** panel adds link lines, guard zones and motion tracking on top of the video.
 
@@ -106,7 +106,7 @@ The other tools (Box, Circle, Polygon) draw areas instead of lines. Use them for
 
 The workflow is already built, so you only need to link it to the line you drew. Go to **AI Configuration > Workflow**. Nodes are grouped into six coloured areas, and data flows from left to right.
 
-![People Counting workflow overview](/img/products/iriv-edgeai-cm5/edgeai-studio/image75.webp)
+![People Counting workflow overview](/img/software/iriv-edgeai-studio/image75.webp)
 
 The Zone Filter is the only node you set yourself; everything after it is pre-wired.
 
@@ -150,7 +150,7 @@ Test it: walk across the line once in each direction. **In** and **Out** should 
 
 Click **Edit dashboard** to rearrange or resize the tiles.
 
-![AI People Counting dashboard](/img/products/iriv-edgeai-cm5/edgeai-studio/image160.webp)
+![AI People Counting dashboard](/img/software/iriv-edgeai-studio/image160.webp)
 
 ## Step 6: Review analytics and the database
 
@@ -168,13 +168,13 @@ Go to **Overview > Analytics**. Pick a day from the date strip, or set a range w
 
 Click **Edit layout** to rearrange the cards, or **Footage** to see recorded video.
 
-![People Counting analytics](/img/products/iriv-edgeai-cm5/edgeai-studio/image59.webp)
+![People Counting analytics](/img/software/iriv-edgeai-studio/image59.webp)
 
 ### Database
 
 Go to **Data > Database** and open the **People Counting** table. It has three columns: in, out and status, and a new row arrives for every crossing.
 
-![People Counting database table](/img/products/iriv-edgeai-cm5/edgeai-studio/image76.webp)
+![People Counting database table](/img/software/iriv-edgeai-studio/image76.webp)
 
 - **Export CSV** downloads the table for Excel or Python.
 
@@ -190,7 +190,7 @@ SELECT * FROM people_counting ORDER BY ts DESC;
 
 To filter by the **Period** dropdown (for example, today), add `ts >= %(from)s AND ts < %(to)s` to a WHERE clause. Click **Save query** to keep a query for later.
 
-![SQL Playground for the people_counting table](/img/products/iriv-edgeai-cm5/edgeai-studio/image9.webp)
+![SQL Playground for the people_counting table](/img/software/iriv-edgeai-studio/image9.webp)
 
 ## Optional: Capture a dataset
 
@@ -206,9 +206,9 @@ You only need this if you plan to train your own model later, for example to cou
 
 Photos are saved to `/mnt/nvme/dataset_image` and clips to `/mnt/nvme/dataset_rec`. Open **Dataset Library** to review, download or delete them.
 
-![Dataset page](/img/products/iriv-edgeai-cm5/edgeai-studio/image19.webp)
+![Dataset page](/img/software/iriv-edgeai-studio/image19.webp)
 
-![Dataset Library](/img/products/iriv-edgeai-cm5/edgeai-studio/image196.webp)
+![Dataset Library](/img/software/iriv-edgeai-studio/image196.webp)
 
 ## Conclusion
 

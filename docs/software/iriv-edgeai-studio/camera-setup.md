@@ -13,7 +13,7 @@ Add the camera for a system and draw the zones and lines the workflow uses. Dete
 
 Go to **AI Configuration > Camera Setup**.
 
-![Camera Setup page](/img/products/iriv-edgeai-cm5/edgeai-studio/image74.webp)
+![Camera Setup page](/img/software/iriv-edgeai-studio/image74.webp)
 
 The Camera Setup page consists of several sections that you should be familiar with.
 
@@ -49,7 +49,7 @@ The Camera Setup page consists of several sections that you should be familiar w
 
 5. **Cameras** - Every camera on this system; the count (e.g. 1 out of 4) shows the slots used. Click + Add camera to add one.
 
-![Camera entry with on/off, settings and remove buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image40.webp)
+![Camera entry with on/off, settings and remove buttons](/img/software/iriv-edgeai-studio/image40.webp)
 
 - **(1) On/Off** - switches the camera on or off.
 
@@ -65,7 +65,7 @@ The Camera Setup page consists of several sections that you should be familiar w
 
 Follow the numbers below to connect a camera.
 
-![Add a camera window](/img/products/iriv-edgeai-cm5/edgeai-studio/image96.webp)
+![Add a camera window](/img/software/iriv-edgeai-studio/image96.webp)
 
 1. **Add a camera** - Click Add a camera (or + Add camera in the Cameras panel).
 
@@ -87,7 +87,7 @@ Use **Box**, **Circle** or **Polygon** for an area (for example a queue or a res
 
 Follow the numbers below to draw and save a line.
 
-![Drawing a counting line](/img/products/iriv-edgeai-cm5/edgeai-studio/image87.webp)
+![Drawing a counting line](/img/software/iriv-edgeai-studio/image87.webp)
 
 1. **Line** - Select the Line tool in the drawing toolbar.
 
@@ -105,7 +105,7 @@ Click a zone or line in the **Zones** panel to change its settings, then click *
 - **Line settings** - a line has its own **Detected when** (feet at the line by default), a **Line type** (for example *in one way, out the other*), a **Flip direction** button to swap the IN side, and a **Crossing threshold**.
 - **Enabled** - untick to switch the zone off without deleting it. **Duplicate** and **Delete** are on the same panel.
 
-![Zone settings: Detected when options](/img/products/iriv-edgeai-cm5/edgeai-studio/image36.webp)
+![Zone settings: Detected when options](/img/software/iriv-edgeai-studio/image36.webp)
 
 Name each zone clearly (for example *Entrance Line* or *Zone 1A*): the workflow's **Zone Filter** nodes pick zones by name.
 
@@ -113,7 +113,7 @@ Name each zone clearly (for example *Entrance Line* or *Zone 1A*): the workflow'
 
 Click Camera Setting (or the settings button of the camera) to edit the camera. The example below is an RTSP / IP camera.
 
-![Camera settings for an RTSP / IP camera](/img/products/iriv-edgeai-cm5/edgeai-studio/image175.webp)
+![Camera settings for an RTSP / IP camera](/img/software/iriv-edgeai-studio/image175.webp)
 
 1. **Source tab** - The source type of the camera (USB, RTSP / IP, GigE or Video / Image).
 
@@ -123,7 +123,7 @@ Click Camera Setting (or the settings button of the camera) to edit the camera. 
 
 4. **Video Stream** - Choose the stream used for detection; the stream path fills in automatically.
 
-![Video Stream brand presets](/img/products/iriv-edgeai-cm5/edgeai-studio/image64.webp)
+![Video Stream brand presets](/img/software/iriv-edgeai-studio/image64.webp)
 
 - **(1) Brand presets** - main stream or lighter sub-stream for TP-Link / Tapo, Hikvision / Hilook and Dahua / Amcrest.
 
@@ -135,7 +135,7 @@ Click Camera Setting (or the settings button of the camera) to edit the camera. 
 
 Scroll down to Quality to change the picture size and frame rate.
 
-![Quality: high resolution, resolution and frame rate](/img/products/iriv-edgeai-cm5/edgeai-studio/image140.webp)
+![Quality: high resolution, resolution and frame rate](/img/software/iriv-edgeai-studio/image140.webp)
 
 - **(1) High Resolution** - turn on for more image detail; this may increase processing load.
 
@@ -147,7 +147,7 @@ Scroll down to Quality to change the picture size and frame rate.
 
 Choose how detection boxes are shown, then click Apply Settings.
 
-![Detection Box Display options](/img/products/iriv-edgeai-cm5/edgeai-studio/image41.webp)
+![Detection Box Display options](/img/software/iriv-edgeai-studio/image41.webp)
 
 - **(1) Draw boxes in the browser** - standard accuracy and low CPU usage; boxes may appear slightly delayed during fast movement.
 

@@ -56,7 +56,7 @@ The controller has 2 × USB 3.0 and 2 × MIPI CSI ports, so up to four cameras c
 
 ## Learn on Your Own
 
-For no-code projects, start with [IRIV EdgeAI Studio](../products/iriv-edgeai-cm5/edgeai-studio/). For coding, see the [EdgeAI CM5 Tutorials](../products/iriv-edgeai-cm5/tutorials.md), especially *Custom Object Detection on IRIV Edge AI* (7 parts).
+For no-code projects, start with [IRIV EdgeAI Studio](../software/iriv-edgeai-studio/index.md). For coding, see the [EdgeAI CM5 Tutorials](../products/iriv-edgeai-cm5/tutorials.md), especially *Custom Object Detection on IRIV Edge AI* (7 parts).
 
 ---
 

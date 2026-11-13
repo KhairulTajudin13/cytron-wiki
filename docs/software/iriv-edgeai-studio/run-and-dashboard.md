@@ -13,7 +13,7 @@ Start and stop systems, switch AI detection on, and watch the results live.
 
 Go to **Run > System Control**, click **Start** on your system and switch **Detection** on.
 
-![System Control page](/img/products/iriv-edgeai-cm5/edgeai-studio/image70.webp)
+![System Control page](/img/software/iriv-edgeai-studio/image70.webp)
 
 The System Control page lists every system in one table. It consists of several parts that you should be familiar with.
 
@@ -37,11 +37,11 @@ The System Control page lists every system in one table. It consists of several 
 
     - **Autostart** - starts the system automatically whenever the IRIV boots up.
 
-![Detection, Snap, Record and Autostart switches](/img/products/iriv-edgeai-cm5/edgeai-studio/image42.webp)
+![Detection, Snap, Record and Autostart switches](/img/software/iriv-edgeai-studio/image42.webp)
 
 5. **Start / Restart / Stop** - The buttons at the end of each row control the system.
 
-![Start, Restart and Stop buttons](/img/products/iriv-edgeai-cm5/edgeai-studio/image8.webp)
+![Start, Restart and Stop buttons](/img/software/iriv-edgeai-studio/image8.webp)
 
     1. **Start** - starts the system.
     2. **Restart** - restarts the system.
@@ -55,7 +55,7 @@ Turn on Autostart if the system should keep running after a power cut or reboot.
 
 A message confirms the system is starting.
 
-![System is starting message](/img/products/iriv-edgeai-cm5/edgeai-studio/image103.webp)
+![System is starting message](/img/software/iriv-edgeai-studio/image103.webp)
 
 :::note
 
@@ -67,7 +67,7 @@ The system pages come up within a few seconds, but AI detection stays off until 
 
 Go to **Overview > Dashboard** to see the live video and cards update in real time.
 
-![Dashboard with live video, cards, class filters and status bar](/img/products/iriv-edgeai-cm5/edgeai-studio/image114.webp)
+![Dashboard with live video, cards, class filters and status bar](/img/software/iriv-edgeai-studio/image114.webp)
 
 The Dashboard consists of several sections that you should be familiar with.
 
@@ -79,7 +79,7 @@ The Dashboard consists of several sections that you should be familiar with.
     2. **Edit dashboard** - opens the Dashboard Builder to change the layout.
     3. **Analytics** - jumps to the Analytics page.
 
-    ![Dashboard buttons: Stop, Edit dashboard, Analytics](/img/products/iriv-edgeai-cm5/edgeai-studio/image91.webp)
+    ![Dashboard buttons: Stop, Edit dashboard, Analytics](/img/software/iriv-edgeai-studio/image91.webp)
 
 3. **Live Video** - The real-time camera feeds with a box and label around each detected object.
 
@@ -90,27 +90,27 @@ The Dashboard consists of several sections that you should be familiar with.
     - **Filter name** - the name of the Class Filter, e.g. people detection.
     - **Switch** - shows Running; click to pause or run that filter.
 
-    ![Class filter switches on the Dashboard](/img/products/iriv-edgeai-cm5/edgeai-studio/image90.webp)
+    ![Class filter switches on the Dashboard](/img/software/iriv-edgeai-studio/image90.webp)
 
 6. **Detection Cards** - Show an alert colour and label (e.g. PEOPLE) when the condition is active, or “Everything within limits” when it is not.
 
 7. **Status Bar** - Live CPU, RAM, CPU temperature, NPU temperature, the number of loaded models and FPS.
 
-![Status bar: CPU, RAM, temperatures, models and FPS](/img/products/iriv-edgeai-cm5/edgeai-studio/image78.webp)
+![Status bar: CPU, RAM, temperatures, models and FPS](/img/software/iriv-edgeai-studio/image78.webp)
 
 While AI detection is running, the card shows the live value:
 
-![Card showing a live value](/img/products/iriv-edgeai-cm5/edgeai-studio/image52.webp)
+![Card showing a live value](/img/software/iriv-edgeai-studio/image52.webp)
 
 When detection is stopped, it shows **AI OFFLINE - Detection is off**. Turn Detection back on in System Control to see the value again.
 
-![Card showing AI OFFLINE](/img/products/iriv-edgeai-cm5/edgeai-studio/image3.webp)
+![Card showing AI OFFLINE](/img/software/iriv-edgeai-studio/image3.webp)
 
 ## Live Preview
 
 Open Live Preview from the main sidebar to watch up to 4 feeds at once without lag.
 
-![Live Preview with four feeds](/img/products/iriv-edgeai-cm5/edgeai-studio/image168.webp)
+![Live Preview with four feeds](/img/software/iriv-edgeai-studio/image168.webp)
 
 1. **Live Preview** - Opens Live Preview from the Run menu of the main sidebar.
 
@@ -130,13 +130,13 @@ Open Live Preview from the main sidebar to watch up to 4 feeds at once without l
     - **FPS** - the Hailo (AI) and camera frame rates.
     - **×** - clears the feed from the slot.
 
-    ![Feed header with name, FPS and clear button](/img/products/iriv-edgeai-cm5/edgeai-studio/image98.webp)
+    ![Feed header with name, FPS and clear button](/img/software/iriv-edgeai-studio/image98.webp)
 
 ## Dashboard Builder
 
 Click **Edit dashboard** to open the Dashboard Builder.
 
-![Dashboard Builder](/img/products/iriv-edgeai-cm5/edgeai-studio/image195.webp)
+![Dashboard Builder](/img/software/iriv-edgeai-studio/image195.webp)
 
 The Dashboard Builder consists of several sections that you should be familiar with.
 

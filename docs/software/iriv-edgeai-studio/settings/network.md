@@ -19,7 +19,7 @@ Go to **Settings > Network**. The top of the page has two cards.
 
     - **No restart** - the switch happens straight away, with no reboot.
 
-    ![Wi-Fi switch](/img/products/iriv-edgeai-cm5/edgeai-studio/image27.webp)
+    ![Wi-Fi switch](/img/software/iriv-edgeai-studio/image27.webp)
 
 2. **Device Hotspot** - The device broadcasts its own Wi-Fi so a computer or phone can connect to it directly. A new device starts with its hotspot on.
 
@@ -27,7 +27,7 @@ Go to **Settings > Network**. The top of the page has two cards.
     - **Password** - at least 8 characters. Change the default password on first setup.
     - **Save Hotspot Settings / Turn Off Hotspot** - save the new name and password, or switch the hotspot off.
 
-    ![Hotspot name and password](/img/products/iriv-edgeai-cm5/edgeai-studio/image154.webp)
+    ![Hotspot name and password](/img/software/iriv-edgeai-studio/image154.webp)
 
     After saving, the hotspot restarts and connected devices must reconnect with the new details.
 
@@ -37,7 +37,7 @@ Go to **Settings > Network**. The top of the page has two cards.
 
 Each Ethernet port (eth0 and eth1) has its own card. This example gives eth0 a fixed IP address.
 
-![Ethernet card with DHCP off and a fixed IP address](/img/products/iriv-edgeai-cm5/edgeai-studio/image20.webp)
+![Ethernet card with DHCP off and a fixed IP address](/img/software/iriv-edgeai-studio/image20.webp)
 
 1. **Obtain IP Address Automatically (DHCP)** - Switch DHCP off to set a fixed IP address. Settings for a port without a cable are applied when a cable is connected, with no reboot.
 
@@ -57,7 +57,7 @@ Each Ethernet port (eth0 and eth1) has its own card. This example gives eth0 a f
 
 Scroll down to the second Ethernet port, Dashboard Access and Device Name.
 
-![Second Ethernet port, Dashboard Access and Device Name](/img/products/iriv-edgeai-cm5/edgeai-studio/image124.webp)
+![Second Ethernet port, Dashboard Access and Device Name](/img/software/iriv-edgeai-studio/image124.webp)
 
 1. **Ethernet Connection 2 (eth1)**
 
@@ -87,7 +87,7 @@ Give each IRIV on the same network its own hostname. If the name is already used
 
 Scroll down to Secure Connection (HTTPS) to encrypt the connection between your browser and the device.
 
-![Secure Connection (HTTPS) card](/img/products/iriv-edgeai-cm5/edgeai-studio/image136.webp)
+![Secure Connection (HTTPS) card](/img/software/iriv-edgeai-studio/image136.webp)
 
 1. **HTTPS Switch** - Turns HTTPS on (ports 443 and 8443). HTTP keeps working as before.
 
