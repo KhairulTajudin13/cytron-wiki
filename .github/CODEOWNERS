@@ -1,0 +1,24 @@
+# Who is asked to review changes to each part of the wiki.
+# GitHub requests a review from these people automatically when a pull request
+# touches their files. Each owner must have write access to the repo.
+#
+# To assign a product owner, replace the default owner on that line with their
+# GitHub username (or a team, e.g. @cytron/wiki-editors). Later lines win.
+
+# Default owner for everything
+*                                   @KhairulTajudin13
+
+# Product sections (replace with each product owner's GitHub username)
+/docs/products/iriv-picontrol/      @KhairulTajudin13
+/docs/products/iriv-io-controller/  @KhairulTajudin13
+/docs/products/iriv-smarthub-cm5/   @KhairulTajudin13
+/docs/products/iriv-edgeai-cm5/     @KhairulTajudin13
+/docs/kits/                         @KhairulTajudin13
+/docs/software/                     @KhairulTajudin13
+
+# Site setup: menus, homepage, redirects and build settings
+/docusaurus.config.js               @KhairulTajudin13
+/sidebars.js                        @KhairulTajudin13
+/src/                               @KhairulTajudin13
+/static/_redirects                  @KhairulTajudin13
+/.github/                           @KhairulTajudin13
