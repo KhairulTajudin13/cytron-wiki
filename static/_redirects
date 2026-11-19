@@ -1,4 +1,8 @@
 # Cloudflare Pages redirects (moved pages keep working)
+# 2026-11: the team editing guide moved off the public site into the GitHub repo
+/docs/contribute https://github.com/KhairulTajudin13/cytron-wiki/blob/main/team/how-to-edit.md 302
+/docs/contribute/ https://github.com/KhairulTajudin13/cytron-wiki/blob/main/team/how-to-edit.md 302
+
 # 2026-11: IRIV EdgeAI Studio moved from Products > IRIV EdgeAI CM5 to Software
 /docs/products/iriv-edgeai-cm5/edgeai-studio /docs/software/iriv-edgeai-studio/ 301
 /docs/products/iriv-edgeai-cm5/edgeai-studio/ /docs/software/iriv-edgeai-studio/ 301
