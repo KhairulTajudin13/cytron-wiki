@@ -9,13 +9,14 @@ Technical documentation for the Cytron IRIV industrial controller series, built 
 - `docs/products/` — IRIV PiControl (CM4 / CM5), IRIV IO Controller (+ IOC MQTT Gateway), IRIV SmartHub CM5, IRIV EdgeAI CM5
 - `docs/kits/` — kits, solutions and training bundles built on the IRIV controllers
 - `docs/software/` — software that runs on the IRIV controllers (IRIV EdgeAI Studio)
+- `team/` — guides for the Cytron team (not published on the site)
 - `src/` — homepage and the shared `ProductCards` component (product and kit cards)
 - `static/img/` — diagrams and product images (prefer WebP for large images)
 - `sources/manuals/` — archived copies of the manuals the pages were written from. The live manuals are the Google Docs linked on each product's **Downloads** page
 
-## Contributing
+## Contributing (Cytron team)
 
-Team members edit in the browser and open a pull request: see [CONTRIBUTING.md](CONTRIBUTING.md) and the wiki page [How to Edit This Wiki](https://cytron-wiki.pages.dev/docs/contribute). Page templates are in [`templates/`](templates/).
+**Team members start here: [How to edit the wiki](team/how-to-edit.md).** Then read [CONTRIBUTING.md](CONTRIBUTING.md). Page templates are in [`templates/`](templates/). Customers never see these: the public site only shows documentation and a "Found a mistake? Tell us" email link.
 
 ## Editing rules
 
