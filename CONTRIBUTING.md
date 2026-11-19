@@ -2,12 +2,12 @@
 
 Thank you for helping keep the wiki correct. Every change goes through a **pull request** and needs **one approval** before it goes live on https://cytron-wiki.pages.dev.
 
-A step-by-step guide with no Git knowledge needed is on the wiki itself: **[How to Edit This Wiki](https://cytron-wiki.pages.dev/docs/contribute)**.
+This is for the **Cytron team**. A step-by-step guide with no Git knowledge needed is in [`team/how-to-edit.md`](team/how-to-edit.md). The public wiki is for customers and does not show editing instructions; customers report mistakes with the **"Found a mistake? Tell us"** link on every page, which emails support@cytron.io.
 
 ## The quick way: edit in the browser
 
-1. On any wiki page, click **Edit this page** at the bottom.
-2. GitHub opens the page in its editor. Make your change.
+1. Find the page's file on GitHub: the wiki address `/docs/products/iriv-picontrol/terminal-1` is the file `docs/products/iriv-picontrol/terminal-1.md` (press `t` on the repo page to search). Click the **pencil** icon.
+2. Make your change in GitHub's editor.
 3. Click **Commit changes…**. Write a short message, choose **Create a new branch … and start a pull request**, then click **Propose changes** and **Create pull request**.
 4. Cloudflare posts a **preview link** on the pull request after a couple of minutes. Check your page there.
 5. A reviewer approves and merges it. The live site updates 2–3 minutes later.
@@ -61,6 +61,8 @@ description: "One sentence, about 150 characters, saying what the page covers."
 | Sidebar order and new pages | `sidebars.js` (a new page must be added here to appear in the sidebar) |
 | Homepage cards | `src/components/ProductCards/index.js` |
 | Moved pages (old URL to new URL) | `static/_redirects` |
+| Team-only guides and notes (not published) | `team/` |
+| "Found a mistake? Tell us" link under every page | `src/theme/DocItem/Footer/` |
 
 ## Before you open a pull request
 
