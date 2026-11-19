@@ -47,7 +47,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/KhairulTajudin13/cytron-wiki/tree/main/',
+            'https://github.com/KhairulTajudin13/cytron-wiki/edit/main/',
         },
         blog: false,
         theme: {
@@ -127,6 +127,7 @@ const config = {
             items: [
               {label: 'Technical support', href: 'mailto:support@cytron.io'},
               {label: 'Sales enquiries', href: 'mailto:sales@cytron.io'},
+              {label: 'How to edit this wiki', to: '/docs/contribute'},
               {label: 'Wiki source on GitHub', href: 'https://github.com/KhairulTajudin13/cytron-wiki'},
             ],
           },
