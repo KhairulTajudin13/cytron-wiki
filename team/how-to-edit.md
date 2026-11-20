@@ -2,48 +2,14 @@
 
 This guide is for Cytron team members. Customers do not see it: the public wiki at https://cytron-wiki.pages.dev only shows product documentation, plus a **"Found a mistake? Tell us"** link that emails support@cytron.io.
 
-You can fix pages and add pictures from a web browser. You do not need to install anything or know Git. There are two ways: **Pages CMS** (easiest, saves straight to the live wiki) and **GitHub** (changes are reviewed before they go live).
+You can fix pages and add pictures from a web browser. Changes go live on the wiki 2–3 minutes after they are saved.
 
-**Bookmark this:** https://app.pagescms.org (the editor). The wiki files are at https://github.com/KhairulTajudin13/cytron-wiki.
+> **Note:** Cytron IT is setting up the editing tool for the wiki. Until then, use GitHub as described below. This guide will be updated when the new editor is ready.
 
-## The Easy Way: Pages CMS (no GitHub account needed)
+**Bookmark this:** https://github.com/KhairulTajudin13/cytron-wiki
 
-Pages CMS is a simple editing page for the wiki. **Saving publishes straight to the live wiki**: the change is online 2–3 minutes later.
-
-### First time
-1. You receive an invitation email from Pages CMS. (Ask the wiki owner to invite you.)
-2. Open https://app.pagescms.org, click **Continue with email** and enter the same email address. Follow the sign-in link sent to you.
-3. Open the **cytron-wiki** repository.
-
-### Edit a page
-1. In the left menu, choose the section: **Products › IRIV PiControl**, **Kits & Solutions** or **Software › IRIV EdgeAI Studio**.
-2. Click the page you want to change.
-3. Edit the fields:
-   - **Page title**: shown in the browser tab and search results. Start with the product name.
-   - **Name in the left menu**: the short name in the wiki's side menu.
-   - **Order in the left menu**: 1 is the top.
-   - **Short description**: one sentence for search engines.
-   - **Page content**: the page text in Markdown (see the cheat sheet below).
-4. Click **Save**. Open the page on https://cytron-wiki.pages.dev after 2–3 minutes to check it.
-
-### Add a picture
-1. Prepare the image: **WebP or PNG, at most 1200 px wide**, and blur any passwords, emails or names.
-2. Open **Media**, go into the product's folder (for example `products/iriv-picontrol`) and upload the image.
-3. In the page content, add it with alt text that says what it shows:
-
-```md
-![Terminal 1 pinout](/img/products/iriv-picontrol/terminal-1-pinout.webp)
-```
-
-### What Pages CMS cannot do (ask the wiki owner)
-- **Add, rename or delete pages.** A new page also needs a place in the wiki menu, and renaming breaks links people already use.
-- Change the **Products**, **Kits & Solutions** and **Software** overview pages (they contain the product cards), the menus or the site settings.
-
-### Use AI to help
+## Use AI to Help
 Claude can draft and update pages from Cytron's datasheets and manuals. You check the facts, then paste and save. See [Editing the Wiki with AI](ai-editing.md).
-
-### Made a mistake?
-Fix it the same way and save again. Every save is kept in the wiki history, so the wiki owner can also restore an earlier version.
 
 ## Markdown Cheat Sheet
 
@@ -72,9 +38,7 @@ Wiring or settings that can harm people or equipment.
 
 Also `:::tip` and `:::info`. Keep `{ }` and `<` out of normal text, or put them in backticks (`` `<IP address>` ``), otherwise the page does not build.
 
-## The Advanced Way: GitHub
-
-Use this if you have a GitHub account and want a change reviewed before it goes live, or need to add a new page.
+## Editing on GitHub
 
 ### Before you start (once)
 

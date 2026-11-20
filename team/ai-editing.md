@@ -1,6 +1,6 @@
 # Editing the Wiki with AI (Cytron team only)
 
-Use Claude to draft and update wiki pages from Cytron's own documents. **You stay the expert**: Claude writes, you check the facts, then you paste the result into Pages CMS and save. Saving publishes straight to the live wiki, so always read the result before you save.
+Use Claude to draft and update wiki pages from Cytron's own documents. **You stay the expert**: Claude writes, you check the facts, then you paste the result into the wiki editor and save. Saving publishes straight to the live wiki, so always read the result before you save.
 
 ## Set Up Once: the "Cytron Wiki Editing" Project
 
@@ -14,7 +14,7 @@ Use Claude to draft and update wiki pages from Cytron's own documents. **You sta
 
 ## Every Time You Edit
 
-1. In Pages CMS, open the page and copy everything in **Page content**.
+1. Open the page in the wiki editor and copy its content (everything below the page header).
 2. In the **Cytron Wiki Editing** project, start a new chat. Paste the page content and say what you want, for example:
    - *"Add a troubleshooting entry: RS485 device does not respond. Use the PiControl user manual."*
    - *"Update the digital input specs on this page from the latest datasheet."*
@@ -22,10 +22,10 @@ Use Claude to draft and update wiki pages from Cytron's own documents. **You sta
    - *"Write a new section about wiring a 4–20 mA sensor to AN0, with a warning box."*
 3. Claude replies with the **full updated page content**, a list of **what changed**, and **facts to check** with their sources.
 4. Check every item under **facts to check** against the datasheet or manual. Search the page for `[CHECK]`: Claude writes it where it could not find a fact. Fix or remove each one.
-5. Copy the full page content from Claude, select everything in **Page content** in Pages CMS, paste, and click **Save**.
+5. Copy the full page content from Claude, replace the page content in the wiki editor with it, and save.
 6. After 2–3 minutes, open the page on https://cytron-wiki.pages.dev and look at it.
 
-If Claude also suggests a new page title, menu name or short description, copy those into the matching fields in Pages CMS.
+If Claude also suggests a new page title, menu name or short description, update them in the page header (`title`, `sidebar_label`, `description`).
 
 ## Before You Click Save
 
@@ -86,4 +86,4 @@ If the request is unclear, or the needed document is not in the project, ask one
 
 - Claude can still make mistakes, especially with numbers. The **facts to check** list is there so you can verify quickly. You are responsible for what you publish.
 - Work on **one page per chat**. Long chats with several pages mix things up.
-- Need a new page, or want to rename or delete one? Ask the wiki owner (Pages CMS cannot add pages yet).
+- Need a new page, or want to rename or delete one? Ask the wiki owner: a new page also needs a place in the menu (`sidebars.js`).
