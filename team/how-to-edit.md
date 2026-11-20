@@ -2,16 +2,83 @@
 
 This guide is for Cytron team members. Customers do not see it: the public wiki at https://cytron-wiki.pages.dev only shows product documentation, plus a **"Found a mistake? Tell us"** link that emails support@cytron.io.
 
-You can fix and add pages from a web browser. You do not need to install anything or know Git. Every change is **reviewed and previewed before it goes live**, so you cannot break the site by mistake.
+You can fix pages and add pictures from a web browser. You do not need to install anything or know Git. There are two ways: **Pages CMS** (easiest, saves straight to the live wiki) and **GitHub** (changes are reviewed before they go live).
 
-**Bookmark this:** https://github.com/KhairulTajudin13/cytron-wiki
+**Bookmark this:** https://app.pagescms.org (the editor). The wiki files are at https://github.com/KhairulTajudin13/cytron-wiki.
 
-## Before You Start (once)
+## The Easy Way: Pages CMS (no GitHub account needed)
+
+Pages CMS is a simple editing page for the wiki. **Saving publishes straight to the live wiki**: the change is online 2–3 minutes later.
+
+### First time
+1. You receive an invitation email from Pages CMS. (Ask the wiki owner to invite you.)
+2. Open https://app.pagescms.org, click **Continue with email** and enter the same email address. Follow the sign-in link sent to you.
+3. Open the **cytron-wiki** repository.
+
+### Edit a page
+1. In the left menu, choose the section: **Products › IRIV PiControl**, **Kits & Solutions** or **Software › IRIV EdgeAI Studio**.
+2. Click the page you want to change.
+3. Edit the fields:
+   - **Page title**: shown in the browser tab and search results. Start with the product name.
+   - **Name in the left menu**: the short name in the wiki's side menu.
+   - **Order in the left menu**: 1 is the top.
+   - **Short description**: one sentence for search engines.
+   - **Page content**: the page text in Markdown (see the cheat sheet below).
+4. Click **Save**. Open the page on https://cytron-wiki.pages.dev after 2–3 minutes to check it.
+
+### Add a picture
+1. Prepare the image: **WebP or PNG, at most 1200 px wide**, and blur any passwords, emails or names.
+2. Open **Media**, go into the product's folder (for example `products/iriv-picontrol`) and upload the image.
+3. In the page content, add it with alt text that says what it shows:
+
+```md
+![Terminal 1 pinout](/img/products/iriv-picontrol/terminal-1-pinout.webp)
+```
+
+### What Pages CMS cannot do (ask the wiki owner)
+- **Add, rename or delete pages.** A new page also needs a place in the wiki menu, and renaming breaks links people already use.
+- Change the **Products**, **Kits & Solutions** and **Software** overview pages (they contain the product cards), the menus or the site settings.
+
+### Made a mistake?
+Fix it the same way and save again. Every save is kept in the wiki history, so the wiki owner can also restore an earlier version.
+
+## Markdown Cheat Sheet
+
+| You type | You get |
+|---|---|
+| `## Heading` / `### Smaller heading` | Section headings (do not skip a level) |
+| `**bold**` | **bold** (use for buttons and key words) |
+| `- item` | Bullet list |
+| `1. step` | Numbered list |
+| `[text](https://…)` | Link |
+| `![what it shows](/img/…/file.webp)` | Picture |
+| `` `code` `` | `code` (commands, pin names, file names) |
+| (copy a table from an existing page and change the text) | Table |
+
+Note and warning boxes:
+
+```md
+:::note
+Normal note.
+:::
+
+:::warning
+Wiring or settings that can harm people or equipment.
+:::
+```
+
+Also `:::tip` and `:::info`. Keep `{ }` and `<` out of normal text, or put them in backticks (`` `<IP address>` ``), otherwise the page does not build.
+
+## The Advanced Way: GitHub
+
+Use this if you have a GitHub account and want a change reviewed before it goes live, or need to add a new page.
+
+### Before you start (once)
 
 1. Create a free account at [github.com](https://github.com/signup) if you do not have one. Use your Cytron email.
 2. Ask the wiki owner to add you as an editor of the [wiki repository](https://github.com/KhairulTajudin13/cytron-wiki). You will get an invitation email; click **Accept**.
 
-## Find the File for a Wiki Page
+### Find the File for a Wiki Page
 
 The address of a wiki page tells you where its file is. Take the part after `cytron-wiki.pages.dev/` and add `.md`:
 
@@ -24,7 +91,7 @@ The address of a wiki page tells you where its file is. Take the part after `cyt
 
 The quickest way to open it: on the repository page, press **`t`** (Go to file), type part of the name (for example `terminal-1`) and press Enter.
 
-## Fix or Update a Page
+### Fix or Update a Page
 
 1. Open the file on GitHub (see above) and click the **pencil** icon (Edit this file).
 2. Make your change. The text is **Markdown**:
@@ -39,7 +106,7 @@ The quickest way to open it: on the repository page, press **`t`** (Go to file),
 
 That's it. A reviewer is notified automatically.
 
-## Check Your Change Before It Goes Live
+### Check Your Change Before It Goes Live
 
 - After 2–3 minutes, **Cloudflare adds a preview link** to your pull request (for example `https://your-branch.cytron-wiki.pages.dev`). Open it to see the site with your change.
 - If a check shows a red cross, it usually means a broken link or a formatting error. Open the check's details, or ask the reviewer.
@@ -47,7 +114,7 @@ That's it. A reviewer is notified automatically.
 
 When the reviewer approves and merges, the live site updates in 2–3 minutes.
 
-## Add a Picture
+### Add a Picture
 
 1. Prepare the image: **WebP or PNG, at most 1200 px wide**, and blur any passwords, emails or names.
 2. On GitHub, open the image folder, for example `static/img/products/iriv-picontrol/`.
@@ -60,7 +127,7 @@ When the reviewer approves and merges, the live site updates in 2–3 minutes.
 
 You can put the image and the page edit in the same pull request: after uploading, switch to your new branch, open the page and edit it there.
 
-## Add a New Page
+### Add a New Page
 
 1. Copy one of the [page templates](../templates/): product page, tutorial or troubleshooting entry.
 2. Open the right folder (for example `docs/products/iriv-picontrol/`), click **Add file › Create new file**, name it in lowercase with hyphens (`modbus-setup.md`) and paste the template.
