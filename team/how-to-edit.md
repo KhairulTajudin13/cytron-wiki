@@ -39,6 +39,9 @@ Pages CMS is a simple editing page for the wiki. **Saving publishes straight to 
 - **Add, rename or delete pages.** A new page also needs a place in the wiki menu, and renaming breaks links people already use.
 - Change the **Products**, **Kits & Solutions** and **Software** overview pages (they contain the product cards), the menus or the site settings.
 
+### Use AI to help
+Claude can draft and update pages from Cytron's datasheets and manuals. You check the facts, then paste and save. See [Editing the Wiki with AI](ai-editing.md).
+
 ### Made a mistake?
 Fix it the same way and save again. Every save is kept in the wiki history, so the wiki owner can also restore an earlier version.
 
