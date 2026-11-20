@@ -120,7 +120,6 @@ const config = {
             items: [
               {label: 'Technical support', href: 'mailto:support@cytron.io'},
               {label: 'Sales enquiries', href: 'mailto:sales@cytron.io'},
-              {label: 'Wiki source on GitHub', href: 'https://github.com/KhairulTajudin13/cytron-wiki'},
             ],
           },
         ],
