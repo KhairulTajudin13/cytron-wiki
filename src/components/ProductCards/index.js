@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 export const products = [
   {
-    title: 'IRIV PiControl Test',
+    title: 'IRIV PiControl',
     tag: 'Raspberry Pi CM4 / CM5',
     image: '/img/products/iriv-picontrol.png',
     link: '/docs/products/iriv-picontrol/',
